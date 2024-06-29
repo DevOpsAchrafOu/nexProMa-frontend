@@ -2,8 +2,6 @@ import { Component, EventEmitter, OnInit,Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { CurrentLangService } from 'src/app/services/help/current-lang.service';
 import { UtilsService } from 'src/app/services/help/utils.service';
-import { AuthService } from 'src/app/services/security/auth.service';
-import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-navbar',
@@ -36,37 +34,17 @@ export class NavbarComponent implements OnInit {
   /*******************************************************************************************/
 
  constructor(
-   private authServ: AuthService,
    private router : Router,
-   private sharedData : SharedService,
    private currentLangService: CurrentLangService
  ) { }
 
  ngOnInit(): void {
 
-  //extraire data Shared
-  this.sharedData.currentDataCurrentUserName.subscribe(data => this.dataUser = data);
-  this.sharedData.currentDataAvatarLogo.subscribe(data => this.dataAvatarLogo = data);
-  this.sharedData.currentDataMenu.subscribe((data) => (this.dataMenu = data));
-
-
-   //set CurrentUserName And AvatarLogo
-   if(this.dataUser == "" || this.dataAvatarLogo){
-    let connectedUser = this.authServ.loadConnectedUser();
-    this.sharedData.setCurrentUserNameAndAvatarLogo(connectedUser);
-   }
-
-   let role = this.authServ.loadRole();
-   if(role && !UtilsService.isEmptyString(role)){
-      this.role =  role;
-   }
 
     //get current lang
     this.rtl = this.currentLangService.isRTL();
 
  }
-
-
 
   /********************************************************************************************/
   /**************************************  The functions **************************************/
@@ -77,7 +55,6 @@ export class NavbarComponent implements OnInit {
   console.log("onSidebarCollapse => "+this.isActiveInChildNav);
   this.isActiveInChildNav = !this.dataMenu.menu;
   //cahange data Shared
-  this.sharedData.changeDataMenu({ menu: this.isActiveInChildNav });
  }
 
 
@@ -90,9 +67,6 @@ export class NavbarComponent implements OnInit {
 
 //  }
 
- onLogout(){
-  this.authServ.onLogout();
- }
 
 //  searchByNumDossier(){
 //   if(this.searchNumDossier && this.searchNumDossier != ""){

@@ -4,11 +4,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Offer } from 'src/app/interfaces/parametrages/offer';
 import { GestionMsgAndStatusService } from 'src/app/services/gestion-msg-and-status.service';
-import { HandleStatusService } from 'src/app/services/help/handle-status.service';
 import { UtilsService } from 'src/app/services/help/utils.service';
-import { AuthService } from 'src/app/services/security/auth.service';
 import { Select2OptionData } from 'ng-select2';
-import { ReferencesService } from 'src/app/services/references.service';
 import { ToastrService } from 'ngx-toastr';
 import { AlertService } from 'src/app/services/help/alert.service';
 import { Tag } from 'src/app/interfaces/tag';
@@ -76,10 +73,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private authService: AuthService,
-    private handleErrorServ: HandleStatusService,
     private messageServ: GestionMsgAndStatusService, //massagae for alert(toastr and Swal)
-    private referencesService : ReferencesService,
     private toastr: ToastrService,
     private route: Router,
     private alertServ: AlertService, //property for alert(toastr and Swal)
@@ -111,16 +105,6 @@ export class HomeComponent implements OnInit {
 
   }
 
-  doAuthUser(){
-    let isAuth = this.authService.isConnected();
-    console.log("doAuthUser " + isAuth);
-    if(isAuth){
-      if(this.authService.loadRole() == "ROLE_NEXPROMA")
-        this.route.navigate(["/offres"]);
-      else
-        this.route.navigate(["/mes-offres"]);
-    }
-  }
 
 
   /********************************************************************************************/
@@ -164,72 +148,6 @@ export class HomeComponent implements OnInit {
     return region ? region.text : 'Unknown';
   }
 
-    /* get last 10  Publishes Offers */
-    getlastDixPublishedOffersPublicFromBack() {
-      this.referencesService
-      .getAllRegionFromBack()
-      .pipe(
-        tap({
-          next: (res: any) => {
-            console.log("getReferences =>")
-            console.log(res?._embedded)
-            this.listRegionSelect = res?._embedded?.regions?.map((x: any) => {
-              this.listRegionStr+=x.labelFr+", ";
-              return { id: x.id, text: x.labelFr };
-            });
-
-            //Start add meta tag
-            let tagListRegionStr : Tag = {key:"geo.placename",value:this.listRegionStr}
-            this.metaTag.addTag(tagListRegionStr);
-            //End add meta tag
-
-            return this.listRegionSelect;
-          },
-          error: (error) => {
-              // error is here, but we can only call side things.
-
-              this.handleErrorServ.onHandleCodeStatus(error);
-              return null;
-          },
-          }
-          )
-          ,filter((region ) => region != null )
-      ).subscribe(
-        (listOffer: Offer[]) => {
-          console.log("getlastDixPublishedOffersPublicFromBack =>");
-          console.log(listOffer);
-          //Start add meta tag
-          let tag;
-          if(listOffer.length && listOffer.length >0){
-             tag = {key:"Nombre-des-offres-publiées",value:""+listOffer.length}
-          }else{
-             tag = {key:"Nombre-des-offres-publiées",value:"0"}
-          }
-          this.metaTag.addTag(tag);
-          //End add meta tag
-
-          if (!UtilsService.isEmptyArray(listOffer))
-            this.offers = listOffer
-            .map((offer, i) =>{
-
-              offer.experience = this.mapExperienceToText(offer.experience);
-              offer.workModel = this.mapWorkModelToText(offer.workModel);
-              offer.studyLevel = this.mapStudyLevelToText(offer.studyLevel);
-              offer.contractTypeStr = this.mapContractTypeToText(offer.contractTypeId);
-              offer.regionStr = this.mapRegionToText(offer.regionId);
-              return { id: i + 1, ...offer}
-            }
-            );
-
-        },
-        (error) => {
-
-          this.handleErrorServ.onHandleCodeStatus(error);
-        }
-      );
-
-
-    }
 
 
     goOfferDetails(reference : string){
@@ -238,17 +156,8 @@ export class HomeComponent implements OnInit {
 
 
     viewAllOffer(){
-      let isAuth = this.authService.isConnected();
-      console.log("doAuthUser " + isAuth);
-      if(isAuth){
-        if(this.authService.loadRole() == "ROLE_NEXPROMA")
-          this.route.navigate(["/offres"]);
-        else
-          this.route.navigate(["/mes-offres"]);
-      }
-      else{
-        this.route.navigate(["/login"]);
-      }
+      this.route.navigate(["/mes-offres"]);
+
     }
 
     initListMetadat(){

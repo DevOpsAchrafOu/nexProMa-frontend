@@ -61,41 +61,6 @@ border-bottom: 1px solid transparent;
 font-weight: 500;
 }
 
-/* start userName */
-#dis .userName {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 36px;
-  /* padding-right: 10px; */
-  padding-left: 10px;
-  min-width: 165px;
-  padding-bottom: 5px;
-}
- /* Small */
- @media (max-width: 767px)
- {
-  #dis .userName {
-    padding-inline: 5px;
-    min-width: 50px;
-  }
- }
-#dis .userName .icon-username{
-font-size: 1.2rem;
-}
-#dis .userName .currentDate{
-font-size: .8rem;
-color:var(--sixth-color-dis);
-text-align: center;
-line-height: 0;
-}
-#dis .userName .text-username{
-text-transform:capitalize;
-}
-#dis .userName .text-username,
-#dis .userName .icon-username,
-#dis .userName .text-username-logo{
-  color: var(--first-color-dis);
-}
 
 /* start logout  */
 #dis .icon-logout{
@@ -103,58 +68,6 @@ color: var(--sixth-color-dis);
 line-height: 36px;
 font-size: 1.2rem;
 }
-
-
-/* .circle {
-  background-color: #740b60 ;
-  color: white;
-  border-radius: 50%;
-  height: 37px;
-  text-align: center;
-  width: 37px;
-  line-height: 37px;
-  float: left;
-  margin-left: auto;
-  margin-right: 0;
-} */
-
-/* .initials {
-  line-height: 2.1;
-  font-size: medium;
-  position: relative;
-  font-weight: 500;
-} */
-
-/* .NumNatification1{
-  position: absolute;
-  right: 45%;
-  top: -22%;
-  z-index: 99;
-  font-size: 48%;
-  padding: 0.4em;
-  border-radius: 999px;
-  line-height: 0.75em;
-  color: white;
-  background: red;
-  text-align: center;
-  min-width: 0em;
-  font-weight: bold;
-}
-.fa-stack {
-  line-height: 25px;
-  font-size: 20px;
-} */
-
-/* #nat1{
-  font-size: 8px;
-
-}
-.icon1{
-  color: var(--sixth-color-dis);
-}
-
-*/
-
 
 
 
@@ -177,3 +90,16 @@ float: left;
 }
 
 /*--------- start navbar section -----------*/
+
+/* Small */
+@media (max-width: 767px) {
+  #header .logo .logo-first {
+    height: 35px;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {}

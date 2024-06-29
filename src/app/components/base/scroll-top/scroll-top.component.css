@@ -1,0 +1,42 @@
+#scroll .scroll-to-top {
+  position: fixed;
+  display: none;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99999;
+  cursor: pointer;
+  /* and a transition */
+  transition: 1s;
+}
+
+#scroll .scroll-to-top span {
+  width: 40px;
+  height: 40px;
+  display: -moz-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--first-color-dis);
+  background-color: #fff;
+  color: var(--first-color-dis);
+  font-size: .8rem;
+  transition: all .8s ease;
+}
+
+#scroll .scroll-to-top:hover span{
+  transition: all .8s ease;
+  background-color: var(--main-color-dis);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--main-color-dis);
+}
+
+
+#scroll .show {
+  display: block;
+}

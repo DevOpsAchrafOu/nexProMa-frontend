@@ -5,12 +5,12 @@
 <!-- Start main setcion -->
 <div id="home" class="container-sm container-fluid">
   <!-- start hero  -->
-  <div class="hero">
+  <div id="hero">
     <div class="row text-sm-right text-center">
-      <div class="col-sm-6 col-12 order-sm-1 order-2 d-flex align-items-center justify-content-sm-start justify-content-center">
+      <div class="col-sm-6 col-12 order-sm-1 order-1 d-flex align-items-center justify-content-sm-start justify-content-center">
         <img class="hero-img" src="./assets/images/nexProMa_img_hero.svg" >
       </div>
-      <div class="col-sm-6 col-12 order-sm-2 order-1 d-flex align-items-center pt-3">
+      <div class="col-sm-6 col-12 order-sm-2 order-2 d-flex align-items-center pt-3">
         <div class=" ">
           <h2 class="hero-title-first ">
             علاش حنا و ماشي شي حد آخر؟
@@ -33,8 +33,8 @@
 
 
   <!-- strat best_offres -->
-  <div  class="best_offres mt-5 mb-5">
-    <h3 class="best_offres-title text-center ">أفضل منتجات</h3>
+  <div id="best_offres" class=" mt-5 mb-5">
+    <h3 class="best_offres-title text-center ">- أفضل منتجات -</h3>
     <div class="row  ">
       <div class="col-lg-4 col-sm-6 " *ngFor="let offer of offers; let i = index;">
         <div *ngIf="offer.reference" class="card mt-4 w-100 " >
@@ -92,8 +92,8 @@
 
 
   <!-- strat com_ca_marche -->
-  <div  class="com_ca_marche mt-5 mb-5 pb-4">
-    <h3 class="com_ca_marche-title text-center ">أن تكون في أيدٍ موثوقة وآمنة</h3>
+  <div  id="com_ca_marche" class=" mt-5 mb-5 pb-4">
+    <h3 class="com_ca_marche-title text-center ">-أن تكون في أيدٍ موثوقة وآمنة-</h3>
     <p class="com_ca_marche-text text-center mb-sm-5 mb-3">! سنساعدك في كل خطوة</p>
     <div class="row d-flex justify-content-between ">
 
@@ -130,9 +130,9 @@
 
 
  <!-- strat pve -->
- <div class="pve mt-5 mb-5">
-  <h3 class="pve-title text-center mb-4">منتجاتنا تتحدث عن نفسها</h3>
-  <div id="carouselControls" class="carousel slide px-5 " data-ride="carousel">
+ <div id="pve" class=" mt-5 mb-5">
+  <h3 class="pve-title text-center mb-4"> - منتجاتنا تتحدث عن نفسها - </h3>
+  <div id="carouselControls" class="carousel slide px-sm-5 " data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselControls" data-slide-to="0" class="active pointer"></li>
       <li data-target="#carouselControls" data-slide-to="1" class="pointer"></li>
@@ -142,17 +142,31 @@
     <div class="carousel-inner ">
       <ng-container *ngFor="let item of list">
         <div class="carousel-item   " [ngClass]="{' active ' : item == 0 }">
-          <div class="row d-flex justify-content-center">
-            <div class="col-sm-4 col-6 ">
-              <img class="pve-img " src="./assets/images/pve_{{(item*3)+1}}.PNG">
-            </div>
-            <div class="col-sm-4 col-6  ">
-              <img class="pve-img " src="./assets/images/pve_{{(item*3)+2}}.PNG">
-            </div>
-            <div class="col-sm-4 col-6  ">
-              <img class="pve-img " src="./assets/images/pve_{{(item*3)+3}}.PNG">
+          <div class="d-sm-block d-none">
+            <div class="row d-flex justify-content-around ">
+              <div class="col-sm-3 col-6 ">
+                <img class="pve-img " src="./assets/images/pve_{{(item*3)+1}}.PNG">
+              </div>
+              <div class="col-sm-3 col-6  ">
+                <img class="pve-img " src="./assets/images/pve_{{(item*3)+2}}.PNG">
+              </div>
+              <div class="col-sm-3 col-6  ">
+                <img class="pve-img " src="./assets/images/pve_{{(item*3)+3}}.PNG">
+              </div>
             </div>
           </div>
+
+          <div class="d-sm-none d-block">
+            <div  class="row d-flex justify-content-around px-1 mx-0">
+              <div class="col-6 px-1">
+                <img class="pve-img " src="./assets/images/pve_{{(item*2)+1}}.PNG">
+              </div>
+              <div class="col-6  px-1">
+                <img class="pve-img " src="./assets/images/pve_{{(item*2)+2}}.PNG">
+              </div>
+            </div>
+          </div>
+
         </div>
       </ng-container>
 
@@ -173,8 +187,8 @@
 
 
   <!-- strat temoignages -->
-  <div  class="temoignages mt-5 pt-3 mb-5">
-    <h3 class="temoignages-title text-center mb-4">شهادة</h3>
+  <div id="temoignages"  class=" mt-5 pt-3 mb-5">
+    <h3 class="temoignages-title text-center mb-4"> - شهادة - </h3>
     <div id="carouselControls" class="carousel slide px-5 " data-ride="carousel">
 
       <div class="carousel-inner ">
@@ -216,4 +230,8 @@
 <!-- Start footer setcion -->
 <app-home-mian-footer ></app-home-mian-footer>
 <app-home-sub-footer ></app-home-sub-footer>
-<!-- End footer setcion -->
+
+<!-- Start scroll-top fix bottom -->
+<app-scroll-top></app-scroll-top>
+<!-- Start whatsapp fix bottom -->
+<app-whatsapp-left></app-whatsapp-left>

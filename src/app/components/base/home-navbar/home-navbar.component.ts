@@ -1,7 +1,6 @@
 import { Component, EventEmitter, OnInit,Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { UtilsService } from 'src/app/services/help/utils.service';
-import { AuthService } from 'src/app/services/security/auth.service';
 
 @Component({
   selector: 'app-home-navbar',
@@ -25,27 +24,10 @@ export class HomeNavbarComponent implements OnInit {
   /*******************************************************************************************/
 
  constructor(
-   private authServ: AuthService,
    private router : Router,
  ) { }
 
  ngOnInit(): void {
-
-  let connectedUser = this.authServ.loadConnectedUser();
-
-  if(connectedUser){
-    if(connectedUser?.nom){
-      this.currentUserName =connectedUser?.nom;//+" "+connectedUser?.preno
-
-    }
-    else if(connectedUser?.login){
-      let login = connectedUser?.login;
-      const index: number = login.toLowerCase().indexOf("@");
-      this.currentUserName =index != -1 ?  login.substring(0,index):login;//+" "+connectedUser?.prenom
-    }
-  }
-
-
 
  }
 
@@ -72,9 +54,6 @@ export class HomeNavbarComponent implements OnInit {
 
 //  }
 
- onLogout(){
-  this.authServ.onLogout();
- }
 
 //  searchByNumDossier(){
 //   if(this.searchNumDossier && this.searchNumDossier != ""){
@@ -93,18 +72,7 @@ export class HomeNavbarComponent implements OnInit {
       this.router.navigate(["/edit-password"])
     }
 
-  opportunites(){
-    let role = this.authServ.loadRole();
-    if(role && !UtilsService.isEmptyString(role)){
-      if(role == "ROLE_NEXPROMA")
-        this.router.navigate(["/offres"]);
-      else if(role == "ROLE_RECRUTEUR")
-        this.router.navigate(["/mes-offres"]);
-    }
-    else{
-      this.router.navigate(["/login"]);
-    }
-  }
+
 }
 
 

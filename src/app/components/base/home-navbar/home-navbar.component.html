@@ -5,34 +5,35 @@
   <!-- End upper Navbar setcion -->
 
   <!-- Start  Navbar setcion -->
-  <nav class="navbar navbar-expand-lg navbar-light  fixed-top py-2 shadow-sm">
+  <nav  class="navbar navbar-expand-lg navbar-light  fixed-top py-2 shadow-sm">
     <div class="container-lg container-fluid">
       <a class="navbar-brand logo animate__animated animate__slow animate__backInLeft mr-5" [routerLink]="'/'">
         <img class="logo-first" src="./assets/images/nexProMa_logo.svg" >
         <!-- <span class="logo-first">NexProMa</span><span class="logo-second">Project</span> -->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars icon-bar" aria-hidden="true"></i>
+        <i class="fa fa-bars icon-bar" aria-hidden="false"></i>
       </button>
 
       <div class=" n-ncollapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav ml-auto">
 
-          <li *ngIf="!currentUserName" class="nav-item">
-            <a class="nav-link"
+          <li  class="nav-item">
+            <a class="nav-link text-center"
             target="_blank"
             placement="bottom"
             ngbTooltip="Send a message via Facebook"
             href="#"
            ><i class="fab fa-facebook"></i> Facebook</a>
           </li>
-          <li *ngIf="!currentUserName" class="nav-item">
+          <li  class="nav-item">
             <a class="nav-link inscrivezVous "
             target="_blank"
             placement="bottom"
             ngbTooltip="Send a message via WhatsApp "
-            href="https://wa.me/+212768808146?text=" ><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            href="https://wa.me/+212768808146?text=" >
+            <i class="fab fa-whatsapp"></i> WhatsApp</a>
           </li>
         </ul>
       </div>

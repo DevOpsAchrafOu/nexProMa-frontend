@@ -1,0 +1,33 @@
+#whatsapp-left .whatsapp-link {
+  position: fixed;
+  display: none;
+  left: 10px;
+  bottom: 10px;
+  z-index: 99999;
+  cursor: pointer;
+  /* and a transition */
+  transition: 1s;
+}
+
+#whatsapp-left .whatsapp-link img.whatsapp-left-img {
+  width: 40px;
+  display: -moz-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  transition: all .8s ease;
+}
+
+#whatsapp-left .whatsapp-link:hover img.whatsapp-left-img {
+  width: 50px;
+}
+
+
+#whatsapp-left .show {
+  display: block;
+}

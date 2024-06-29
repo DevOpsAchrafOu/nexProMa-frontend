@@ -13,16 +13,13 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/base/footer/footer.component';
-import { LogoutComponent } from './components/base/logout/logout.component';
 import { EditModeDirective } from './directives/edit-mode.directive';
 import { ViewModeDirective } from './directives/view-mode.directive';
 import { EditableComponent } from './editable/editable.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { TruncatePipe } from './pipes/truncate.pipe';
-import { TokenHtppInterceptorService } from './services/security/token-htpp-interceptor.service';
 import { RemplacerComponent } from './tests/remplacer/remplacer.component';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/base/navbar/navbar.component';
 import { HomeNavbarComponent } from './components/base/home-navbar/home-navbar.component';
 import { Page500Component } from './components/page-error/page500/page500.component';
@@ -31,6 +28,8 @@ import { PageErrorNavbarComponent } from './components/page-error/page-error-nav
 import { HomeMianFooterComponent } from './components/base/home-mian-footer/home-mian-footer.component';
 import { HomeSubFooterComponent } from './components/base/home-sub-footer/home-sub-footer.component';
 import { SpinnerComponent } from './components/base/spinner/spinner.component';
+import { ScrollTopComponent } from './components/base/scroll-top/scroll-top.component';
+import { WhatsappLeftComponent } from './components/base/whatsapp-left/whatsapp-left.component';
 
 
 @NgModule({
@@ -43,9 +42,7 @@ import { SpinnerComponent } from './components/base/spinner/spinner.component';
     EditModeDirective,
     ViewModeDirective,
     TruncatePipe,
-    LogoutComponent,
     HomeComponent,
-    LoginComponent,
     NavbarComponent,
     HomeNavbarComponent,
     Page500Component,
@@ -54,6 +51,8 @@ import { SpinnerComponent } from './components/base/spinner/spinner.component';
     HomeMianFooterComponent,
     HomeSubFooterComponent,
     SpinnerComponent,
+    ScrollTopComponent,
+    WhatsappLeftComponent,
     ],
   imports: [
     AppRoutingModule,
@@ -76,12 +75,7 @@ import { SpinnerComponent } from './components/base/spinner/spinner.component';
     }),//Translate for i18n internationalization
   ],
   providers: [
-    DatePipe,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TokenHtppInterceptorService,
-      multi: true
-    }
+    DatePipe
   ],
   bootstrap: [AppComponent]
 

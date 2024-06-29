@@ -1,7 +1,5 @@
-import { Component, EventEmitter, OnInit,Input, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UtilsService } from 'src/app/services/help/utils.service';
-import { AuthService } from 'src/app/services/security/auth.service';
 
 @Component({
   selector: 'app-page-error-navbar',
@@ -24,7 +22,6 @@ export class PageErrorNavbarComponent implements OnInit {
   /*******************************************************************************************/
 
  constructor(
-   private authServ: AuthService,
    private router : Router,
  ) { }
 
@@ -41,16 +38,7 @@ export class PageErrorNavbarComponent implements OnInit {
 
 
   opportunites(){
-    let role = this.authServ.loadRole();
-    if(role && !UtilsService.isEmptyString(role)){
-      if(role == "ROLE_NEXPROMA")
-        this.router.navigate(["/offres"]);
-      else if(role == "ROLE_RECRUTEUR")
-        this.router.navigate(["/mes-offres"]);
-    }
-    else{
-      this.router.navigate(["/login"]);
-    }
+    this.router.navigate(["/"]);
   }
 }
 
