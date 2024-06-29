@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   api_nexProMa: "http://localhost:8082/api/v1", //private
   api_nexProMa_login: "http://localhost:8082", // public
-  nexProMas_backend: "http://localhost:8082/api/v1"
+  api_nexProMas_backend: "http://localhost:8082/api/v1"
 };
 
 /*

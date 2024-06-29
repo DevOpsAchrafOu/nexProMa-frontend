@@ -162,13 +162,13 @@ export class HomeComponent implements OnInit {
 
     initListMetadat(){
       this.listMetadat.push({key:"title",value:"home | NexProMas Project"});
-      this.listMetadat.push({key:"author",value:"NexProMas-Project"});
-      this.listMetadat.push({key:"og:title",value:"home | NexProMas-Project"});
+      this.listMetadat.push({key:"author",value:"NexProMa-Project"});
+      this.listMetadat.push({key:"og:title",value:"home | NexProMa-Project"});
       this.listMetadat.push({key:"og:type",value:"website"});
       this.listMetadat.push({key:"og:image",value:"http://localhost:4200/assets/images/hero-01.png"});
       this.listMetadat.push({key:"og:url",value:"http://localhost:4200/"});
-      this.listMetadat.push({key:"og:description",value:"Platform NexProMas-Project"});
-      this.listMetadat.push({key:"og:site_name",value:"NexProMas-Project"});
+      this.listMetadat.push({key:"og:description",value:"Platform NexProMa-Project"});
+      this.listMetadat.push({key:"og:site_name",value:"NexProMa-Project"});
       this.listMetadat.push({key:"og:locale",value:"fr_FR"});
       this.listMetadat.push({key:"geo.region",value:"MA"});
     }

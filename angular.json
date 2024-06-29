@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "nexProMas-backend": {
+    "nexProMa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nexProMas-backend",
+            "outputPath": "dist/nexProMa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,22 +80,22 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nexProMas-backend:build:production"
+              "browserTarget": "nexProMa:build:production"
             },
             "development": {
-              "browserTarget": "nexProMas-backend:build:development"
+              "browserTarget": "nexProMa:build:development"
             }
           },
           "defaultConfiguration": "development",
           "options": {
-            "browserTarget": "nexProMas-backend:build",
+            "browserTarget": "nexProMa:build",
             "proxyConfig": "src/proxy.conf.json",
             "port": 4100 }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nexProMas-backend:build"
+            "browserTarget": "nexProMa:build"
           }
         },
         "test": {
@@ -119,5 +119,5 @@
       }
     }
   },
-  "defaultProject": "nexProMas-backend"
+  "defaultProject": "nexProMa"
 }
