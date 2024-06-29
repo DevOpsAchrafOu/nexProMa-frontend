@@ -1,10 +1,10 @@
-# ng build --prod --base-href '/nexProMa/'
+# ng build --prod --base-href './'
 <IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteCond %{REQUEST_FILENAME} -s [OR]
-    RewriteCond %{REQUEST_FILENAME} -l [OR]
-    RewriteCond %{REQUEST_FILENAME} -d
-    RewriteRule ^.*$ - [NC,L]
-    RewriteRule ^(.*) /nexProMa/index.html [NC,L]
-</IfModule>
+RewriteEngine On
 
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+RewriteRule ^ /index.html
+RewriteRule ^ /404.html
+</IfModule>
