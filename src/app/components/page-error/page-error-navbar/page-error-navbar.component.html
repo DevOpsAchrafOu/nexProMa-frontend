@@ -1,0 +1,37 @@
+<div id="header">
+
+  <!-- Start upper Navbar setcion -->
+
+  <!-- End upper Navbar setcion -->
+
+  <!-- Start  Navbar setcion -->
+  <nav class="navbar navbar-expand-lg navbar-light  fixed-top py-2 shadow-sm px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand logo animate__animated animate__slow animate__backInLeft mr-5" [routerLink]="'/'">
+        <img class="logo-first" src="./assets/images/logo_nexproma.svg" >
+        <!-- <span class="logo-first">NexProMa</span><span class="logo-second">Project</span> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars icon-bar" aria-hidden="true"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item ">
+            <a class="nav-link " [routerLink]="'/'">Accueil</a>
+          </li>
+          <li class="nav-item pointer">
+            <a class="nav-link" (click)="opportunites()">Opportunités</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" [routerLink]="'/blog'">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End  Navbar setcion -->
+
+</div>
+
+

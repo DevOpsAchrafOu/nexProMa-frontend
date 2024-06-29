@@ -1,0 +1,57 @@
+<!-- start main footer   -->
+<div id="footer-main" dir="rtl">
+  <div class="container-lg container-fluid ">
+    <div class="row  pt-5 pb-2 px-2 text-sm-right text-center">
+      <div class="col-sm col-12 my-3">
+        <div class="info-email">
+          <a class="logo" [routerLink]="'/'">
+            <img class="logo-first" src="./assets/images/nexProMa_logo_footer.svg">
+            <!-- <span class="logo-first">NexProMa</span><span class="logo-second">Project</span> -->
+          </a>
+          <p class="my-3">
+            في 2024، تميزت منصة نكس بروما للتجارة الإلكترونية بتوفير منتجات متنوعة مع خيار الدفع عند الاستلام. نحن ملتزمون بتقديم منتجات عالية الجودة تلبي احتياجات عملائنا بشكل موثوق وآمن، مع ضمان تجربة شراء مريحة وآمنة.
+          </p>
+          <div class="social-links">
+            <div class="d-flex justify-content-lg-start justify-content-around">
+              <ng-container *ngFor="let item of listSocial">
+                <div class=" mr-3">
+                  <a href="{{item.link}}"><i class="  icon " ngClass="{{item.icon}}"></i></a>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+          <hr class="line  mr-sm-0 mx-auto">
+
+          <!-- End form -->
+        </div>
+      </div>
+      <div class="col-sm col-12 my-3">
+        <div class="row footer-menu">
+          <div class="col" *ngIf="false">
+            <ul>
+              <li class="footer-menu-title">Resources</li>
+              <li class="footer-menu-item" [routerLink]="'/Pourquoi-TP'">Pourquoi TP</li>
+              <li class="footer-menu-item" [routerLink]="'/Notre histoire'">Notre histoire</li>
+              <li class="footer-menu-item" [routerLink]="'/Blog'">Blog</li>
+              <li class="footer-menu-item" [routerLink]="'/Guides'">Guides</li>
+              <li class="footer-menu-item  mb-1" [routerLink]="'/Webinars'">Webinars</li>
+            </ul>
+          </div>
+          <div class="col-sm-3"></div>
+          <div class="col">
+            <ul>
+              <li class="footer-menu-title">Entreprise</li>
+              <li class="footer-menu-item" [routerLink]="'/privacy'">Confidentialité</li>
+              <li class="footer-menu-item" [routerLink]="'/terms-of-use'">Conditions d'utilisation </li>
+              <li class="footer-menu-item mb-1" [routerLink]="'/cookies'">Cookies</li>
+              <!-- <li class="footer-menu-item" [routerLink]="'/Support'">Support</li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- end main footer   -->

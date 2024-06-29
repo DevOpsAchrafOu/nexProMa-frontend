@@ -1,0 +1,30 @@
+
+/* start hero */
+#page500{
+  padding-top: 150px;
+  padding-bottom: 10px;
+  /* height: 70vh; */
+}
+
+
+#page500 .title{
+  color: #8F8F8F !important;
+  font-size: 43px;
+  font-weight: 500;
+}
+
+#page500 a.btn{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+#page500 .btn-success {
+  background-color: var(--first-color-dis);
+  border-color: var(--first-color-dis);
+}
+#page500 .btn-success.disabled,
+#page500 .btn-success:disabled,
+#page500 .btn-success:hover {
+  background-color: #0bc656;
+  border-color: #0bc656;
+}

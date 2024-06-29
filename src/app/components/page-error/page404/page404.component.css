@@ -1,0 +1,34 @@
+
+/* start hero */
+#page404{
+  padding-top: 150px;
+  padding-bottom: 10px;
+  /* height: 70vh; */
+}
+#page404 .title{
+  color: #424242 !important;
+  font-size: 118px;
+  font-weight: 800;
+}
+
+#page404 .sub-title{
+  color: #8F8F8F !important;
+  font-size: 43px;
+  font-weight: 500;
+}
+
+#page404 a.btn{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+#page404 .btn-success {
+  background-color: var(--first-color-dis);
+  border-color: var(--first-color-dis);
+}
+#page404 .btn-success.disabled,
+#page404 .btn-success:disabled,
+#page404 .btn-success:hover {
+  background-color: #0bc656;
+  border-color: #0bc656;
+}

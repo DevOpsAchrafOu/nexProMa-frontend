@@ -1,0 +1,19 @@
+<div id="dis" class="navbar">
+  <div class=" navbar p-0 mr-0 ml-auto" >
+    <ul class="nav ">
+        <li class="nav-item color-{{ dataRole.currentRole | lowercase}}" class="logout">
+          <i class="icon-username mx-2 fas fa-user-circle "></i>
+          <!-- <span class="text-dark font-weight-bold">Bonjour : {{'' | translate}}</span> -->
+          <span class="text-username">{{ dataUser.currentUserName }}</span>
+        </li>
+        <li class="nav-item">
+          <a
+          href="javascript: void(0);"
+          class="icon-logout "
+          (click)="onLogout()"
+          ><i class="fas fa-sign-out-alt"></i> </a
+        >
+        </li>
+    </ul>
+</div>
+</div>

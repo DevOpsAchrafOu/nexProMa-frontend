@@ -1,0 +1,15 @@
+
+#footer-sub  {
+  background-color: var(--main-color-dis);
+  color: white;
+}
+
+#footer-sub  .footer-sub-logo-dist{
+  margin-top: -6px;
+
+}
+
+#footer-sub  .footer-sub-logo-dist img.logo-dist{
+  height: 30px;
+}
+

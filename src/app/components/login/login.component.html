@@ -1,0 +1,92 @@
+<!-- Start Login Section -->
+<div class="contient " id="login">
+  <div dir="{{ currentLang == 'ar' ? 'rtl' : 'ltr' }}" [ngClass]="{' i18n-ar ' : currentLang == 'ar' }">
+    <div class="vh-100 ">
+      <!-- d-sm-block d-none -->
+      <div class="h-100 ">
+        <div class="row h-100  m-0 ">
+          <div id="info-left" class="col-lg-7  col-sm-6 col-12 order-sm-1 order-2 bg-white  m-0 px-lg-5 d-flex align-items-center justify-content-center">
+            <div class=" card border-0 text-center w-70 rounded-0 ">
+              <div class="card-body py-1 px-lg-5 px-2 text-center ">
+                <h4 class="card-title d-flex justify-content-center mb-4" role="button" [routerLink]="['/']">Connecter vous sur{{"" |
+                  translate }}</h4>
+                  <a class="logo " href="javascript:void(0)"  [routerLink]="'/'">
+                    <img class="logo-first" src="./assets/images/logo_nexproma.svg" >
+                    <!-- <span class="logo-first">NexProMa</span><span class="logo-second">Project</span> -->
+                  </a>
+                <!-- Start form -->
+                <form id="form-dis" class="mt-5 mx-2 " [formGroup]="formLogin" (ngSubmit)="onFormSubmit(formLogin)">
+
+                  <!-- Start message error -->
+                  <div class="alert alert-danger msgError" *ngIf="messageError">{{messageError}}</div>
+                  <!-- End message error-->
+
+                  <!-- Start login input-->
+                  <div class="form-group">
+                    <!-- <label class="col-form-label d-block" [ngClass]="currentLang == 'ar' ? ' text-right ' : ' text-left ' " for="username">{{'input-username-label' | translate}} : </label> -->
+                    <input type="text" dir="ltr" class="form-control "  id="username" formControlName="username" name="username" required
+                    placeholder="Email">
+                    <section class="text-center"  *ngIf="(isSubmitLogin && formLogin.get('username')?.errors) || (formLogin.get('username')?.invalid && ( formLogin.get('username')?.dirty || formLogin.get('username')?.touched))">
+                    <div class="invalid-feedback d-block" *ngIf=" formLogin.get('username')?.errors?.required">
+                        <i class="fa fa-exclamation-triangle" ></i> {{'validation-username-required' | translate}}
+                    </div>
+                    <div class="invalid-feedback d-block" *ngIf="formLogin.get('username')?.errors?.minlength">
+                        <i class="fa fa-exclamation-triangle" ></i> {{'validation-username-minlength' | translate}}
+                    </div>
+                    <div class="invalid-feedback d-block" *ngIf="formLogin.get('username')?.errors?.pattern">
+                        <i class="fa fa-exclamation-triangle" ></i> {{'validation-username-pattern' | translate}}
+                    </div>
+                    </section>
+                  </div>
+
+                  <!-- Start password input-->
+                  <div class="form-group">
+                    <!-- <label class="col-form-label d-block" [ngClass]="currentLang == 'ar' ? ' text-right ' : ' text-left ' " for="password">{{'input-password-label' | translate}} : </label> -->
+                    <input type="password" dir="ltr"  class="form-control" formControlName="password"
+                      required placeholder="Mot de passe">
+                    <section class="text-center"
+                      *ngIf="(isSubmitLogin && formLogin.get('password')?.errors) || (formLogin.get('password')?.invalid && ( formLogin.get('password')?.dirty || formLogin.get('password')?.touched))">
+                      <div class="invalid-feedback d-block" *ngIf="formLogin.get('password')?.errors?.required ">
+                        <i class="fa fa-exclamation-triangle"></i> {{"validation-password-required" | translate}}
+                      </div>
+                      <div class="invalid-feedback d-block" *ngIf="formLogin.get('password')?.errors?.minlength">
+                        <i class="fa fa-exclamation-triangle" ></i> {{'validation-password-minlength' | translate}}
+                      </div>
+                    </section>
+                  </div>
+                  <div>
+                    <a href="javascript: void(0);" [routerLink]="['/forgot-password']" class="title-forgot-password d-flex justify-content-center">Mot de passe oublié ?{{'' | translate}}</a>
+                  </div>
+                  <button type="submit" class="btn btn btn-success  p-2 my-3 w-100" [disabled]="formLogin.invalid">
+                    Connexion {{'' | translate}}</button>
+                </form>
+                <!-- End form -->
+                <div>
+                  <span class="d-flex justify-content-center title-inscrit mb-sm-5 mb-4">
+                    Besoin d'un compte ? <a href="javascript: void(0);" (click)="onInscription()"  class="ml-1"> S'inscrire{{'' | translate}}</a>
+                  </span>
+                </div>
+                <div>
+                  <span  class="text-mail d-flex justify-content-center mt-sm-3"><i class="far fa-envelope mr-2"></i> Help@nexProMaproject.com {{'' | translate}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- d-sm-block d-none -->
+          <div  id="img-rigth" class=" col-lg-5 col-sm-6 col-12 order-sm-2 order-1 m-0 p-0  ">
+            <div class="d-flex justify-content-center align-items-center h-100 ">
+              <div class=" h-100 w-100 card">
+                <div class="img-overlay top-left-other"> </div>
+                <div class="img-overlay buttom-right-other"> </div>
+                <img class="card-img" src="./assets/images/login-00.jpg" >
+                <div class="card-img-overlay top-left"> </div>
+                <div class="card-img-overlay buttom-right"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Login Section -->

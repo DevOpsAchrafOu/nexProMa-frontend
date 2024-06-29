@@ -1,0 +1,118 @@
+<div id="header">
+
+  <!-- Start upper Navbar setcion -->
+
+  <!-- End upper Navbar setcion -->
+
+  <!-- Start  Navbar setcion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-0 py-3 bg-gradient-navbar ml-3"
+    [ngClass]="{' i18n-arb ' : rtl}"  id="dis">
+        <div class="container-fluid">
+            <!-- button click hide/show -->
+            <span id="sidebarCollapse" (click)="onSidebarCollapse()">
+              <i class="fas pointer fa-bars fa-lg"    ></i>
+             </span>
+            <!-- <i *ngIf="isActiveInChildNav == false; else elseBlock" class="fa  fa-lg btn " [ngClass]="rtl == true ? ' fa-angle-double-right ' : ' fa-angle-double-left ' " id="sidebarCollapse"
+                (click)="onSidebarCollapse()"></i>
+            <ng-template #elseBlock>
+                <i class="fa  fa-lg btn " [ngClass]="rtl == true ? ' fa-angle-double-left ' : ' fa-angle-double-right  ' "   id="sidebarCollapse" (click)="onSidebarCollapse()"></i>
+            </ng-template> -->
+
+            <!-- <form class=" d-flex  ml-auto w-30"
+            placement="{{rtl ? 'left' : 'right' }}" ngbTooltip="{{'NAVBAR-TIP-SEARCH' | translate}}">
+              <input class="form-control form-control-sm mr-2" type="search" id="search"
+              [(ngModel)]="searchNumDossier" [ngModelOptions]="{standalone: true}"
+                placeholder=" Ex: S001-AP001-2022" aria-label="Search">
+              <button class="btn btn-sm btn-outline-success p-1 mx-2"  type="submit" (click)="searchByNumDossier()">{{'NAVBAR-INPUT-SEARCH'|translate}}</button>
+            </form> -->
+            <div class="navbar w-95 pl-0" id="navbarSupportedContent">
+
+                <ul  class="navbar-nav mx-auto ">
+                  <li class="nav-item ">
+                    <a class="nav-link "
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: false }"
+                    [routerLink]="'/home'">
+                    <i *ngIf="false" class="fas fa-home mr-2"></i>Accueil</a>
+                  </li>
+                  <li *ngIf="role == 'ROLE_NEXPROMA'" class="nav-item pointer">
+                    <a class="nav-link"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: false }"
+                    [routerLink]="'/offres'">
+                    <i *ngIf="false" class="fas fa-briefcase mr-2"></i>Opportunités</a>
+                  </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link"
+
+                    [routerLink]="'/blog'">
+                    <i *ngIf="false" class="fas fa-blog  mr-2"></i>
+                    Blog</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav  mr-0 " >
+
+                    <!-- <li class="nav-item">
+                        <a class='nav-link ' routerLink="/">
+                            <div id="nat1" aria-level="Natification">
+                                <span class=" fa-stack fa-3x has-badge ">
+                                    <p class="NumNatification1">9</p>
+                                    <i class="fa fa-bell fa-stack icon1" title="Notification"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </li> -->
+
+                    <li   class="nav-item" class="userName">
+                      <span  class="d-lg-inline-block d-none">Bonjour : </span>
+                      <!-- <span class="text-dark font-weight-bold">Bonjour : {{'' | translate}}</span> -->
+                      <span class="text-username d-sm-inline-block d-none ml-2">{{ dataUser.currentUserName }} !</span>
+                      <span class="text-username-logo  d-sm-none d-inline-block">{{ dataAvatarLogo.avatarLogo }} !</span>
+                      <i class="icon-username mx-sm-2 mx-1 fas  fa-user-circle "></i>
+                      <!-- <div class="currentDate">
+                        <span>{{ today | date : 'dd/MM/yyyy'}}</span>
+                      </div> -->
+                    </li>
+                    <li  class="nav-item">
+                      <a
+                      href="javascript: void(0);"
+                      class="icon-logout px-sm-2 px-0"
+                      (click)="onLogout()"
+                      ><i class="fas fa-sign-out-alt"></i> </a
+                    >
+                    </li>
+                    <!-- <li class="nav-item">
+                      <div class="circle">
+                        <span class="initials">{{dataAvatarLogo.avatarLogo}}</span>
+                      </div>
+                    </li>
+                    <li class="dropdown dropdown-user nav-item">
+                      <a
+                        href="javascript: void(0);"
+                        data-toggle="dropdown"
+                        class="dropdown-toggle nav-link dropdown-user-link"
+                      >
+                      </a>
+                      <div class="dropdown-menu "  [ngClass]="rtl == true ? ' dropdown-menu-left ' : ' dropdown-menu-right ' " >
+                        <a href="javascript: void(0);" class="dropdown-item d-none"
+                          ><i class="fa fa-lock"></i> {{'NAVBAR-MENU-TITLE-PWD' | translate}}</a
+                        >
+                        <a href="javascript: void(0);" class="dropdown-item" (click)="onGoEditPassword()"
+                          ><i class="fa fa-lock"></i> {{'NAVBAR-MENU-TITLE-PWD' | translate}}</a
+                        >
+                        <a
+                          href="javascript: void(0);"
+                          class="dropdown-item"
+                          (click)="onLogout()"
+                          ><i class="fa fa-sign-out"></i> {{'NAVBAR-MENU-TITLE-LOGOUT' | translate}}</a
+                        >
+                      </div>
+                    </li> -->
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+  <!-- Start  Navbar setcion -->
+</div>

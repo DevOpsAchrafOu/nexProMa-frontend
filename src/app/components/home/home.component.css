@@ -1,0 +1,321 @@
+/* start home */
+#home {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+
+#home .hero h2.hero-title-first,
+#home .hero h2.hero-title-second {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+#home .hero h2.hero-title-first {
+  color: #1D1D1D;
+  margin-bottom: 25px;
+}
+
+#home .hero h2.hero-title-second {
+  color: var(--first-color-dis);
+  margin-bottom: 25px;
+}
+
+#home .hero p.hero-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+
+#home .hero .hero-img {
+  width: 75%;
+}
+
+#home .hero .hero-btn .btn-primary {
+  color: #fff;
+  background-color: var(--main-color-dis);
+  border-color: var(--main-color-dis);
+  border-radius: 7px;
+  min-width: 150px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#home .hero .hero-btn .btn-success {
+  color: #fff;
+  background-color: var(--first-color-dis);
+  border-color: var(--first-color-dis);
+  border-radius: 7px;
+  min-width: 150px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* start best_offres  */
+
+#home .best_offres .card {
+  border-radius: 8%;
+}
+
+#home .best_offres .card:hover {
+  border: 1px solid var(--first-color-dis);
+}
+
+#home .best_offres .card-header {
+  min-height: 100px;
+  padding: 0rem;
+  padding-top: 10px;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+#home .best_offres .card-header p {
+  margin-bottom: 0rem;
+}
+
+
+#home .best_offres .offer-labels span p {
+  margin: 0px !important;
+}
+
+#home .best_offres .offer-labels {
+  color: #1D1D1D;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#home .best_offres .color-icon {
+  color: var(--main-color-dis) !important;
+}
+
+#home .best_offres .card:hover .color-icon {
+  color: var(--first-color-dis) !important;
+}
+
+#home .best_offres .title-offer {
+  color: #1D1D1D;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* height: 64px;*/
+}
+
+/* start best_offres */
+#home .best_offres h3.best_offres-title {
+  color: var(--main-color-dis);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#home .best_offres .best_offres-item {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#home .best_offres .best_offres-item-img {
+  height: 70% !important;
+}
+
+#home .best_offres .best_offres-item-text {
+  color: #1D1D1D;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#home .best_offres .best_offres-item-text span {
+  color: var(--first-color-dis);
+}
+
+#home .best_offres .btn-more-offer .btn-primary {
+  background-color: var(--main-color-dis);
+  border-color: var(--main-color-dis);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#home .best_offres .btn-more-offer .btn-primary:hover {
+  background-color: var(--first-color-dis);
+  border-color: var(--first-color-dis);
+}
+
+/* start com_ca_marche */
+#home .com_ca_marche h3.com_ca_marche-title {
+  color: var(--main-color-dis);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#home .com_ca_marche .com_ca_marche-text {
+  color: #8C98A4;
+  font-size: 20px;
+}
+
+#home .com_ca_marche .com_ca_marche-item {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#home .com_ca_marche .com_ca_marche-item-img {
+  height: 70% !important;
+  max-width: 100%;
+}
+
+#home .com_ca_marche .com_ca_marche-item-text {
+  color: #1D1D1D;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.7rem;
+}
+
+#home .com_ca_marche .com_ca_marche-item-text span {
+  color: var(--first-color-dis);
+}
+
+#home .pve h3.pve-title {
+  color: var(--main-color-dis);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#home .pve .pve-img {
+  width: 100% !important;
+  object-fit: cover;
+}
+
+#home .pve .pve-text {
+  color: #242424;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  margin-top: -5%;
+}
+
+#home .pve .carousel-control-prev-icon,
+#home .pve .carousel-control-next-icon {
+  background-color: var(--first-color-dis);
+}
+
+#home .pve .carousel-control-next,
+#home .pve .carousel-control-prev {
+  width: 3%;
+  color: #E6E6E6;
+  /* bottom: 24%; */
+  opacity: .9;
+}
+
+#home .pve .carousel-control-next .icon-next,
+#home .pve .carousel-control-prev .icon-prev {
+  font-size: 35px;
+}
+
+#home .pve .carousel-control-next:focus,
+#home .pve .carousel-control-next:hover,
+#home .pve .carousel-control-prev:focus,
+#home .pve .carousel-control-prev:hover {
+  color: var(--first-color-dis);
+  opacity: .9;
+}
+
+#home .pve .carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--first-color-dis);
+  opacity: .3;
+}
+
+#home .pve .carousel-indicators{
+  bottom: -8%;
+}
+
+#home .pve .carousel-indicators .active{
+  bottom: -8%;
+  background-color: var(--main-color-dis);
+  opacity: 1;
+}
+
+#home .temoignages h3.temoignages-title {
+  color: var(--main-color-dis);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#home .temoignages .temoignages-img {
+  width: 150px !important;
+  object-fit: cover;
+  height: 150px !important;
+  clip-path: ellipse(50% 50%);
+}
+
+#home .temoignages .temoignages-text {
+  color: #242424;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  margin-top: -5%;
+}
+
+#home .temoignages .carousel-control-prev-icon,
+#home .temoignages .carousel-control-next-icon {
+  background-color: var(--first-color-dis);
+}
+
+#home .temoignages .carousel-control-next,
+#home .temoignages .carousel-control-prev {
+  width: 3%;
+  color: #E6E6E6;
+  bottom: 24%;
+  opacity: .9;
+}
+
+#home .temoignages .carousel-control-next .icon-next,
+#home .temoignages .carousel-control-prev .icon-prev {
+  font-size: 35px;
+}
+
+#home .temoignages .carousel-control-next:focus,
+#home .temoignages .carousel-control-next:hover,
+#home .temoignages .carousel-control-prev:focus,
+#home .temoignages .carousel-control-prev:hover {
+  color: var(--first-color-dis);
+  opacity: .9;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+
+/* Medium */
+@media (max-width: 1199px) {
+  #home h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #001253;
+
+  }
+}
+
+/* Small */
+@media (max-width: 767px) {
+}
+
+/* Medium */
+@media (max-width: 1199px) {
+  #home h4 {
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {}
+
