@@ -1,0 +1,330 @@
+{
+    "_ALL ################################## ": "I18N en générale ##################################",
+
+
+    "LIST-PAGESIZE-TITLE-ONE" : "Afficher ",
+    "LIST-PAGESIZE-TITLE-TWO" : " élements",
+    "LIST-LABEL-ACTION": "Action",
+    "LIST-ADD": "Ajouter ",
+    "LIST-EDIT": "Modifier ",
+    "LIST-GESTION": "Gestion ",
+    "LIST-STATUS": "STATE ",
+    "LIST-LIST": "Liste ",
+    "LIST-TIP-DOWNLOAD" : "Télécharger PJ",
+    "HEADER-CURRENT-DATE": "Aujourd'hui",
+    "VALID-SELECT" : "S'il vous plaît Choisissez ",
+
+    "langFr" : "français",
+    "langAr" : "arabe",
+
+    "_LOGIN ################################## ": "I18N login ######################################",
+
+    "LOGIN-TITLE": "EASY POS",
+    "LOGIN-SUBTITLE": "Connectez-vous pour continuer",
+    "LOGIN-BTN-LABEL-CONNXION": "Connexion",
+    "LOGIN-URL-LABEL-FORGOT-PASSWORD": "Mot de passe oublié ?",
+    "LOGIN-URL-LABEL-SIGN-UP": "Pas encore inscrit ?",
+    "LOGIN-RIGHT-TITLE": "Bienvenue dans votre espace privé",
+    "LOGIN-RIGHT-SUBTITLE": "Un système d'information intégré pour mieux communiquer.",
+    "FORGOT-PASSWORD-SUBTITLE": "Trouver votre adresse e-mail",
+    "FORGOT-PASSWORD-BTN-LABEL-CONNXION": "Valider",
+
+    "INPUT-CODEPIN-PLACEHOLDER" : "Entrer le code pin",
+    "VALIDATION-CODEPIN-REQUIRED" : " S'il vous plaît entrez votre code pin.",
+    "VALIDATION-CODEPIN-PATTERN" : "Votre code pin doit contenir 4 chiffre.",
+
+    "validation-username-required" : "S'il vous plaît entrez votre Login.",
+    "validation-username-minlength" : "Votre Login doit contenir au moins 8 caractères.",
+    "validation-username-pattern" : " S'il vous plaît inclure un '@' dans l'username, 'yourname@example.com' manque un '@'.",
+
+    "INPUT-EMAIL-PLACEHOLDER" :		"Email",
+
+
+
+    "_PROFILE ################################## ": "I18N profile ##################################",
+
+
+    "VALIDATION-FIRSTNAME-REQUIRED" : "S'il vous plaît entrez votre Prenom.",
+    "VALIDATION-FIRSTNAME-PATTERN" : "S'il vous plaît le Prenom ne contient que les caractères.",
+
+    "VALIDATION-LASTNAME-REQUIRED" : "S'il vous plaît entrez votre Nom.",
+    "VALIDATION-LASTNAME-PATTERN" : "S'il vous plaît le Nom ne contient que les caractères.",
+
+    "VALIDATION-PHONENUMBER-REQUIRED" : "S'il vous plaît entrez votre N° téléphone.",
+    "vALIDATION-PHONENUMBER-MINLENGTH" : "Votre Numéro Téléphone doit contenir 10 chiffres.",
+    "VALIDATION-PHONENUMBER-PATTERN" : "s'il vous plaît entrer un numéro de téléphone marocain valide au format +212xx ou 0xx avec des séparateurs facultatifs.",
+
+
+    "VALIDATION-EMAIL-REQUIRED" :	"S'il vous plaît entrez votre Email.",
+    "VALIDATION-EMAIL-MINLENGTH" :	"Votre Email doit contenir au moins 8 caractères.",
+    "VALIDATION-EMAIL-PATTERN" : "S'il vous plaît inclure un '@' dans l'adresse e-mail, 'yourname@example.com' manque un '@'.",
+
+    "VALIDATION-SOCIETE-REQUIRED" : "S'il vous plaît entrez votre Societé.",
+
+
+    "_PASSWORD ################################## ": "I18N PASSWORD ######################################",
+
+    "validation-password-required" : " S'il vous plaît entrez votre Mot de passe.",
+    "validation-confirmPass-notEquivalent" : " Le mot de passe ne correspond pas.",
+    "validation-password-minlength" : "Votre Email doit contenir au moins 8 caractères.",
+    "validation-oldPassword-incorrect" : "Le mot de passe précédent était incorrect",
+    "validation-oldPassword-and-oldPassword-incorrect" : " L'ancien et l'actuel mots de passe ne correspondent pas",
+    "validation-password-valid" : "Le mot de passe n'est pas un mot de passe valide. Veuillez essayer un mot de passe sécurisé !",
+
+
+    "_ACCOUNT ################################## ": "I18N account ######################################",
+
+    "ACCOUNT-DET-TITLE" : "Demande d'inscription",
+
+    "ACCOUNT-LIST-SUBTITLE" :"Liste des demandes d'inscription",
+
+    "ACCOUNT-INPUT-EMAIL-LABEL" :   "Email",
+
+    "ACCOUNT-INPUT-ASSOCIATIONNAME-LABEL" : "Association",
+    "ACCOUNT-INPUT-RESPONSIBLENAME-LABEL" : "Nom Responsable",
+    "ACCOUNT-INPUT-RESPONSABLEPHONENUMBER-LABEL" : "N° Téléphone",
+    "ACCOUNT-INPUT-RESPONSIBLEEMAIL-LABEL" : "Email",
+    "ACCOUNT-INPUT-ADDRESS-LABEL" :  "Adresse",
+    "ACCOUNT-INPUT-COUNTY-LABEL" : "Pays",
+    "ACCOUNT-INPUT-CITY-LABEL" : "Villes",
+    "ACCOUNT-INPUT-REGIONACADEMY-LABEL" :  "Académie",
+    "ACCOUNT-INPUT-ZIPCODE-LABEL" : "Code postale",
+    "ACCOUNT-INPUT-DATE-CREATION-LABEL" : "Date d'inscription",
+
+    "ACCOUNT-DET-BTN-PENDING" : "تعليق التسجيل",
+    "ACCOUNT-DET-BTN-ACTIVATED" : "تاكيد التسجيل",
+    "ACCOUNT-DET-BTN-DEACTIVATED" : " إلغاء التسجيل",
+    "ACCOUNT-DET-BTN-DELETED" : "حذف التسجيل",
+    "ACCOUNT-DET-BTN-BLOCKED" : "تعليق التسجيل",
+
+    "ACCOUNT-SWAL-VALID-BODY-PENDING-1" : " أنت على وشك تعليق التسجيل لحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-PENDING-2" : " <span class='d-block' >Êtes-vous sûr de continuer ?</span> ",
+
+    "ACCOUNT-SWAL-VALID-BODY-ACTIVATED-1" : " أنت على وشك تفعيل  التسجيل لحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-ACTIVATED-2" : " <span class='d-block' >Êtes-vous sûr de continuer ?</span> ",
+
+
+    "ACCOUNT-SWAL-VALID-BODY-DEACTIVATED-1" : " أنت على وشك إلغاء تنشيط التسجيل لحساب ",
+    "ACCOUNT-SWAL-VALID-BODY-DEACTIVATED-2" : " <span class='d-block' >Êtes-vous sûr de continuer ?</span> ",
+
+
+    "ACCOUNT-SWAL-VALID-BODY-DELETED-1" : " أنت على وشك حذف التسجيل لحساب ",
+    "ACCOUNT-SWAL-VALID-BODY-DELETED-2" : " <span class='d-block' >Êtes-vous sûr de continuer ?</span> ",
+
+
+    "ACCOUNT-SWAL-VALID-BODY-BLOCKED-1" : " أنت على وشك حظر التسجيل لحساب ",
+    "ACCOUNT-SWAL-VALID-BODY-BLOCKED-2" : " <span class='d-block' >Êtes-vous sûr de continuer ?</span> ",
+
+    "STATUS-PENDING" : "PENDING",
+    "STATUS-ACTIVATED" : "ACTIVATED",
+    "STATUS-DEACTIVATED" : "DEACTIVATED",
+    "STATUS-DELETED" : "DELETED",
+    "STATUS-BLOCKED" : "BLOCKED",
+
+    "_NAVBAR ################################## ": "I18N navBar ##################################",
+
+    "NAVBAR-TITLE-BONJ" : "Bonjour",
+    "NAVBAR-NOTIF-TIP" : "Notification",
+    "NAVBAR-NOTIF-MENU-HEAD-TITLE" : "Notifications",
+    "NAVBAR-NOTIF-MENU-FOOTER-TITLE" : "Afficher toutes les notifications",
+
+    "NAVBAR-MENU-TITLE-PROF" : "Profile",
+    "NAVBAR-MENU-TITLE-PWD" : " Changer mot de passe",
+    "NAVBAR-MENU-TITLE-LOGOUT" : " Se déconnecter",
+
+    "_SADBAR ################################## ": "I18N sadBar ##################################",
+    "SADBAR-TITLE": "EASY POS",
+    "SADBAR-TITLE-HOME": "Accueil",
+    "SADBAR-TITLE-TABLE-BORD": "Tableau de bord",
+    "SADBAR-TITLE-AP": "Appels aux Projets",
+    "SADBAR-TITLE-EL": "Etat de lieu",
+    "SADBAR-TITLE-SM": "Suivi Soumissions",
+    "SADBAR-TITLE-RD": "Suivi Rapports de Départ",
+    "SADBAR-TITLE-RMP": "Suivi Rapports mi-parcours",
+    "SADBAR-TITLE-RP": "Rapports Pédagogiques",
+    "SADBAR-TITLE-RF": "Rapports Financiers",
+    "SADBAR-TITLE-ADMIN": "Administration",
+    "SADBAR-TITLE-USER": "Utilisateurs",
+    "SADBAR-TITLE-ROLE": "Rôles",
+    "SADBAR-TITLE-MENUS": "Menus",
+    "SADBAR-TITLE-ENTITES": "Entités",
+    "SADBAR-TITLE-REFE": "Référentiel",
+    "SADBAR-TITLE-DOC-DEM": "Documents demandés",
+    "SADBAR-TITLE-FON": "Fonctions",
+    "SADBAR-TITLE-DIPL": "Diplômes",
+    "SADBAR-TITLE-DOM-FORM": "Domaines de Formation",
+    "SADBAR-TITLE-ACAD": "Académies\/Régions",
+    "SADBAR-TITLE-MOD-PAIEM": "Modes de Paiement",
+    "SADBAR-TITLE-RUB-FIN": "Rubriques financières",
+    "SADBAR-TITLE-PAYS": "Pays",
+    "SADBAR-TITLE-VILLES": "Villes",
+
+
+
+    "_FOOTER ################################## ": "I18N footer ##################################",
+
+    "FOOTER-TITLE" : " NexProMa 2024. Tous les droits réservés",
+
+
+    "_COMP-INFO ################################## ": "I18N Complement Information (list/detail)################",
+
+    "COMP-INFO-LIST-TITLE" : " Complément d'Information",
+    "COMP-INFO-LIST-SUBTITLE" : " Liste des compléments d'Informations",
+    "COMP-INFO-LIST-SUBTITLE-OTHER" : "Liste de messages",
+    "COMP-INFO-LIST-COL-PROSS" : "Processus",
+    "COMP-INFO-LIST-COL-STEP" : "Étape",
+    "COMP-INFO-LIST-COL-NUM-DOS" : "N° Dossier",
+    "COMP-INFO-LIST-COL-DESC" : "Description",
+    "COMP-INFO-LIST-COL-DATE-REPONSE" : "réponse le",
+    "COMP-INFO-LIST-COL-ACT" : "Action",
+
+    "COMP-INFO-DET-SUBTITLE" : "Afficher complément d'Information",
+    "COMP-INFO-DET-SUBTITLE-1" : "Documents demandés",
+    "COMP-INFO-DET-PROSS" : "Processus",
+    "COMP-INFO-DET-STEP" : "Étape",
+    "COMP-INFO-DET-NUM-DOS" : "N° Dossier",
+    "COMP-INFO-DET-DESC" : "Description",
+    "COMP-INFO-DET-DATE-REPONSE" : "réponse le",
+    "COMP-INFO-DET-MSG" : " Complément",
+
+    "_ALL-SUIVI ################################## ": "I18N en générale (suivi) ##################################",
+
+    "LIST-LABEL-DATE-RECEIVED" : "Date réception",
+    "LIST-LABEL-DATE-TREATMENT" : "Date traitement",
+    "LIST-LABEL-DATE-STATUT" : "Statut",
+
+    "SWAL-VALID-TITLE-WF-SM" : " la soumission ",
+    "SWAL-VALID-TITLE-WF-RD" : " le rapport de départ ",
+    "SWAL-VALID-TITLE-WF-RMP" : " le rapport Mi-parcour ",
+    "SWAL-VALID-TITLE-WF-RP" : " le rapport pédagogique",
+    "SWAL-VALID-TITLE-WF-RF" : " le rapport financier",
+
+
+    "SWAL-VALID-BODY-PEC-1" : "Vous êtes sur le point de prendre en charge ",
+    "SWAL-VALID-BODY-PEC-2" : "<span class='d-block' >Êtes-vous sûr de continuer ?</span>",
+
+    "SWAL-VALID-BODY-CTR-1" : "Vous êtes sur le point de contrôler ",
+    "SWAL-VALID-BODY-CTR-2" : "<span class='d-block' >Êtes-vous sûr de continuer ?</span>",
+
+    "SWAL-VALID-BODY-CI-1" : "Complément d'information",
+
+    "SWAL-VALID-BODY-A-1" : "Vous êtes sur le point d'accepter préalablement  ",
+    "SWAL-VALID-BODY-A-2" : "<span class='d-block' >Êtes-vous sûr de continuer ?</span>",
+
+    "SWAL-VALID-BODY-V-1" : "Vous êtes sur le point de valider ",
+    "SWAL-VALID-BODY-V-2" : "<span class='d-block' >Êtes-vous sûr de continuer ?</span>",
+
+    "SWAL-VALID-BODY-R-1" : "Vous êtes sur le point de rejeter ",
+    "SWAL-VALID-BODY-R-2" : "<span class='d-block' >Êtes-vous sûr de continuer ?</span>",
+
+
+    "TOASTR-VALID-BODY-PEC" : " Pris en charge a été bien enregistré",
+    "TOASTR-VALID-BODY-CTR" : "  a été bien contrôlé  ",
+    "TOASTR-VALID-BODY-CI" : " Demande de complément d'information a été bien enregistré ",
+    "TOASTR-VALID-BODY-A" : " a été bien accepté  ",
+    "TOASTR-VALID-BODY-V" : "  a été bien validé  ",
+    "TOASTR-VALID-BODY-R" : " a été bien rejeté ",
+    "TOASTR-VALID-BODY-TRAITE" : " a été bien traité ",
+
+
+
+    "STATUS-SAISE" : "Saise",
+    "STATUS-E" : "Reçu",
+    "STATUS-PEC" : "Pris en charge",
+    "STATUS-CTR" : "Contrôle",
+    "STATUS-CI" : "Complément d'information",
+    "STATUS-A" : "Acceptation",
+    "STATUS-V" : "Valide",
+    "STATUS-R" : "Rejet",
+
+
+
+    "TITLE-SAISE" : "En cours de saisie",
+    "TITLE-E" : "Reçu",
+    "TITLE-PEC" : "Pris en charge",
+    "TITLE-CTR" : "Contrôle",
+    "TITLE-CI" : "Complément d'information",
+    "TITLE-A" : "Acceptation préalable",
+    "TITLE-V" : "Valide",
+    "TITLE-R" : "Rejet",
+
+
+    "_TOOLTIPS ##################################": "I18N tooltips ##############################",
+    "TIP-DETAIL": "Plus de détails",
+    "TIP-DOWNLOAD": "Télécharger PJ",
+    "TIP-ADD-FILE": "Ajouter PJ",
+    "TIP-MOTIF": "Motif de rejet",
+    "TIP-MSG": "Message",
+    "TIP-RAISON" : "Le raison",
+    "TIP-SOUM": "Soumissionner",
+    "TIP-GO": "Accès a lui",
+    "TIP-EDIT": "Éditer",
+    "TIP-DELTE": "Supprimer",
+    "TIP-VALID": "Valide",
+    "TIP-REJECT": "Rejeté",
+    "TIP-CHARGE" : "Chargé le",
+    "TIP-CI": "Demande un complément d'information",
+    "TIP-PRE-CH": "Prendre en charge",
+
+    "TIP-R" : " le Rapport",
+    "TIP-SM" : " la Soumission",
+    "TIP-PAR-CONTR" : " par Contrôleur",
+
+    "TIP-SHOW-CI" : "Afficher complément d'Information",
+
+
+    "TIP-ADD-PV" : "Procès verbal",
+    "TIP-NOTIFIER-CLIENT" : "Notifier clients",
+
+
+  "_BUTTONS ##################################": "I18N buttons ##############################",
+  "BTN-ADD": "Ajouter",
+  "BTN-EDIT": "Modifier",
+  "BTN-SAVE": "Enregistrer",
+  "BTN-PAYER": "Payer",
+  "BTN-EXPORT-PDF": "imprimer une copie",
+  "BTN-CANCEL": "Annuler",
+  "BTN-NON": "Non",
+  "BTN-OK": "Ok",
+  "BTN-YES": "Oui",
+  "BTN-VALID": "Valider",
+  "BTN-REJECT": "Rejeter",
+  "BTN-CI": "Demande de complément",
+
+  "BTN-CONTR": "Contrôler",
+  "BTN-ACCEP-PREAL": "Acceptation préalable",
+
+  "BTN-SHOW-CI" : "Afficher CI",
+
+
+  "_MSGERROR ##################################": "I18N message erreur ##############################",
+  "MSGERROR-TABLE-EMPTY": "Le tableau est vide !",
+  "MSGERROR-FIELD-EMPTY": "L'un des champs obligatoires est vide !",
+  "MSGERROR-FILE-EMPTY-OR-BAD": "Le document obligatoire est vide ou le format PDF est incorrect !",
+  "MSGERROR-ANY": "Une erreur s'est produite !",
+  "MSGERROR-ANY-500": "وقع خطأ ما عنده معالجة طلبكم, المرجو إعادة المحاولة مرة أخرى",
+  "MSGERROR-UN-AUTHORIZED": "Vous n'êtes pas autorisé à accéder à cette ressource",
+  "MSGERROR-CONNECTION-REFUSED": "Veuillez réessayer plus tard",
+  "MSGERROR-UNKNOWN-USERNAME-PASSWORD": "Identifiant inconnu ou mot de passe incorrect",
+  "MSGERROR-MAIL-NOT-EXIST": "Votre Email n'existe pas",
+  "MSGERROR-ELEMENT-EXISTS": "Élément existe déjà",
+  "MSGERROR-UN-AUTHORIZED-EDIT-PROFIL": "Merci de mettre à jour votre profile",
+
+
+
+
+  "_SWAL ##################################": "I18N message Swal ####",
+  "SWAL-CONFIRM": "Demande de confirmation",
+  "SWAL-MOTIF-REJET": "Motif de rejet",
+  "SWAL-CI": "Complément d'information",
+  "SWAL-TEXT-MSG": "Message : ",
+
+
+  "_TOASTR ################################## ": "I18N message Toastr  ####",
+
+  "TOASTR-ADD": "Sauvegarde effectuée avec succès",
+  "TOASTR-SEND": "Votre demande a été envoyée avec succcès",
+  "TOASTR-EDIT": "Modification effectuée avec succès"
+
+
+}

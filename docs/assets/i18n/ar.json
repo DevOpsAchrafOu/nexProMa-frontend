@@ -1,0 +1,366 @@
+{
+    "_ALL ################################## ": "I18N en générale ##################################",
+
+
+    "LIST-PAGESIZE-TITLE-ONE" : " عرض",
+    "LIST-PAGESIZE-TITLE-TWO" : " عناصر ",
+    "LIST-LABEL-ACTION": "إجراء",
+    "LIST-ADD": " إضافة ",
+    "LIST-EDIT": " تعديل ",
+    "LIST-GESTION": " إدارة",
+    "LIST-ACTIF" : "نشيط",
+    "LIST-ENABLED" : "مفعل",
+    "LIST-LIST": " قائمة",
+    "LIST-STATUS" : "وضعية",
+    "LIST-LABEL-DATE-RECEIVED" : "تاريخ الاستلام",
+    "LIST-LABEL-DATE-TREATMENT" : "تاريخ المعالجة",
+    "LIST-LABEL-DATE-OPERATION" : " تاريخ العملية",
+    "LIST-LABEL-DATE-STATUT" : "الوضعية",
+    "LIST-TIP-DOWNLOAD" : "تحميل الوثيقة المرافقة",
+    "HEADER-CURRENT-DATE": "اليوم",
+
+
+    "langFr" : "الفرنسية",
+    "langAr" : "العربية",
+
+    "_LOGIN ################################## ": "I18N login ######################################",
+
+    "LOGIN-TITLE": "نظام البيع السهل",
+    "LOGIN-SUBTITLE": "تسجيل الدخول للمتابعة",
+    "LOGIN-BTN-LABEL-CONNXION": "تسجيل الدخول",
+    "LOGIN-URL-LABEL-FORGOT-PASSWORD": "استرجاع كلمة المرور",
+    "LOGIN-URL-LABEL-SIGN-UP": "لم تسجل بعد ؟",
+    "LOGIN-RIGHT-TITLE": "مرحبًا بك في حسابك الخاص",
+    "LOGIN-RIGHT-SUBTITLE": "منظومة معلوماتية متكاملة من أجل تواصل أفضل",
+    "FORGOT-PASSWORD-SUBTITLE": "استرجاع كلمة المرور",
+    "FORGOT-PASSWORD-BTN-LABEL-CONNXION": "تأكيد",
+
+    "INPUT-CODEPIN-PLACEHOLDER" : "رقم السري",
+    "VALIDATION-CODEPIN-REQUIRED" : "المرجو إدخال  رقم السري",
+
+    "INPUT-EMAIL-PLACEHOLDER" :	"البريد الإلكتروني",
+    "VALIDATION-EMAIL-REQUIRED" :	"المرجو إدخال البريد الإلكتروني",
+    "VALIDATION-EMAIL-MINLENGTH" :	"يجب أن يحتوي بريدك الإلكتروني على 8 أحرف على الأقل",
+    "VALIDATION-EMAIL-PATTERN" :"المرجو تضمين '@' في عنوان البريد الإلكتروني، 'yourname@example.com'",
+
+
+    "_PROFILE ################################## ": "I18N profile ##################################",
+
+    "validation-fullname-required" : " المرجو ادخال الاسم الكامل للمسؤول عن البرنامج",
+    "validation-fullname-pattern" : "المرجو التأكد من أن الاسم المدرج لا يحتوي إلا على حروف",
+
+    "validation-phoneNumber-required" : "المرجو ادخال رقم الهاتف",
+    "validation-phoneNumber-pattern" : "رقم الهاتف يجب أن يتضمن 10 أرقام على الأقل",
+
+
+    "_PASSWORD ################################## ": "I18N PASSWORD ######################################",
+
+    "edit-password-subTitle" : "تغيير كلمة المرور",
+    "input-oldPassword-label" : " كلمة المرور الحالية",
+    "input-password-label" : "كلمة المرور الجديدة ",
+    "input-confirmPass-label" : "أكد كلمة المرور",
+
+    "validation-password-required" : "المرجو ادخال كلمة المرور",
+    "validation-confirmPass-notEquivalent" : "كلمة السر لا تتطابق",
+    "validation-password-minlength" : "يجب أن تحتوي كلمة المرور على 8 على الأقل",
+    "validation-oldPassword-incorrect" : " كلمة المرور سابق غير صحيحة",
+    "validation-oldPassword-and-oldPassword-incorrect" : " كلمات المرور القديمة والحالية غير متطابقة ",
+    "validation-password-valid" : "كلمة المرور ليست كلمة مرور صالحة. من فضلك حاول إعطاء كلمة مرور آمنة!",
+
+
+    "_ACCOUNT ################################## ": "I18N account ######################################",
+
+    "ACCOUNT-DET-TITLE" : "طلب التسجيل",
+    "ACCOUNT-LIST-SUBTITLE" : " قائمة طلبات التسجيل ",
+
+    "ACCOUNT-INPUT-EMAIL-LABEL" :  "البريد الإلكتروني",
+
+    "ACCOUNT-INPUT-ASSOCIATIONNAME-LABEL-FR" : "اسم الجمعية بالفرنسية",
+    "ACCOUNT-INPUT-ASSOCIATIONNAME-LABEL-AR" : "اسم الجمعية بالعربي",
+    "ACCOUNT-INPUT-RESPONSIBLENAME-LABEL" : "الإسم الكامل للمسؤول",
+    "ACCOUNT-INPUT-RESPONSABLEPHONENUMBER-LABEL" : "رقم هاتف المسؤول",
+    "ACCOUNT-INPUT-RESPONSIBLEEMAIL-LABEL" : "البريد الإلكتروني للمسؤول ",
+    "ACCOUNT-INPUT-ADDRESS-LABEL" : "عنوان المسؤول",
+    "ACCOUNT-INPUT-COUNTY-LABEL" : "البلد",
+    "ACCOUNT-INPUT-CITY-LABEL" : "المدينة",
+    "ACCOUNT-INPUT-REGIONACADEMY-LABEL" : "الأكاديمية",
+    "ACCOUNT-INPUT-ZIPCODE-LABEL" : "الرمز البريدي",
+    "ACCOUNT-INPUT-DATE-CREATION-LABEL" : "تاريخ التسجيل ",
+
+    "ACCOUNT-DET-BTN-PENDING" : "تعليق التسجيل",
+    "ACCOUNT-DET-BTN-ACTIVATED" : "تفعيل التسجيل",
+    "ACCOUNT-DET-BTN-DEACTIVATED" : " إلغاء التسجيل",
+    "ACCOUNT-DET-BTN-DELETED" : "حذف الحساب",
+    "ACCOUNT-DET-BTN-BLOCKED" : "إيقاف الحساب",
+
+    "ACCOUNT-SWAL-VALID-BODY-PENDING-1" : " بضغطك على زر التأكيد, أنت تؤكد رغبتك في  تعليق هذاالحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-PENDING-2" : " <span class='d-block' > هل أنت متأكد من المتابعة ؟</span> ",
+
+    "ACCOUNT-SWAL-VALID-BODY-ACTIVATED-1" : " بضغطك على زر التأكيد, أنت تؤكد رغبتك في  تفعيل هذا الحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-ACTIVATED-2" : " <span class='d-block' > هل أنت متأكد من المتابعة ؟</span> ",
+
+
+    "ACCOUNT-SWAL-VALID-BODY-DEACTIVATED-1" : " بضغطك على زر التأكيد, أنت تؤكد رغبتك في إلغاء تفعيل هذا الحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-DEACTIVATED-2" : " <span class='d-block' > هل أنت متأكد من المتابعة ؟</span> ",
+
+
+    "ACCOUNT-SWAL-VALID-BODY-DELETED-1" : " بضغطك على زر التأكيد, أنت تؤكد رغبتك في حذف هذا الحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-DELETED-2" : "<span class='d-block' > هل أنت متأكد من المتابعة ؟</span> ",
+
+
+    "ACCOUNT-SWAL-VALID-BODY-BLOCKED-1" : " بضغطك على زر التأكيد, أنت تؤكد رغبتك في إيقاف هذا الحساب  ",
+    "ACCOUNT-SWAL-VALID-BODY-BLOCKED-2" : " <span class='d-block' > هل أنت متأكد من المتابعة ؟</span> ",
+
+    "STATUS-PENDING" : "مُعلّق",
+    "STATUS-ACTIVATED" : "مُفعّل",
+    "STATUS-DEACTIVATED" : "غير مفعل",
+    "STATUS-DELETED" : "محذوف",
+    "STATUS-BLOCKED" : "موقوف",
+
+    "_NAVBAR ################################## ": "I18N navBar ##################################",
+
+    "NAVBAR-TITLE-BONJ" : "مرحباً",
+    "NAVBAR-NOTIF-TIP" : "إشعار",
+    "NAVBAR-NOTIF-MENU-HEAD-TITLE" : "إشعارات",
+    "NAVBAR-NOTIF-MENU-FOOTER-TITLE" : "عرض جميع الإشعارات",
+
+    "NAVBAR-MENU-TITLE-PROF" : "الملف الشخصي",
+    "NAVBAR-MENU-TITLE-PWD" : " تغيير كلمة المرور",
+    "NAVBAR-MENU-TITLE-LOGOUT" : "تسجيل الخروج",
+
+    "NAVBAR-INPUT-SEARCH" : "بحث  ",
+    "NAVBAR-TIP-SEARCH" : "البحث عن ملف",
+
+
+    "_SADBAR ################################## ": "I18N sadBar ##################################",
+    "SADBAR-TITLE": "نظام البيع السهل",
+    "SADBAR-TITLE-HOME": "الصفحة الرئيسية",
+    "SADBAR-TITLE-TABLE-BORD": "شاشة الإحصائيات",
+    "SADBAR-TITLE-ACCOUNT": "طلبات التسجيل",
+    "SADBAR-TITLE-AP": "طلبات المشاريع",
+    "SADBAR-TITLE-EL": "الوضعية الحالية",
+    "SADBAR-TITLE-SM": "تتبع التقديم على طلبات المشاريع",
+    "SADBAR-TITLE-RD": "تتبع تقرير الإنطلاقة",
+    "SADBAR-TITLE-RMP": "تتبع التقرير الدوري",
+    "SADBAR-TITLE-RP": "التقرير البيداغوجي والتنظيمي",
+    "SADBAR-TITLE-RF": "التقريرالمالي",
+    "SADBAR-TITLE-RFin" : "تتبع التقرير النهائي",
+    "SADBAR-TITLE-RPF" : " التقرير البيداغوجي والتنظيمي (النهائي)",
+    "SADBAR-TITLE-RFF" : " التقريرالمالي (النهائي) ",
+    "SADBAR-TITLE-ADMIN": "ادارة",
+    "SADBAR-TITLE-USER": "المستخدمون",
+    "SADBAR-TITLE-ROLE": "الأدوار",
+    "SADBAR-TITLE-MENUS": "القوائم",
+    "SADBAR-TITLE-ENTITES": "الأقسام",
+    "SADBAR-TITLE-REFE": "إعدادت",
+    "SADBAR-TITLE-DOC-DEM": " الوثائق المرفقة",
+    "SADBAR-TITLE-FON": "المهام",
+    "SADBAR-TITLE-DIPL": "الدبلومات \/ الشواهد",
+    "SADBAR-TITLE-DOM-FORM": "مجالات التدريب",
+    "SADBAR-TITLE-ACAD": "الأكاديميات \/ الجهات",
+    "SADBAR-TITLE-MOD-PAIEM": "طرق الأداء ",
+    "SADBAR-TITLE-RUB-FIN": "  الأقسام  المالية ",
+    "SADBAR-TITLE-PAYS": "البلدان",
+    "SADBAR-TITLE-VILLES": "المدن",
+
+
+    "_FOOTER ################################## ": "I18N footer ##################################",
+
+    "FOOTER-TITLE" : "جميع الحقوق محفوظة . © NexProMas 2023",
+
+
+    "_HOP- ################################## ": "I18N Historique Operation/situation dossiers ##################################",
+
+
+    "HOP-TITLE" : " تتبع الملف ",
+    "HOP-LIST-SUBTITLE" : "قائمة تتبع الملف  ",
+
+
+    "HOP-LIST-COL-RESPONSIBLE" : "المسؤول",
+    "HOP-LIST-COL-DESC" : "التفاصيل ",
+
+    "SITU-TITLE" :"تتبع الملفات غير المكتملة",
+    "SITU-LIST-SUBTITLE" : "قائمة الملفات غير المكتملة ",
+    "SITU-LIST-ACTION-PEC":"تم التكفل",
+    "SITU-LIST-ACTION-ET":"قيد المعالجة",
+    "SITU-LIST-ACTION-CI":"طلب إضافة معلومات",
+
+    "SITU-LIST-COL-DUREE-TRAITEMENT":"مدة المعالجة",
+    "SITU-LIST-COL-DUREE-TRAITEMENT-DAYS":"أيام",
+    "SITU-LIST-COL-DUREE-TRAITEMENT-HOURS":"ساعات",
+    "SITU-LIST-COL-DUREE-TRAITEMENT-MINUTES":"دقائق",
+
+
+    "AP-DET-LISTE-EMPTY" : "لا توجد اي نتائج توافق موضوع طلبكم",
+
+
+
+    "_COMP-INFO ################################## ": "I18N Complement Information (list/detail)################",
+
+    "COMP-INFO-LIST-TITLE" : "معلومات إضافية",
+    "COMP-INFO-LIST-SUBTITLE" : " معلومات إضافية",
+    "COMP-INFO-LIST-SUBTITLE-OTHER" : "قائمة الرسائل",
+
+    "COMP-INFO-LIST-COL-PROSS" : "عملية",
+    "COMP-INFO-LIST-COL-STEP" : "مرحلة",
+    "COMP-INFO-LIST-COL-NUM-DOS" : "رقم الملف",
+    "COMP-INFO-LIST-COL-DESC" : "التفاصيل المطلوبة",
+    "COMP-INFO-LIST-COL-DATE-REPONSE" : "تم الرد في",
+    "COMP-INFO-LIST-COL-ACT" : "إجراء",
+
+    "COMP-INFO-DET-SUBTITLE" : "إظهارالمعلومات الإضافية",
+    "COMP-INFO-DET-SUBTITLE-1" : "الوثائق المطلوبة",
+    "COMP-INFO-DET-PROSS" : "عملية",
+    "COMP-INFO-DET-STEP" : "مرحلة",
+    "COMP-INFO-DET-NUM-DOS" : "رقم الملف",
+    "COMP-INFO-DET-DESC" : "التفاصيل المطلوبة",
+    "COMP-INFO-DET-MSG" : "معلومات إضافية",
+    "COMP-INFO-DET-DATE-REPONSE" : "تم الرد في",
+    "COMP-INFO-DET-BTN-BACK" : " عودة الى الملف ",
+
+    "COMP-INFO-DET-FILES-EMPTY" : "لم يتم إرسال أي وثيقة",
+
+    "_ALL-SUIVI ################################## ": "I18N en générale (suivi) ##################################",
+
+
+    "SWAL-VALID-TITLE-WF-SM" : "التقديم على طلبات المشاريع",
+    "SWAL-VALID-TITLE-WF-RD" : "تقرير الإنطلاقة",
+    "SWAL-VALID-TITLE-WF-RMP" : "تقرير الدوري ",
+    "SWAL-VALID-TITLE-WF-RP" : "التقرير البيداغوجي",
+    "SWAL-VALID-TITLE-WF-RF" : "التقريرالمالي",
+
+
+    "SWAL-VALID-BODY-PEC-1" : ".بضغطك على زر التأكيد, أنت تؤكد رغبتك في معالجة هذا الملف ",
+    "SWAL-VALID-BODY-PEC-2" : "<span class='d-block' > هل أنت متأكد من المتابعة ؟</span>",
+
+    "SWAL-VALID-BODY-CTR-1" : ".بضغطك على زر التأكيد, أنت تؤكد مصادقتك على هذا الملف",
+    "SWAL-VALID-BODY-CTR-2" : "<span class='d-block' > هل أنت متأكد من المتابعة ؟</span>",
+
+    "SWAL-VALID-BODY-CI-1" : "معلومات إضافية",
+
+    "SWAL-VALID-BODY-A-1" : ".بضغطك على زر التأكيد, أنت تؤكد مصادقتك على هذا الملف ",
+    "SWAL-VALID-BODY-A-2" : "<span class='d-block' > هل أنت متأكد من المتابعة ؟</span>",
+
+    "SWAL-VALID-BODY-V-1" : ".ضغطك على زر التأكيد, أنت تؤكد مصادقتك على  معطيات هذا الملف",
+    "SWAL-VALID-BODY-V-2" : "<span class='d-block' > هل أنت متأكد من المتابعة ؟</span>",
+
+    "SWAL-VALID-BODY-R-1" : ".بضغطك على زر التأكيد, أنت تؤكد رفضك لمعطيات هذا الملف ",
+    "SWAL-VALID-BODY-R-2" : "<span class='d-block' > هل أنت متأكد من المتابعة ؟</span>",
+
+
+    "TOASTR-VALID-BODY-PEC" : " تمت معالجة طلبكم بنجاح",
+    "TOASTR-VALID-BODY-CTR" : "تم التأكيد على صحة المعلومات بنجاح",
+    "TOASTR-VALID-BODY-CI" : "تم تسجيل طلب المعلومات الإضافية بنجاح ",
+    "TOASTR-VALID-BODY-A" : "تمت تسجيل الموافقة المبدئية بنجاح ",
+    "TOASTR-VALID-BODY-V" : "تم تسجيل قبول الملف بنجاح ",
+    "TOASTR-VALID-BODY-R" : " تم تسجيل رفض الملف بنجاح",
+    "TOASTR-VALID-BODY-TRAITE" : "تم تسجيل معالجة الملف  بنجاح ",
+
+    "STATUS-SAISE" : "قيد الإنشاء",
+    "STATUS-E" : "تم الاستلام",
+    "STATUS-PEC" : "قيد الدراسة",
+    "STATUS-CTR" : "تم التحقق منه",
+    "STATUS-CI" : "مطلوب معلومات إضافية",
+    "STATUS-A" : "موافقة مبدئية",
+    "STATUS-V" : "مقبول",
+    "STATUS-R" : "مرفوض",
+
+    "TITLE-SAISE" : "قيد الإنشاء",
+    "TITLE-E" : "تم الاستلام",
+    "TITLE-PEC" : "قيد الدراسة",
+    "TITLE-CTR" : "تم التحقق منه",
+    "TITLE-CI" : "مطلوب معلومات إضافية",
+    "TITLE-A" : "موافقة مبدئية",
+    "TITLE-V" : "مقبول",
+    "TITLE-R" : "مرفوض",
+
+
+    "_RF_NOTIFIER ##################################": "I18N rapport final (notifier) ##############################",
+
+    "RF-NOTIFIER-ADD" : "اشعار اضافة التقرير النهائي ",
+    "RF-NOTIFIER-TITLE" : "اشعار اضافة التقرير النهائي ",
+    "RF-NOTIFIER-SUBTITLE" : "أضف الاشعار ",
+
+    "_FILE ################################## ": "I18N file ##################################",
+    "FILE-SHOW-LABEL" : "وثيقة",
+
+    "_TOOLTIPS ##################################": "I18N tooltips ##############################",
+    "TIP-DETAIL": "المزيد من التفاصيل",
+    "TIP-DOWNLOAD": "تنزيل المرفقات",
+    "TIP-ADD-FILE":"أضف وثيقة ",
+    "TIP-EDIT-FILE" : " تعديل وثيقة",
+    "TIP-MOTIF": "سبب الرفض",
+    "TIP-RAISON" : "سبب",
+    "TIP-MSG": "معلومات إضافية",
+    "TIP-SOUM": "التقديم على طلبات المشاريع",
+    "TIP-GO": "الوصول إليه",
+    "TIP-EDIT": "تعديل",
+    "TIP-DELTE": "حذف",
+    "TIP-VALID": "قبول",
+    "TIP-REJECT": "رفض",
+    "TIP-CHARGE" : "تحميل",
+    "TIP-CI": "يستلزم معلومات إضافية",
+    "TIP-PRE-CH": "معالجة الملف",
+
+    "TIP-R" : " التقرير ",
+    "TIP-SM" : " التقديم على طلبات المشاريع ",
+    "TIP-PAR-CONTR" : " ",
+
+    "TIP-SHOW-CI" : " إظهار المعلومات الإضافية",
+
+    "TIP-ADD-PV" : "  محضر الانتقاء",
+    "TIP-NOTIFIER-CLIENT" : "اشعار المتقدمين",
+
+
+    "_BUTTONS ##################################": "I18N buttons ##############################",
+    "BTN-ADD": "إضافة",
+    "BTN-EDIT": "تعديل",
+    "BTN-SAVE": "حفظ",
+    "BTN-EXPORT-PDF": "طباعة نسخة",
+    "BTN-CANCEL": "لا",
+    "BTN-OK": "موافق",
+    "BTN-YES": "نعم",
+    "BTN-VALID": "قبول",
+    "BTN-REJECT": "رفض",
+    "BTN-CI": "طلب معلومات إضافية",
+
+    "BTN-CONTR": "التأكيد على صحة المعلومات",
+    "BTN-ACCEP-PREAL": "موافقة مبدئية",
+
+    "BTN-SHOW-CI" : "إظهار ",
+
+    "_VALUE ################################## ": "I18N value ##############################",
+
+    "VAL-YES":"نعم",
+    "VAL-NON":"لا",
+
+  "_MSGERROR ##################################": "I18N message erreur ##############################",
+
+  "MSGERROR-FILE-EMPTY": "أحد الملفات المطلوبة فارغ !",
+  "MSGERROR-FILES-AT-LEAST-ONE": "يستلزم وثيقة على اقل !",
+  "MSGERROR-FILE-EMPTY-OR-BAD": "مستند الإلزامي فارغ أو تنسيق pdf غير صحيح!",
+  "MSGERROR-TABLE-EMPTY": "الجدول فارغ",
+  "MSGERROR-FIELD-EMPTY": "أحد الحقول المطلوبة فارغ !",
+  "MSGERROR-ANY-500": "وقع خطأ ما عنده معالجة طلبكم, المرجو إعادة المحاولة مرة أخرى",
+  "MSGERROR-ANY": "وقع خطأ ما !",
+  "MSGERROR-UN-AUTHORIZED": "أنت غير مخول لك للوصول إلى هذا المورد",
+  "MSGERROR-CONNECTION-REFUSED": "رجاء الاتصال في وقت لاحق",
+  "MSGERROR-UNKNOWN-USERNAME-PASSWORD": "اسم المستخدم أو كلمة المرور غير صالحة",
+  "MSGERROR-MAIL-NOT-EXIST": "بريدك الإلكتروني غير موجود",
+  "MSGERROR-ELEMENT-EXISTS": "العنصر موجود بالفعل",
+
+
+  "_SWAL ##################################": "I18N message Swal ####",
+  "SWAL-CONFIRM": "طلب تأكيد",
+  "SWAL-MOTIF-REJET": "سبب الرفض",
+  "SWAL-CI": "معلومات إضافية",
+  "SWAL-TEXT-MSG": " : الرسالة",
+
+  "_TOASTR ################################## ": "I18N message Toastr ####",
+
+  "TOASTR-ADD": "تم الحفظ بنجاح",
+  "TOASTR-SEND": "تم إرسال طلبك بنجاح",
+  "TOASTR-EDIT": "تم التغيير بنجاح"
+
+
+}
