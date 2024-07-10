@@ -1,0 +1,138 @@
+<div id="best_products" class=" mt-5 mb-5">
+  <h3 class="best_products-title text-center ">- أفضل منتجات -</h3>
+  <div class="row  px-0">
+    <!-- <div class="col-sm-3 ">
+      <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li [attr.data-target]="'#carouselExampleIndicators' + articles[0].id" data-slide-to="0" class="active pointer"></li>
+            <li [attr.data-target]="'#carouselExampleIndicators' + articles[0].id" data-slide-to="1" class="pointer"></li>
+            <li [attr.data-target]="'#carouselExampleIndicators' + articles[0].id" data-slide-to="2" class="pointer"></li>
+            <li [attr.data-target]="'#carouselExampleIndicators' + articles[0].id" data-slide-to="3" class="pointer"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item  active " >
+            <img class="product-img "
+              src="../../../../assets/images/produits/{{articles[0].name_img}}/{{articles[0].name_img}}_1.png">
+          </div>
+          <div class="carousel-item   " >
+            <img class="product-img "
+              src="../../../../assets/images/produits/{{articles[0].name_img}}/{{articles[0].name_img}}_2.png">
+          </div>
+          <div class="carousel-item   " >
+            <img class="product-img "
+              src="../../../../assets/images/produits/{{articles[0].name_img}}/{{articles[0].name_img}}_4.png">
+          </div>
+          <div class="carousel-item   " >
+            <img class="product-img "
+              src="../../../../assets/images/produits/{{articles[0].name_img}}/{{articles[0].name_img}}_5.png">
+          </div>
+        </div>
+        <a class="carousel-control-prev" [attr.data-target]="'#carouselExampleIndicators' + articles[0].id" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" [attr.data-target]="'#carouselExampleIndicators' + articles[0].id" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div> -->
+    <!-- start Responsive Desktop/tablet  -->
+    <ng-container *ngFor="let article of articles">
+      <div *ngIf="article" class="col-sm-3 ">
+        <!-- start Responsive Desktop/tablet  -->
+        <div id="carouselExampleIndicators{{article.id}}" class="carousel slide " data-ride="carousel">
+          <div class="badge_sale pointer">
+            <span class="badge--sale-pt">-50%</span>
+          </div>
+          <a class="send_msg_fb pointer" [href]="article.link"  target="_blank">
+            <span class="send_msg_fb_content">
+              <i class="far fa-paper-plane send_msg_fb_icon"></i>
+            </span>
+          </a>
+          <ol class="carousel-indicators ">
+            <ng-container *ngFor="let itemC of article.nbr_img_ary">
+              <li [attr.data-target]="'#carouselExampleIndicators' + article.id" [attr.data-slide-to]="itemC-1" class="pointer"
+                [ngClass]="{' active ' : itemC == 1 }"></li>
+            </ng-container>
+          </ol>
+          <div class="carousel-inner " (click)="onShowDetails()">
+            <ng-container *ngFor="let item of article.nbr_img_ary">
+              <div class="carousel-item   " [ngClass]="{' active ' : item == 1 }">
+                <img class="product-img "
+                  src="../../../../assets/images/produits/{{article.name_img}}/{{article.name_img}}_{{item}}.png">
+              </div>
+            </ng-container>
+          </div>
+          <button class="carousel-control-prev pointer" type="button" [attr.data-target]="'#carouselExampleIndicators' + article.id" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <i class=" icon-prev fas fa-chevron-left"></i>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next pointer" type="button" [attr.data-target]="'#carouselExampleIndicators' + article.id" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <i class="icon-next fas fa-chevron-right"></i>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+        <div class="carousel-description pointer" dir="rtl">
+          <h1 class="article-title pt-2"> {{article.title}} </h1>
+          <div class="d-flex article-price">
+          <h4 class="article-price-fix ">{{article.price}} DH</h4>
+          <del class="article-price-delete mx-2">{{article.price_del}} DH</del>
+          </div>
+          <h6 class="article-etat"></h6>
+        </div>
+      </div>
+    </ng-container>
+    <!-- <div class="col-lg-4 col-sm-6 " *ngFor="let offer of offers; let i = index;">
+      <div *ngIf="offer.reference" class="card mt-4 w-100 ">
+        <div class="card-header">
+          <div class="row mx-0 px-0 w-100">
+            <div class="col-4 px-0 d-flex justify-content-center">
+              <img class="card-item-logo-offre " src="./assets/images/logo_offre.svg">
+            </div>
+            <div class="col-8 px-0">
+              <h5 class="card-title title-offer ">{{offer.title}}</h5>
+              <p class="name-Entrop-offer">OCP</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-body px-4 pt-2 pb-4 text-center pointer" (click)="goOfferDetails(offer.reference)">
+
+          <div class="d-flex justify-content-between align-items-center ">
+            <div class="d-flex justify-content-start align-items-center ">
+              <i class="fas fa-file-contract mr-2 mb-2 color-icon"></i>
+              <div class="offer-labels mb-2">{{offer.contractTypeStr}}</div>
+            </div>
+            <div class="d-flex justify-content-start align-items-center">
+              <i class="fas fa-user-tie mr-2 mb-2 color-icon"></i>
+              <div class="offer-labels mb-2">{{offer.workModel}}</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center ">
+            <div class="d-flex justify-content-start align-items-center">
+              <i class="fas fa-graduation-cap mr-2 mb-2 color-icon"></i>
+              <div class="offer-labels mb-2">{{offer.studyLevel}}</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-start align-items-center ">
+              <i class="fas fa-map-marker-alt mr-2 mb-2 color-icon"></i>
+              <div class="offer-labels mb-2">{{offer.regionStr}}</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="w-100" *ngIf="(i + 1) % 3 === 0"></div>
+    </div> -->
+  </div>
+  <div class="btn-more-offer d-flex justify-content-end ">
+    <button placement="left" ngbTooltip="Voir plus des produits" (click)="viewAllOffer()" type="button"
+      class="btn btn-primary  p-2 px-4 my-3 ">
+      <i class="fas fa-plus"></i> المزيد </button>
+  </div>
+</div>

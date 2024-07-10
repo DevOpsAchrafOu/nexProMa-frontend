@@ -30,6 +30,7 @@ import { HomeSubFooterComponent } from './components/base/home-sub-footer/home-s
 import { SpinnerComponent } from './components/base/spinner/spinner.component';
 import { ScrollTopComponent } from './components/base/scroll-top/scroll-top.component';
 import { WhatsappLeftComponent } from './components/base/whatsapp-left/whatsapp-left.component';
+import { BestProductComponent } from './components/home/best-product/best-product.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { WhatsappLeftComponent } from './components/base/whatsapp-left/whatsapp-
     SpinnerComponent,
     ScrollTopComponent,
     WhatsappLeftComponent,
+    BestProductComponent,
     ],
   imports: [
     AppRoutingModule,

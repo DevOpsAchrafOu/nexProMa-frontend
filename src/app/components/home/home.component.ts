@@ -21,9 +21,10 @@ export class HomeComponent implements OnInit {
 
   searchCategorie : string = "";
   imgHero : Array<string> = ['hero-01.png','hero-02.png'];
-  offers: Offer[] = [];
 
-  list: any[] = [0,1,2,3];//list
+
+  list: any[] = [0,1,2,3];//list for Desktop/tablet
+  listMobile: any[] = [0,1,2,3,4,5];//list for Mobile
 
   /********************************************************************************************/
   /**************************************** The attributes  ***********************************/
@@ -148,17 +149,6 @@ export class HomeComponent implements OnInit {
     return region ? region.text : 'Unknown';
   }
 
-
-
-    goOfferDetails(reference : string){
-      this.route.navigate(['view-offre-public', reference]);
-    }
-
-
-    viewAllOffer(){
-      this.route.navigate(["/mes-offres"]);
-
-    }
 
     initListMetadat(){
       this.listMetadat.push({key:"title",value:"home | NexProMas Project"});
