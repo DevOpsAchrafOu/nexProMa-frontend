@@ -224,8 +224,8 @@
 
 #all_products .filter .btn-primary {
   color: #fff;
-  background-color: var(--main-color-dis);
-  border-color: var(--main-color-dis);
+  background-color: var(--first-color-dis);
+  border-color: var(--first-color-dis);
   border-radius: 7px;
   min-width: 150px;
   font-size: 1.1rem;
@@ -234,5 +234,6 @@
   text-align: start;
 }
 #all_products .filter .btn-primary:hover {
-  background-color: var(--first-color-dis);
+  background-color: var(--main-color-dis);
+  border-color: var(--main-color-dis);
 }

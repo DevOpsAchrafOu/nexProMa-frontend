@@ -84,7 +84,7 @@ export class AllProductComponent implements OnInit {
           "price": 119,
           "link": "https://www.facebook.com/marketplace/item/1608004633132792/",
           "name_img": "جهاز_التدليك_إزالة_التشنجات_تخفيف_آلام_العضلات",
-          "nbr_img": 10,
+          "nbr_img": 8,
           "categorie": "المنزل والرفاهية"
       },
       {
@@ -139,7 +139,7 @@ export class AllProductComponent implements OnInit {
           "price": 89,
           "link": "https://www.facebook.com/marketplace/item/1546453326268385/",
           "name_img": "Écouteur_bluetooth_Lenovo_GM2_Pro_أبيض",
-          "nbr_img": 1,
+          "nbr_img": 6,
           "categorie": "إلكترونيات"
       },
       {
@@ -148,7 +148,7 @@ export class AllProductComponent implements OnInit {
           "price": 49,
           "link": "https://www.facebook.com/marketplace/item/2439880789556119/",
           "name_img": "أربطة_معصم_قابلة_للتعديل_للرجال_والنساء_تمنع_التهاب_المفاصل_أسود",
-          "nbr_img": 1,
+          "nbr_img": 8,
           "categorie": "رياضة ولياقة"
       },
       {
@@ -220,7 +220,7 @@ export class AllProductComponent implements OnInit {
           "price": 59,
           "link": "https://www.facebook.com/marketplace/item/1470115906943774/",
           "name_img": "Montre_de_Moteur_pour_Homme_et_Femme_Collier_Pendentif_Cadeau",
-          "nbr_img": 1,
+          "nbr_img": 3,
           "categorie": "إكسسوارات شخصية"
       },
       {
@@ -229,7 +229,7 @@ export class AllProductComponent implements OnInit {
           "price": 59,
           "link": "https://www.facebook.com/marketplace/item/1499819943948444/",
           "name_img": "حقيبة_خصر_خفيفة_لحمل_هاتفك_أثناء_التمرين_أو_في_اللقاءات_الرياضية",
-          "nbr_img": 1,
+          "nbr_img": 5,
           "categorie": "رياضة ولياقة"
       },
       {
