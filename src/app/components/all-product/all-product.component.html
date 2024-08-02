@@ -54,8 +54,8 @@
         <div *ngIf="article" class="col-sm-3 px-sm-1 px-4 ">
           <!-- start Responsive Desktop/tablet  -->
           <div id="carouselExampleIndicators{{article.id}}" class="carousel slide " data-ride="carousel">
-            <div class="badge_sale pointer">
-              <span class="badge--sale-pt">-20%</span>
+            <div *ngIf="article.percentage_redu" class="percentage_reduction pointer">
+              <span class="percentage_reduction_value">-{{article.percentage_redu|round}}%</span>
             </div>
             <a class="send_msg_fb pointer" [href]="article.link"  target="_blank">
               <span class="send_msg_fb_content">

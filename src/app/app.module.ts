@@ -32,6 +32,7 @@ import { ScrollTopComponent } from './components/base/scroll-top/scroll-top.comp
 import { WhatsappLeftComponent } from './components/base/whatsapp-left/whatsapp-left.component';
 import { BestProductComponent } from './components/home/best-product/best-product.component';
 import { AllProductComponent } from './components/all-product/all-product.component';
+import { RoundPipe } from './pipes/round.pipe';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { AllProductComponent } from './components/all-product/all-product.compon
     WhatsappLeftComponent,
     BestProductComponent,
     AllProductComponent,
+    RoundPipe,
     ],
   imports: [
     AppRoutingModule,

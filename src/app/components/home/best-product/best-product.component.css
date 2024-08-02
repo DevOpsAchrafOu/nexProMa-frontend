@@ -99,7 +99,7 @@
 }
 
 
-#best_products .badge_sale {
+#best_products .percentage_reduction {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -109,7 +109,7 @@
   z-index: 10;
 }
 
-#best_products .badge_sale .badge--sale-pt {
+#best_products .percentage_reduction .percentage_reduction_value {
   font-size: .8rem;
   font-weight: 600;
   line-height: 20px;

@@ -8,4 +8,5 @@ export interface Article {
   nbr_img?:number;
   nbr_img_ary?: Array<number>;
   categorie?: string;
+  percentage_redu? : number;
 }
