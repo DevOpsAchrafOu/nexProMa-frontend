@@ -120,6 +120,12 @@ html[dir=rtl] .x{float:left;margin:10px 0 -54px 10px}
 #lb .x{position:absolute;top:-12px;right:-12px;margin:0;float:none}
 .fab{position:fixed;bottom:22px;inset-inline-end:22px;z-index:25;box-shadow:0 10px 26px rgba(7,138,62,.4);border-radius:999px}
 @media (max-width:720px){#qvorder{position:sticky;bottom:10px;z-index:2;box-shadow:0 8px 20px rgba(11,122,59,.35)}.qv .gal{padding:10px}.fab{display:none}.qv .info{padding:18px}.qv h2{font-size:20px}.tools label span{display:none}.about img{width:150px}}
+
+.num{font-variant-numeric:tabular-nums;white-space:nowrap;unicode-bidi:isolate}
+.phone{margin:10px 0 0;display:flex;align-items:center;gap:8px;font-size:17px;color:#fff;font-weight:600}.phone a{color:#fff;font-weight:800;font-size:20px;text-decoration:none;border-bottom:2px solid var(--sun)}.phone svg{color:#7CF0AA}
+.bignum{margin:18px 0 0}.bignum a{color:#fff;font-size:28px;font-weight:800;text-decoration:none;letter-spacing:.01em}
+footer a{color:#fff;text-decoration:none;font-weight:700}
+.qvnum{margin:0;text-align:center;color:var(--ink2);font-size:15px}
 </style>
 </head>
 <body>
@@ -128,7 +134,7 @@ html[dir=rtl] .x{float:left;margin:10px 0 -54px 10px}
 <nav aria-label="Menu"><a href="#products"><span data-i18n="nav_products">Products</span></a><a href="#how"><span data-i18n="nav_how">How to order</span></a><a href="#avis"><span data-i18n="nav_reviews">Reviews</span></a><a href="#faq"><span data-i18n="nav_faq">FAQ</span></a></nav>
 <div class="right">
 <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="ar" aria-pressed="false" lang="ar">ع</button></div>
-<a class="btn wa hide-sm" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+<a class="btn wa hide-sm" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener" aria-label="WhatsApp +212 7 68 80 81 46"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span dir="ltr" class="num">+212 7 68 80 81 46</span></a>
 </div>
 </div></header>
 
@@ -140,6 +146,7 @@ html[dir=rtl] .x{float:left;margin:10px 0 -54px 10px}
 <p class="lead"><span data-i18n="lead">Electronics, sport, accessories and home products. No account, no bank card: pick a product, send us a message, and we deliver it to you.</span></p>
 <div class="ctas"><a class="btn blue" href="#products"><span data-i18n="see">See the products</span> (30)</a><a class="btn wa" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="ask">Ask us on WhatsApp</span></a></div>
 <p class="micro"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="nocash">No prepayment. Check the product before you pay.</span></p>
+<p class="phone"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span>WhatsApp</span> <a data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><span dir="ltr" class="num">+212 7 68 80 81 46</span></a></p>
 </div>
 <div class="collage" aria-hidden="true"><svg class="spark" aria-hidden="true" style="top:-26px;inset-inline-start:-22px;z-index:2" width="54" height="54" viewBox="0 0 24 24"><path fill="#FFC93C" d="M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0z"/></svg><svg class="spark" aria-hidden="true" style="bottom:-18px;inset-inline-end:-14px;z-index:2" width="40" height="40" viewBox="0 0 24 24"><path fill="#00D555" d="M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0z"/></svg><img src="img/p23.jpg" alt=""><img src="img/p1.jpg" alt=""><img src="img/p12.jpg" alt=""></div>
 </div></div>
@@ -431,10 +438,11 @@ html[dir=rtl] .x{float:left;margin:10px 0 -54px 10px}
 <section class="final"><div class="wrap">
 <h2><span data-i18n="fin_h">Found something you like?</span></h2><p><span data-i18n="fin_p">Message us now — delivery is free in Salé and Rabat.</span></p>
 <a class="btn wa" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="fin_b">Order on WhatsApp</span></a>
+<p class="bignum"><a data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><span dir="ltr" class="num">+212 7 68 80 81 46</span></a></p>
 </div></section>
 </main>
 
-<footer><div class="wrap"><span><span data-i18n="rights">© 2026 nexProMa — All rights reserved</span></span><span>Redesign by OA</span></div></footer>
+<footer><div class="wrap"><span><span data-i18n="rights">© 2026 nexProMa — All rights reserved</span></span><span>WhatsApp: <a data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><span dir="ltr" class="num">+212 7 68 80 81 46</span></a></span><span>Redesign by OA</span></div></footer>
 <div class="bar"><a class="btn wa" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a><a class="btn blue" href="#products"><span data-i18n="bar_p">Products</span></a></div>
 <a class="btn wa fab" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="fab">Chat on WhatsApp</span></a>
 
@@ -453,6 +461,7 @@ html[dir=rtl] .x{float:left;margin:10px 0 -54px 10px}
 <a class="btn wa" id="qvorder" href="#" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 <ul><li><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="m1">Cash on delivery — no prepayment</span></li><li><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="m2">Free delivery in Salé &amp; Rabat</span></li><li><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="m3">Check the product before you pay</span></li></ul>
 <a class="ask" id="qvask" href="#" target="_blank" rel="noopener"><span data-i18n="askp">Ask a question about this product</span></a>
+<p class="qvnum">WhatsApp <span dir="ltr" class="num">+212 7 68 80 81 46</span></p>
 </div>
 </div>
 </dialog>
