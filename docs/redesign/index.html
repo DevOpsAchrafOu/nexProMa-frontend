@@ -1,20 +1,19 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>nexProMa — منتجات مختارة، توصيل مجاني لسلا والرباط والدفع عند الاستلام</title>
-<meta name="description" content="متجر nexProMa: إلكترونيات، رياضة، إكسسوارات ومنتجات للدار بأثمنة مزيانة. التوصيل فابور لسلا والرباط، والخلاص ملي توصلك. اطلب مباشرة فواتساب.">
-<meta property="og:title" content="nexProMa — توصيل مجاني لسلا والرباط، والدفع عند الاستلام">
-<meta property="og:description" content="اختار المنتج، صيفط لينا فواتساب، وخلص ملي توصلك.">
+<title>nexProMa — Free delivery in Salé &amp; Rabat, cash on delivery</title>
+<meta name="description" content="nexProMa: electronics, sport, accessories and home products at great prices. Free delivery in Salé and Rabat, cash on delivery. Order directly on WhatsApp.">
+<meta property="og:title" content="nexProMa — Free delivery in Salé &amp; Rabat, cash on delivery">
 <meta property="og:image" content="img/p23.jpg">
+<link rel="alternate" hreflang="en" href="?lang=en"><link rel="alternate" hreflang="fr" href="?lang=fr"><link rel="alternate" hreflang="ar" href="?lang=ar">
 <link rel="icon" href="../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"nexProMa","telephone":"+212768808146","areaServed":["Salé","Rabat","Témara"],"paymentAccepted":"Cash on delivery","url":"https://devopsachrafou.github.io/nexProMa-frontend/redesign/"}</script>
-<style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Cairo,system-ui,sans-serif;color:#14181F;background:#F5F6F8;line-height:1.65}
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#14181F;background:#F5F6F8;line-height:1.65}
 a{color:#0E4AD4}img{max-width:100%;display:block}
 .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
@@ -62,290 +61,319 @@ footer a{color:#fff}
 .bar{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #E4E7EC;padding:10px 12px;gap:10px;z-index:30;box-shadow:0 -6px 20px rgba(0,0,0,.08)}
 .bar .btn{flex:1}
 @media (max-width:720px){h1{font-size:31px}h2{font-size:26px}header.top nav{display:none}.bar{display:flex}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card h3{font-size:14px}.pr strong{font-size:18px}.card .btn{font-size:14px;padding:10px}.cb{padding:10px}section{padding:44px 0}}
+html[dir=rtl] body{font-family:Cairo,system-ui,sans-serif}
+.off{right:auto;inset-inline-end:10px}
+header.top .right{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:1px solid #D4D8DF;border-radius:10px;overflow:hidden}
+.lang button{font-family:inherit;font-weight:700;font-size:14px;min-width:44px;min-height:44px;border:0;background:#fff;color:#14181F;cursor:pointer}
+.lang button[aria-pressed=true]{background:#14181F;color:#fff}
+.white{background:#fff}.narrow{max-width:820px}
+@media (max-width:720px){.hide-sm{display:none}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="logo" href="#top" aria-label="nexProMa"><img src="../assets/images/nexProMa_logo.svg" alt="nexProMa" width="160" height="40"></a>
-<nav aria-label="القائمة"><a href="#products">المنتجات</a><a href="#how">كيفاش نطلب</a><a href="#avis">آراء الزبناء</a><a href="#faq">أسئلة</a></nav>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D9%86%D8%AA%D8%AC" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>واتساب</a>
+<nav aria-label="Menu"><a href="#products"><span data-i18n="nav_products">Products</span></a><a href="#how"><span data-i18n="nav_how">How to order</span></a><a href="#avis"><span data-i18n="nav_reviews">Reviews</span></a><a href="#faq"><span data-i18n="nav_faq">FAQ</span></a></nav>
+<div class="right">
+<div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="ar" aria-pressed="false" lang="ar">ع</button></div>
+<a class="btn wa hide-sm" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+</div>
 </div></header>
 
 <main id="top">
 <div class="hero"><div class="wrap">
 <div class="txt">
-<span class="pill">توصيل مجاني لسلا والرباط · الخلاص عند الاستلام</span>
-<h1>منتجات مختارة بأثمنة مزيانة — <em>طلب فواتساب، وخلص ملي توصلك</em></h1>
-<p class="lead">إلكترونيات، رياضة، إكسسوارات ومنتجات للدار. ما كاين لا حساب لا بطاقة بنكية: اختار المنتج، صيفط لينا ميساج، ونوصلوه ليك.</p>
-<div class="ctas"><a class="btn blue" href="#products">شوف المنتجات (31)</a><a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D9%86%D8%AA%D8%AC" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>سولنا فواتساب</a></div>
+<span class="pill"><span data-i18n="pill">Free delivery in Salé &amp; Rabat · Cash on delivery</span></span>
+<h1><span data-i18n="h1a">Handpicked products at great prices — </span><em><span data-i18n="h1b">order on WhatsApp, pay when it arrives</span></em></h1>
+<p class="lead"><span data-i18n="lead">Electronics, sport, accessories and home products. No account, no bank card: pick a product, send us a message, and we deliver it to you.</span></p>
+<div class="ctas"><a class="btn blue" href="#products"><span data-i18n="see">See the products</span> (31)</a><a class="btn wa" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="ask">Ask us on WhatsApp</span></a></div>
 </div>
 <div class="collage" aria-hidden="true"><img src="img/p23.jpg" alt=""><img src="img/p1.jpg" alt=""><img src="img/p12.jpg" alt=""></div>
 </div></div>
 
 <div class="trust"><div class="wrap">
-<span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>الدفع عند الاستلام</span><span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>توصيل مجاني لسلا والرباط</span><span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>تمارة فعطلة آخر الأسبوع</span><span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>خدمة ما بعد البيع 24/24 طول الأسبوع</span>
+<span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="t1">Cash on delivery</span></span><span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="t2">Free delivery in Salé &amp; Rabat</span></span><span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="t3">Témara on weekends</span></span><span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="t4">After-sales support 24/7</span></span>
 </div></div>
 
 <section id="products"><div class="wrap">
-<h2>المنتجات</h2><p class="sub">كل منتج كيتطلب بضغطة وحدة: الميساج كيتكتب بوحدو فواتساب.</p>
-<div class="chips" role="group" aria-label="الأصناف"><button class="chip on" data-f="all" type="button">الكل (31)</button><button class="chip" data-f="إلكترونيات" type="button">إلكترونيات (10)</button><button class="chip" data-f="رياضة ولياقة" type="button">رياضة ولياقة (10)</button><button class="chip" data-f="إكسسوارات شخصية" type="button">إكسسوارات شخصية (6)</button><button class="chip" data-f="المنزل والرفاهية" type="button">المنزل والرفاهية (5)</button></div>
+<h2><span data-i18n="p_h">Products</span></h2><p class="sub"><span data-i18n="p_sub">Every product is one tap away: the WhatsApp message is written for you.</span></p>
+<div class="chips" role="group"><button class="chip on" data-f="all" type="button" aria-pressed="true"><span data-i18n="all">All</span> (31)</button><button class="chip" data-f="elec" type="button" aria-pressed="false"><span data-cat-label="elec">Electronics</span> (10)</button><button class="chip" data-f="sport" type="button" aria-pressed="false"><span data-cat-label="sport">Sport & fitness</span> (10)</button><button class="chip" data-f="acc" type="button" aria-pressed="false"><span data-cat-label="acc">Accessories</span> (6)</button><button class="chip" data-f="home" type="button" aria-pressed="false"><span data-cat-label="home">Home & comfort</span> (5)</button></div>
 <div class="grid">
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p1.jpg" alt="جهاز قياس ضغط الدم الذكي للذراع الاوتوماتيكي Tensiomètre Microlife" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-23%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>جهاز قياس ضغط الدم الذكي للذراع الاوتوماتيكي Tensiomètre Microlife</h3>
-<div class="pr"><strong>169 درهم</strong><s>220 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%AC%D9%87%D8%A7%D8%B2%20%D9%82%D9%8A%D8%A7%D8%B3%20%D8%B6%D8%BA%D8%B7%20%D8%A7%D9%84%D8%AF%D9%85%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20%D9%84%D9%84%D8%B0%D8%B1%D8%A7%D8%B9%20%D8%A7%D9%84%D8%A7%D9%88%D8%AA%D9%88%D9%85%D8%A7%D8%AA%D9%8A%D9%83%D9%8A%20Tensiom%C3%A8tre%20Microlife%20%E2%80%94%20169%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="1" data-price="169">
+<div class="ph"><img src="img/p1.jpg" alt="Smart automatic upper-arm blood pressure monitor (Microlife)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-23%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="1">Smart automatic upper-arm blood pressure monitor (Microlife)</h3>
+<div class="pr"><strong>169 <span data-i18n="cur">MAD</span></strong><s>220 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="1" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Smart%20automatic%20upper-arm%20blood%20pressure%20monitor%20%28Microlife%29%20%E2%80%94%20169%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p2.jpg" alt="المقبس الذكي للتحكم في أي جهاز كهربائي، مثل التلفزيون أو المصباح أو مكيف الهواء.. عن بعد Wifi" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-21%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>المقبس الذكي للتحكم في أي جهاز كهربائي، مثل التلفزيون أو المصباح أو مكيف الهواء.. عن بعد Wifi</h3>
-<div class="pr"><strong>119 درهم</strong><s>150 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D9%85%D9%82%D8%A8%D8%B3%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20%D9%84%D9%84%D8%AA%D8%AD%D9%83%D9%85%20%D9%81%D9%8A%20%D8%A3%D9%8A%20%D8%AC%D9%87%D8%A7%D8%B2%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%8C%20%D9%85%D8%AB%D9%84%20%D8%A7%D9%84%D8%AA%D9%84%D9%81%D8%B2%D9%8A%D9%88%D9%86%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%85%D8%B5%D8%A8%D8%A7%D8%AD%20%D8%A3%D9%88%20%D9%85%D9%83%D9%8A%D9%81%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1..%20%D8%B9%D9%86%20%D8%A8%D8%B9%D8%AF%20Wifi%20%E2%80%94%20119%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="2" data-price="119">
+<div class="ph"><img src="img/p2.jpg" alt="Smart Wi-Fi plug — control any appliance remotely (TV, lamp, AC)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-21%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="2">Smart Wi-Fi plug — control any appliance remotely (TV, lamp, AC)</h3>
+<div class="pr"><strong>119 <span data-i18n="cur">MAD</span></strong><s>150 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="2" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Smart%20Wi-Fi%20plug%20%E2%80%94%20control%20any%20appliance%20remotely%20%28TV%2C%20lamp%2C%20AC%29%20%E2%80%94%20119%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p3.jpg" alt="قفازات رياضية (Taille M, L) musculation, fitness, gym, sport — أسود" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-23%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>قفازات رياضية (Taille M, L) musculation, fitness, gym, sport — أسود</h3>
-<div class="pr"><strong>69 درهم</strong><s>90 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%82%D9%81%D8%A7%D8%B2%D8%A7%D8%AA%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9%20%28Taille%20M%2C%20L%29%20musculation%2C%20fitness%2C%20gym%2C%20sport%20%E2%80%94%20%D8%A3%D8%B3%D9%88%D8%AF%20%E2%80%94%2069%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="3" data-price="69">
+<div class="ph"><img src="img/p3.jpg" alt="Gym gloves, sizes M–L — black" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-23%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="3">Gym gloves, sizes M–L — black</h3>
+<div class="pr"><strong>69 <span data-i18n="cur">MAD</span></strong><s>90 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="3" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Gym%20gloves%2C%20sizes%20M%E2%80%93L%20%E2%80%94%20black%20%E2%80%94%2069%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إكسسوارات شخصية">
-<div class="ph"><img src="img/p4.jpg" alt="Montre de romok/camion pour Homme et Femme, Collier, Pendentif, Cadeau ساعة شاحنات قلادة، هدية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">إكسسوارات شخصية</span>
-<h3>Montre de romok/camion pour Homme et Femme, Collier, Pendentif, Cadeau ساعة شاحنات قلادة، هدية</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Montre%20de%20romok/camion%20pour%20Homme%20et%20Femme%2C%20Collier%2C%20Pendentif%2C%20Cadeau%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%B4%D8%A7%D8%AD%D9%86%D8%A7%D8%AA%20%D9%82%D9%84%D8%A7%D8%AF%D8%A9%D8%8C%20%D9%87%D8%AF%D9%8A%D8%A9%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="acc" data-id="4" data-price="59">
+<div class="ph"><img src="img/p4.jpg" alt="Truck pendant watch necklace — unisex gift" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="acc">Accessories</span>
+<h3 data-title="4">Truck pendant watch necklace — unisex gift</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="4" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Truck%20pendant%20watch%20necklace%20%E2%80%94%20unisex%20gift%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p5.jpg" alt="(Taille S-M) قفازات تكتيكية رياضية للتدريب، للتمرين، لركوب الدراجات" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-29%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>(Taille S-M) قفازات تكتيكية رياضية للتدريب، للتمرين، لركوب الدراجات</h3>
-<div class="pr"><strong>50 درهم</strong><s>70 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%28Taille%20S-M%29%20%D9%82%D9%81%D8%A7%D8%B2%D8%A7%D8%AA%20%D8%AA%D9%83%D8%AA%D9%8A%D9%83%D9%8A%D8%A9%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9%20%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D8%8C%20%D9%84%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D9%86%D8%8C%20%D9%84%D8%B1%D9%83%D9%88%D8%A8%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%AC%D8%A7%D8%AA%20%E2%80%94%2050%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="5" data-price="50">
+<div class="ph"><img src="img/p5.jpg" alt="Tactical sport gloves for training &amp; cycling, sizes S–M" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-29%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="5">Tactical sport gloves for training &amp; cycling, sizes S–M</h3>
+<div class="pr"><strong>50 <span data-i18n="cur">MAD</span></strong><s>70 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="5" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Tactical%20sport%20gloves%20for%20training%20%26%20cycling%2C%20sizes%20S%E2%80%93M%20%E2%80%94%2050%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="المنزل والرفاهية">
-<div class="ph"><img src="img/p6.jpg" alt="جهاز التدليك وإزالة التشنجات و تخفيف آلام العضلات" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-41%</span></div>
-<div class="cb"><span class="cat">المنزل والرفاهية</span>
-<h3>جهاز التدليك وإزالة التشنجات و تخفيف آلام العضلات</h3>
-<div class="pr"><strong>59 درهم</strong><s>100 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A7%D9%84%D8%AA%D8%AF%D9%84%D9%8A%D9%83%20%D9%88%D8%A5%D8%B2%D8%A7%D9%84%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B4%D9%86%D8%AC%D8%A7%D8%AA%20%D9%88%20%D8%AA%D8%AE%D9%81%D9%8A%D9%81%20%D8%A2%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D8%B9%D8%B6%D9%84%D8%A7%D8%AA%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="home" data-id="6" data-price="59">
+<div class="ph"><img src="img/p6.jpg" alt="Muscle massager — relieves cramps and muscle pain" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-41%</span></div>
+<div class="cb"><span class="cat" data-cat-label="home">Home & comfort</span>
+<h3 data-title="6">Muscle massager — relieves cramps and muscle pain</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>100 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="6" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Muscle%20massager%20%E2%80%94%20relieves%20cramps%20and%20muscle%20pain%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p7.jpg" alt="قفازات رياضية (Taille M, L) musculation, fitness, gym, sport — أخضر" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-14%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>قفازات رياضية (Taille M, L) musculation, fitness, gym, sport — أخضر</h3>
-<div class="pr"><strong>69 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%82%D9%81%D8%A7%D8%B2%D8%A7%D8%AA%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9%20%28Taille%20M%2C%20L%29%20musculation%2C%20fitness%2C%20gym%2C%20sport%20%E2%80%94%20%D8%A3%D8%AE%D8%B6%D8%B1%20%E2%80%94%2069%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="7" data-price="69">
+<div class="ph"><img src="img/p7.jpg" alt="Gym gloves, sizes M–L — green" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-14%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="7">Gym gloves, sizes M–L — green</h3>
+<div class="pr"><strong>69 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="7" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Gym%20gloves%2C%20sizes%20M%E2%80%93L%20%E2%80%94%20green%20%E2%80%94%2069%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p8.jpg" alt="قفازات رياضية مع حماية المعصم أثناء مزاولة الرياضة(Taille S-M-L-XL) gants la salle sport" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-25%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>قفازات رياضية مع حماية المعصم أثناء مزاولة الرياضة(Taille S-M-L-XL) gants la salle sport</h3>
-<div class="pr"><strong>60 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%82%D9%81%D8%A7%D8%B2%D8%A7%D8%AA%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9%20%D9%85%D8%B9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B5%D9%85%20%D8%A3%D8%AB%D9%86%D8%A7%D8%A1%20%D9%85%D8%B2%D8%A7%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9%28Taille%20S-M-L-XL%29%20gants%20la%20salle%20sport%20%E2%80%94%2060%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="8" data-price="60">
+<div class="ph"><img src="img/p8.jpg" alt="Gym gloves with wrist support, sizes S–XL" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-25%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="8">Gym gloves with wrist support, sizes S–XL</h3>
+<div class="pr"><strong>60 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="8" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Gym%20gloves%20with%20wrist%20support%2C%20sizes%20S%E2%80%93XL%20%E2%80%94%2060%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p9.jpg" alt="منظف الأذن البصري الكهربائي الذكي مع أداة إزالة شمع الأذن Smart Visual Electric Ear Cleaner" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>منظف الأذن البصري الكهربائي الذكي مع أداة إزالة شمع الأذن Smart Visual Electric Ear Cleaner</h3>
-<div class="pr"><strong>119 درهم</strong><s>160 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%85%D9%86%D8%B8%D9%81%20%D8%A7%D9%84%D8%A3%D8%B0%D9%86%20%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D9%8A%20%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20%D9%85%D8%B9%20%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%A5%D8%B2%D8%A7%D9%84%D8%A9%20%D8%B4%D9%85%D8%B9%20%D8%A7%D9%84%D8%A3%D8%B0%D9%86%20Smart%20Visual%20Electric%20Ear%20Cleaner%20%E2%80%94%20119%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="9" data-price="119">
+<div class="ph"><img src="img/p9.jpg" alt="Smart ear cleaner with camera and wax removal tool" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="9">Smart ear cleaner with camera and wax removal tool</h3>
+<div class="pr"><strong>119 <span data-i18n="cur">MAD</span></strong><s>160 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="9" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Smart%20ear%20cleaner%20with%20camera%20and%20wax%20removal%20tool%20%E2%80%94%20119%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p10.jpg" alt="Electric toothbrush- فرشاة أسنان كهربائية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-21%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>Electric toothbrush- فرشاة أسنان كهربائية</h3>
-<div class="pr"><strong>79 درهم</strong><s>100 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Electric%20toothbrush-%20%D9%81%D8%B1%D8%B4%D8%A7%D8%A9%20%D8%A3%D8%B3%D9%86%D8%A7%D9%86%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9%20%E2%80%94%2079%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="10" data-price="79">
+<div class="ph"><img src="img/p10.jpg" alt="Electric toothbrush, rechargeable" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-21%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="10">Electric toothbrush, rechargeable</h3>
+<div class="pr"><strong>79 <span data-i18n="cur">MAD</span></strong><s>100 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="10" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Electric%20toothbrush%2C%20rechargeable%20%E2%80%94%2079%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إكسسوارات شخصية">
-<div class="ph"><img src="img/p11.jpg" alt="هدية تتخطى الزمن: ساعة (One-Piece) بتصميم فريد لن ينساه أبدًا(ساعة أنيقة + توصيل مجاني Rabat Sale)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">إكسسوارات شخصية</span>
-<h3>هدية تتخطى الزمن: ساعة (One-Piece) بتصميم فريد لن ينساه أبدًا(ساعة أنيقة + توصيل مجاني Rabat Sale)</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%87%D8%AF%D9%8A%D8%A9%20%D8%AA%D8%AA%D8%AE%D8%B7%D9%89%20%D8%A7%D9%84%D8%B2%D9%85%D9%86%3A%20%D8%B3%D8%A7%D8%B9%D8%A9%20%28One-Piece%29%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%81%D8%B1%D9%8A%D8%AF%20%D9%84%D9%86%20%D9%8A%D9%86%D8%B3%D8%A7%D9%87%20%D8%A3%D8%A8%D8%AF%D9%8B%D8%A7%28%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%A3%D9%86%D9%8A%D9%82%D8%A9%20%2B%20%D8%AA%D9%88%D8%B5%D9%8A%D9%84%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%20Rabat%20Sale%29%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="acc" data-id="11" data-price="59">
+<div class="ph"><img src="img/p11.jpg" alt="One Piece pendant watch — a unique gift" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="acc">Accessories</span>
+<h3 data-title="11">One Piece pendant watch — a unique gift</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="11" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20One%20Piece%20pendant%20watch%20%E2%80%94%20a%20unique%20gift%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p12.jpg" alt="Écouteur bluetooth Lenovo GM2 Pro - سماعات بلوتوث — أبيض" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-51%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>Écouteur bluetooth Lenovo GM2 Pro - سماعات بلوتوث — أبيض</h3>
-<div class="pr"><strong>89 درهم</strong><s>180 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%C3%89couteur%20bluetooth%20Lenovo%20GM2%20Pro%20-%20%D8%B3%D9%85%D8%A7%D8%B9%D8%A7%D8%AA%20%D8%A8%D9%84%D9%88%D8%AA%D9%88%D8%AB%20%E2%80%94%20%D8%A3%D8%A8%D9%8A%D8%B6%20%E2%80%94%2089%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="12" data-price="89">
+<div class="ph"><img src="img/p12.jpg" alt="Lenovo GM2 Pro Bluetooth earbuds — white" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-51%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="12">Lenovo GM2 Pro Bluetooth earbuds — white</h3>
+<div class="pr"><strong>89 <span data-i18n="cur">MAD</span></strong><s>180 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="12" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Lenovo%20GM2%20Pro%20Bluetooth%20earbuds%20%E2%80%94%20white%20%E2%80%94%2089%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p13.jpg" alt="أربطة معصم قابلة للتعديل للرجال والنساء ، تمنع التهاب المفاصل ، أسورة معصم مرنة (2 قطعة) — أسود" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-30%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>أربطة معصم قابلة للتعديل للرجال والنساء ، تمنع التهاب المفاصل ، أسورة معصم مرنة (2 قطعة) — أسود</h3>
-<div class="pr"><strong>49 درهم</strong><s>70 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%A3%D8%B1%D8%A8%D8%B7%D8%A9%20%D9%85%D8%B9%D8%B5%D9%85%20%D9%82%D8%A7%D8%A8%D9%84%D8%A9%20%D9%84%D9%84%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D9%84%D9%84%D8%B1%D8%AC%D8%A7%D9%84%20%D9%88%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1%20%D8%8C%20%D8%AA%D9%85%D9%86%D8%B9%20%D8%A7%D9%84%D8%AA%D9%87%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D9%81%D8%A7%D8%B5%D9%84%20%D8%8C%20%D8%A3%D8%B3%D9%88%D8%B1%D8%A9%20%D9%85%D8%B9%D8%B5%D9%85%20%D9%85%D8%B1%D9%86%D8%A9%20%282%20%D9%82%D8%B7%D8%B9%D8%A9%29%20%E2%80%94%20%D8%A3%D8%B3%D9%88%D8%AF%20%E2%80%94%2049%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="13" data-price="49">
+<div class="ph"><img src="img/p13.jpg" alt="Adjustable wrist straps, men &amp; women (pack of 2)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-30%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="13">Adjustable wrist straps, men &amp; women (pack of 2)</h3>
+<div class="pr"><strong>49 <span data-i18n="cur">MAD</span></strong><s>70 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="13" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Adjustable%20wrist%20straps%2C%20men%20%26%20women%20%28pack%20of%202%29%20%E2%80%94%2049%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إكسسوارات شخصية">
-<div class="ph"><img src="img/p14.jpg" alt="Montre de Moteur pour Homme et Femme, Collier, Pendentif, Cadeau ساعة دراجة نارية قلادة، هدية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">إكسسوارات شخصية</span>
-<h3>Montre de Moteur pour Homme et Femme, Collier, Pendentif, Cadeau ساعة دراجة نارية قلادة، هدية</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Montre%20de%20Moteur%20pour%20Homme%20et%20Femme%2C%20Collier%2C%20Pendentif%2C%20Cadeau%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%B1%D8%A7%D8%AC%D8%A9%20%D9%86%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%82%D9%84%D8%A7%D8%AF%D8%A9%D8%8C%20%D9%87%D8%AF%D9%8A%D8%A9%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="acc" data-id="14" data-price="59">
+<div class="ph"><img src="img/p14.jpg" alt="Motorcycle pendant watch necklace — unisex gift" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="acc">Accessories</span>
+<h3 data-title="14">Motorcycle pendant watch necklace — unisex gift</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="14" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Motorcycle%20pendant%20watch%20necklace%20%E2%80%94%20unisex%20gift%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="المنزل والرفاهية">
-<div class="ph"><img src="img/p15.jpg" alt="Support Pc Portable aluminium Livraison gratuite à (Salé et Rabat) حامل للحاسوب" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-38%</span></div>
-<div class="cb"><span class="cat">المنزل والرفاهية</span>
-<h3>Support Pc Portable aluminium Livraison gratuite à (Salé et Rabat) حامل للحاسوب</h3>
-<div class="pr"><strong>99 درهم</strong><s>160 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Support%20Pc%20Portable%20aluminium%20Livraison%20gratuite%20%C3%A0%20%28Sal%C3%A9%20et%20Rabat%29%20%D8%AD%D8%A7%D9%85%D9%84%20%D9%84%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20%E2%80%94%2099%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="home" data-id="15" data-price="99">
+<div class="ph"><img src="img/p15.jpg" alt="Aluminium laptop stand" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-38%</span></div>
+<div class="cb"><span class="cat" data-cat-label="home">Home & comfort</span>
+<h3 data-title="15">Aluminium laptop stand</h3>
+<div class="pr"><strong>99 <span data-i18n="cur">MAD</span></strong><s>160 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="15" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Aluminium%20laptop%20stand%20%E2%80%94%2099%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="المنزل والرفاهية">
-<div class="ph"><img src="img/p16.jpg" alt="جهاز لاسلكي للتحكم في المصباح عن بعدTélécommande de contrôle de lampe sans fil 15m" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-41%</span></div>
-<div class="cb"><span class="cat">المنزل والرفاهية</span>
-<h3>جهاز لاسلكي للتحكم في المصباح عن بعدTélécommande de contrôle de lampe sans fil 15m</h3>
-<div class="pr"><strong>89 درهم</strong><s>150 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%AC%D9%87%D8%A7%D8%B2%20%D9%84%D8%A7%D8%B3%D9%84%D9%83%D9%8A%20%D9%84%D9%84%D8%AA%D8%AD%D9%83%D9%85%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%A8%D8%A7%D8%AD%20%D8%B9%D9%86%20%D8%A8%D8%B9%D8%AFT%C3%A9l%C3%A9commande%20de%20contr%C3%B4le%20de%20lampe%20sans%20fil%2015m%20%E2%80%94%2089%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="home" data-id="16" data-price="89">
+<div class="ph"><img src="img/p16.jpg" alt="Wireless lamp remote control (15 m range)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-41%</span></div>
+<div class="cb"><span class="cat" data-cat-label="home">Home & comfort</span>
+<h3 data-title="16">Wireless lamp remote control (15 m range)</h3>
+<div class="pr"><strong>89 <span data-i18n="cur">MAD</span></strong><s>150 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="16" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Wireless%20lamp%20remote%20control%20%2815%20m%20range%29%20%E2%80%94%2089%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p17.jpg" alt="Écouteur bluetooth Lenovo GM2 Pro - سماعات بلوتوث — أسود" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-34%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>Écouteur bluetooth Lenovo GM2 Pro - سماعات بلوتوث — أسود</h3>
-<div class="pr"><strong>119 درهم</strong><s>180 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%C3%89couteur%20bluetooth%20Lenovo%20GM2%20Pro%20-%20%D8%B3%D9%85%D8%A7%D8%B9%D8%A7%D8%AA%20%D8%A8%D9%84%D9%88%D8%AA%D9%88%D8%AB%20%E2%80%94%20%D8%A3%D8%B3%D9%88%D8%AF%20%E2%80%94%20119%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="17" data-price="119">
+<div class="ph"><img src="img/p17.jpg" alt="Lenovo GM2 Pro Bluetooth earbuds — black" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-34%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="17">Lenovo GM2 Pro Bluetooth earbuds — black</h3>
+<div class="pr"><strong>119 <span data-i18n="cur">MAD</span></strong><s>180 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="17" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Lenovo%20GM2%20Pro%20Bluetooth%20earbuds%20%E2%80%94%20black%20%E2%80%94%20119%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p18.jpg" alt="Petit support PC portable en aluminium auto-adhésif neuf محمول من الألومنيوم-صغير- ذاتي اللصق" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-41%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>Petit support PC portable en aluminium auto-adhésif neuf محمول من الألومنيوم-صغير- ذاتي اللصق</h3>
-<div class="pr"><strong>59 درهم</strong><s>100 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Petit%20support%20PC%20portable%20en%20aluminium%20auto-adh%C3%A9sif%20neuf%20%D9%85%D8%AD%D9%85%D9%88%D9%84%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A3%D9%84%D9%88%D9%85%D9%86%D9%8A%D9%88%D9%85-%D8%B5%D8%BA%D9%8A%D8%B1-%20%D8%B0%D8%A7%D8%AA%D9%8A%20%D8%A7%D9%84%D9%84%D8%B5%D9%82%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="18" data-price="59">
+<div class="ph"><img src="img/p18.jpg" alt="Mini self-adhesive aluminium laptop stand" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-41%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="18">Mini self-adhesive aluminium laptop stand</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>100 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="18" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Mini%20self-adhesive%20aluminium%20laptop%20stand%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p19.jpg" alt="Répéteur et point d&#x27;accès wifi Augmente le signal يلتقط ويضخم و يعيد إطلاق اشارة الوايفاي" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-27%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>Répéteur et point d&#x27;accès wifi Augmente le signal يلتقط ويضخم و يعيد إطلاق اشارة الوايفاي</h3>
-<div class="pr"><strong>109 درهم</strong><s>150 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20R%C3%A9p%C3%A9teur%20et%20point%20d%27acc%C3%A8s%20wifi%20Augmente%20le%20signal%20%D9%8A%D9%84%D8%AA%D9%82%D8%B7%20%D9%88%D9%8A%D8%B6%D8%AE%D9%85%20%D9%88%20%D9%8A%D8%B9%D9%8A%D8%AF%20%D8%A5%D8%B7%D9%84%D8%A7%D9%82%20%D8%A7%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%88%D8%A7%D9%8A%D9%81%D8%A7%D9%8A%20%E2%80%94%20109%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="19" data-price="109">
+<div class="ph"><img src="img/p19.jpg" alt="Wi-Fi repeater and access point — boosts your signal" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-27%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="19">Wi-Fi repeater and access point — boosts your signal</h3>
+<div class="pr"><strong>109 <span data-i18n="cur">MAD</span></strong><s>150 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="19" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Wi-Fi%20repeater%20and%20access%20point%20%E2%80%94%20boosts%20your%20signal%20%E2%80%94%20109%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إكسسوارات شخصية">
-<div class="ph"><img src="img/p20.jpg" alt="Montre de 3awd/Cheval pour Homme et Femme, Collier, Pendentif, Cadeau ساعة حصان/الخيول قلادة، هدية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">إكسسوارات شخصية</span>
-<h3>Montre de 3awd/Cheval pour Homme et Femme, Collier, Pendentif, Cadeau ساعة حصان/الخيول قلادة، هدية</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Montre%20de%203awd/Cheval%20pour%20Homme%20et%20Femme%2C%20Collier%2C%20Pendentif%2C%20Cadeau%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AD%D8%B5%D8%A7%D9%86/%D8%A7%D9%84%D8%AE%D9%8A%D9%88%D9%84%20%D9%82%D9%84%D8%A7%D8%AF%D8%A9%D8%8C%20%D9%87%D8%AF%D9%8A%D8%A9%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="acc" data-id="20" data-price="59">
+<div class="ph"><img src="img/p20.jpg" alt="Horse pendant watch necklace — unisex gift" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="acc">Accessories</span>
+<h3 data-title="20">Horse pendant watch necklace — unisex gift</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="20" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Horse%20pendant%20watch%20necklace%20%E2%80%94%20unisex%20gift%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إكسسوارات شخصية">
-<div class="ph"><img src="img/p21.jpg" alt="Montre de Moteur pour Homme et Femme, Collier, Pendentif, Cadeau ساعة دراجة نارية قلادة، هدية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">إكسسوارات شخصية</span>
-<h3>Montre de Moteur pour Homme et Femme, Collier, Pendentif, Cadeau ساعة دراجة نارية قلادة، هدية</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Montre%20de%20Moteur%20pour%20Homme%20et%20Femme%2C%20Collier%2C%20Pendentif%2C%20Cadeau%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%B1%D8%A7%D8%AC%D8%A9%20%D9%86%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%82%D9%84%D8%A7%D8%AF%D8%A9%D8%8C%20%D9%87%D8%AF%D9%8A%D8%A9%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="acc" data-id="21" data-price="59">
+<div class="ph"><img src="img/p21.jpg" alt="Motorcycle pendant watch necklace — unisex gift" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="acc">Accessories</span>
+<h3 data-title="21">Motorcycle pendant watch necklace — unisex gift</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="21" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Motorcycle%20pendant%20watch%20necklace%20%E2%80%94%20unisex%20gift%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p22.jpg" alt="حقيبة خصر خفيفة لحمل هاتفك, أثناء التمرين في القاعات الرياضية والجري" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-16%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>حقيبة خصر خفيفة لحمل هاتفك, أثناء التمرين في القاعات الرياضية والجري</h3>
-<div class="pr"><strong>59 درهم</strong><s>70 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%AD%D9%82%D9%8A%D8%A8%D8%A9%20%D8%AE%D8%B5%D8%B1%20%D8%AE%D9%81%D9%8A%D9%81%D8%A9%20%D9%84%D8%AD%D9%85%D9%84%20%D9%87%D8%A7%D8%AA%D9%81%D9%83%2C%20%D8%A3%D8%AB%D9%86%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="22" data-price="59">
+<div class="ph"><img src="img/p22.jpg" alt="Light running waist bag for your phone" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-16%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="22">Light running waist bag for your phone</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>70 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="22" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Light%20running%20waist%20bag%20for%20your%20phone%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p23.jpg" alt="⌚Smart watch Colmi P71 Original ساعة جديدة للرجال والنساء ذات ساعة عالية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-32%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>⌚Smart watch Colmi P71 Original ساعة جديدة للرجال والنساء ذات ساعة عالية</h3>
-<div class="pr"><strong>169 درهم</strong><s>250 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%E2%8C%9ASmart%20watch%20Colmi%20P71%20Original%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%20%D9%84%D9%84%D8%B1%D8%AC%D8%A7%D9%84%20%D9%88%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1%20%D8%B0%D8%A7%D8%AA%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%E2%80%94%20169%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="23" data-price="169">
+<div class="ph"><img src="img/p23.jpg" alt="Colmi P71 smartwatch — original" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-32%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="23">Colmi P71 smartwatch — original</h3>
+<div class="pr"><strong>169 <span data-i18n="cur">MAD</span></strong><s>250 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="23" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Colmi%20P71%20smartwatch%20%E2%80%94%20original%20%E2%80%94%20169%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="المنزل والرفاهية">
-<div class="ph"><img src="img/p24.jpg" alt="حقيبة الصدر/الظهر المضادة للماء والمتعددة الاستخدامات Sac de poitrine-dos (Rabat, Sale)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-27%</span></div>
-<div class="cb"><span class="cat">المنزل والرفاهية</span>
-<h3>حقيبة الصدر/الظهر المضادة للماء والمتعددة الاستخدامات Sac de poitrine-dos (Rabat, Sale)</h3>
-<div class="pr"><strong>109 درهم</strong><s>150 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%AD%D9%82%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AF%D8%B1/%D8%A7%D9%84%D8%B8%D9%87%D8%B1%20%D8%A7%D9%84%D9%85%D8%B6%D8%A7%D8%AF%D8%A9%20%D9%84%D9%84%D9%85%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%B9%D8%AF%D8%AF%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%D8%A7%D8%AA%20Sac%20de%20poitrine-dos%20%28Rabat%2C%20Sale%29%20%E2%80%94%20109%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="home" data-id="24" data-price="109">
+<div class="ph"><img src="img/p24.jpg" alt="Waterproof chest/back bag, multi-use" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-27%</span></div>
+<div class="cb"><span class="cat" data-cat-label="home">Home & comfort</span>
+<h3 data-title="24">Waterproof chest/back bag, multi-use</h3>
+<div class="pr"><strong>109 <span data-i18n="cur">MAD</span></strong><s>150 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="24" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Waterproof%20chest/back%20bag%2C%20multi-use%20%E2%80%94%20109%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إكسسوارات شخصية">
-<div class="ph"><img src="img/p25.jpg" alt="هدية تتخطى الزمن: ساعة (One-Piece) بتصميم فريد لن ينساه أبدًا(ساعة أنيقة + توصيل مجاني Rabat Sale)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-30%</span></div>
-<div class="cb"><span class="cat">إكسسوارات شخصية</span>
-<h3>هدية تتخطى الزمن: ساعة (One-Piece) بتصميم فريد لن ينساه أبدًا(ساعة أنيقة + توصيل مجاني Rabat Sale)</h3>
-<div class="pr"><strong>70 درهم</strong><s>100 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%87%D8%AF%D9%8A%D8%A9%20%D8%AA%D8%AA%D8%AE%D8%B7%D9%89%20%D8%A7%D9%84%D8%B2%D9%85%D9%86%3A%20%D8%B3%D8%A7%D8%B9%D8%A9%20%28One-Piece%29%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%81%D8%B1%D9%8A%D8%AF%20%D9%84%D9%86%20%D9%8A%D9%86%D8%B3%D8%A7%D9%87%20%D8%A3%D8%A8%D8%AF%D9%8B%D8%A7%28%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%A3%D9%86%D9%8A%D9%82%D8%A9%20%2B%20%D8%AA%D9%88%D8%B5%D9%8A%D9%84%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%20Rabat%20Sale%29%20%E2%80%94%2070%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="acc" data-id="25" data-price="70">
+<div class="ph"><img src="img/p25.jpg" alt="One Piece pendant watch — a unique gift" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-30%</span></div>
+<div class="cb"><span class="cat" data-cat-label="acc">Accessories</span>
+<h3 data-title="25">One Piece pendant watch — a unique gift</h3>
+<div class="pr"><strong>70 <span data-i18n="cur">MAD</span></strong><s>100 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="25" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20One%20Piece%20pendant%20watch%20%E2%80%94%20a%20unique%20gift%20%E2%80%94%2070%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="المنزل والرفاهية">
-<div class="ph"><img src="img/p26.jpg" alt="مشبك الأنف لمكافحة الشخير- Pince-nez contre les ronflements livraison Gratuit (Rabat, Sale)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-50%</span></div>
-<div class="cb"><span class="cat">المنزل والرفاهية</span>
-<h3>مشبك الأنف لمكافحة الشخير- Pince-nez contre les ronflements livraison Gratuit (Rabat, Sale)</h3>
-<div class="pr"><strong>30 درهم</strong><s>60 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D9%85%D8%B4%D8%A8%D9%83%20%D8%A7%D9%84%D8%A3%D9%86%D9%81%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%A7%D9%84%D8%B4%D8%AE%D9%8A%D8%B1-%20Pince-nez%20contre%20les%20ronflements%20livraison%20Gratuit%20%28Rabat%2C%20Sale%29%20%E2%80%94%2030%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="home" data-id="26" data-price="30">
+<div class="ph"><img src="img/p26.jpg" alt="Anti-snoring nose clip" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-50%</span></div>
+<div class="cb"><span class="cat" data-cat-label="home">Home & comfort</span>
+<h3 data-title="26">Anti-snoring nose clip</h3>
+<div class="pr"><strong>30 <span data-i18n="cur">MAD</span></strong><s>60 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="26" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Anti-snoring%20nose%20clip%20%E2%80%94%2030%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p27.jpg" alt="Compteur de vélo كونتور لقياس المسافات و السرعة للدراجات الهوائية" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-34%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>Compteur de vélo كونتور لقياس المسافات و السرعة للدراجات الهوائية</h3>
-<div class="pr"><strong>59 درهم</strong><s>90 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Compteur%20de%20v%C3%A9lo%20%D9%83%D9%88%D9%86%D8%AA%D9%88%D8%B1%20%D9%84%D9%82%D9%8A%D8%A7%D8%B3%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%A7%D8%AA%20%D9%88%20%D8%A7%D9%84%D8%B3%D8%B1%D8%B9%D8%A9%20%D9%84%D9%84%D8%AF%D8%B1%D8%A7%D8%AC%D8%A7%D8%AA%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A6%D9%8A%D8%A9%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="27" data-price="59">
+<div class="ph"><img src="img/p27.jpg" alt="Bike computer — speed and distance" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-34%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="27">Bike computer — speed and distance</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>90 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="27" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Bike%20computer%20%E2%80%94%20speed%20and%20distance%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="إلكترونيات">
-<div class="ph"><img src="img/p28.jpg" alt="Thermomètre infrarouge sans contact ميزان الحرارة عن بعد" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-27%</span></div>
-<div class="cb"><span class="cat">إلكترونيات</span>
-<h3>Thermomètre infrarouge sans contact ميزان الحرارة عن بعد</h3>
-<div class="pr"><strong>109 درهم</strong><s>150 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20Thermom%C3%A8tre%20infrarouge%20sans%20contact%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%B9%D9%86%20%D8%A8%D8%B9%D8%AF%20%E2%80%94%20109%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="elec" data-id="28" data-price="109">
+<div class="ph"><img src="img/p28.jpg" alt="Non-contact infrared thermometer" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-27%</span></div>
+<div class="cb"><span class="cat" data-cat-label="elec">Electronics</span>
+<h3 data-title="28">Non-contact infrared thermometer</h3>
+<div class="pr"><strong>109 <span data-i18n="cur">MAD</span></strong><s>150 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="28" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Non-contact%20infrared%20thermometer%20%E2%80%94%20109%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p29.jpg" alt="(Taille S-M-L-XL) قفازات حمل الاثقالقفازات تكتيكية رياضية للتدريب، للتمرين، لركوب الدراجات" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>(Taille S-M-L-XL) قفازات حمل الاثقالقفازات تكتيكية رياضية للتدريب، للتمرين، لركوب الدراجات</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%28Taille%20S-M-L-XL%29%20%D9%82%D9%81%D8%A7%D8%B2%D8%A7%D8%AA%20%D8%AD%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%AB%D9%82%D8%A7%D9%84%D9%82%D9%81%D8%A7%D8%B2%D8%A7%D8%AA%20%D8%AA%D9%83%D8%AA%D9%8A%D9%83%D9%8A%D8%A9%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9%20%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D8%8C%20%D9%84%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D9%86%D8%8C%20%D9%84%D8%B1%D9%83%D9%88%D8%A8%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%AC%D8%A7%D8%AA%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="29" data-price="59">
+<div class="ph"><img src="img/p29.jpg" alt="Weightlifting tactical gloves, sizes S–XL" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="29">Weightlifting tactical gloves, sizes S–XL</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="29" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Weightlifting%20tactical%20gloves%2C%20sizes%20S%E2%80%93XL%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p30.jpg" alt="خوذة أمان للأطفال لحماية الرأس ومضادة للسقوطCasque de Sécurisée pour votre Bébé Antichoc" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>خوذة أمان للأطفال لحماية الرأس ومضادة للسقوطCasque de Sécurisée pour votre Bébé Antichoc</h3>
-<div class="pr"><strong>59 درهم</strong><s>80 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%AE%D9%88%D8%B0%D8%A9%20%D8%A3%D9%85%D8%A7%D9%86%20%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A3%D8%B3%20%D9%88%D9%85%D8%B6%D8%A7%D8%AF%D8%A9%20%D9%84%D9%84%D8%B3%D9%82%D9%88%D8%B7Casque%20de%20S%C3%A9curis%C3%A9e%20pour%20votre%20B%C3%A9b%C3%A9%20Antichoc%20%E2%80%94%2059%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="30" data-price="59">
+<div class="ph"><img src="img/p30.jpg" alt="Baby safety helmet — anti-fall head protection" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-26%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="30">Baby safety helmet — anti-fall head protection</h3>
+<div class="pr"><strong>59 <span data-i18n="cur">MAD</span></strong><s>80 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="30" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Baby%20safety%20helmet%20%E2%80%94%20anti-fall%20head%20protection%20%E2%80%94%2059%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
-<article class="card" data-cat="رياضة ولياقة">
-<div class="ph"><img src="img/p31.jpg" alt="بوق لدراجة Klaxon de vélo et trottinette Livraison Gratuite (Salé+Rabat)" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-31%</span></div>
-<div class="cb"><span class="cat">رياضة ولياقة</span>
-<h3>بوق لدراجة Klaxon de vélo et trottinette Livraison Gratuite (Salé+Rabat)</h3>
-<div class="pr"><strong>69 درهم</strong><s>100 درهم</s></div>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D9%88%D9%82%20%D9%84%D8%AF%D8%B1%D8%A7%D8%AC%D8%A9%20Klaxon%20de%20v%C3%A9lo%20et%20trottinette%20Livraison%20Gratuite%20%28Sal%C3%A9%2BRabat%29%20%E2%80%94%2069%20%D8%AF%D8%B1%D9%87%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>اطلب فواتساب</a>
+<article class="card" data-cat="sport" data-id="31" data-price="69">
+<div class="ph"><img src="img/p31.jpg" alt="Electric horn for bike and scooter" loading="lazy" width="600" height="600"><span class="off" dir="ltr">-31%</span></div>
+<div class="cb"><span class="cat" data-cat-label="sport">Sport & fitness</span>
+<h3 data-title="31">Electric horn for bike and scooter</h3>
+<div class="pr"><strong>69 <span data-i18n="cur">MAD</span></strong><s>100 <span data-i18n="cur">MAD</span></s></div>
+<a class="btn wa" data-order="31" href="https://wa.me/212768808146?text=Hello%2C%20I%27d%20like%20to%20order%3A%20Electric%20horn%20for%20bike%20and%20scooter%20%E2%80%94%2069%20MAD" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="order">Order on WhatsApp</span></a>
 </div></article>
 </div>
 </div></section>
 
-<section id="how" style="background:#fff"><div class="wrap">
-<h2>كيفاش نطلب؟</h2><p class="sub">3 خطوات، بلا تسجيل.</p>
+<section id="how" class="white"><div class="wrap">
+<h2><span data-i18n="how_h">How to order</span></h2><p class="sub"><span data-i18n="how_sub">3 steps, no sign-up.</span></p>
 <div class="steps">
-<div class="step"><b>1</b><h3>اختار المنتج</h3><p>ضغط على «اطلب فواتساب» تحت المنتج اللي عجبك.</p></div>
-<div class="step"><b>2</b><h3>صيفط الميساج</h3><p>كنأكدو معاك العنوان ووقت التوصيل.</p></div>
-<div class="step"><b>3</b><h3>خلص ملي توصلك</h3><p>شوف المنتج بعينيك، ومن بعد خلص.</p></div>
+<div class="step"><b>1</b><h3><span data-i18n="s1h">Pick a product</span></h3><p><span data-i18n="s1p">Tap “Order on WhatsApp” under the product you like.</span></p></div>
+<div class="step"><b>2</b><h3><span data-i18n="s2h">Send the message</span></h3><p><span data-i18n="s2p">We confirm your address and delivery time with you.</span></p></div>
+<div class="step"><b>3</b><h3><span data-i18n="s3h">Pay on delivery</span></h3><p><span data-i18n="s3p">Check the product with your own eyes, then pay.</span></p></div>
 </div>
 </div></section>
 
 <section id="avis"><div class="wrap">
-<h2>منتجاتنا كتهضر على راسها</h2><p class="sub">محادثات حقيقية مع زبنائنا فواتساب.</p>
-<div class="avis" tabindex="0" aria-label="صور محادثات الزبناء"><img src="img/avis1.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis2.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis3.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis4.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis5.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis6.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis7.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis8.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis9.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis10.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis11.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"><img src="img/avis12.jpg" alt="محادثة واتساب حقيقية مع زبون" loading="lazy" width="420" height="866"></div>
+<h2><span data-i18n="rev_h">Our products speak for themselves</span></h2><p class="sub"><span data-i18n="rev_sub">Real WhatsApp conversations with our customers.</span></p>
+<div class="avis" tabindex="0"><img src="img/avis1.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis2.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis3.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis4.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis5.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis6.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis7.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis8.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis9.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis10.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis11.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"><img src="img/avis12.jpg" alt="Real WhatsApp conversation with a customer" data-i18n-alt="avis_alt" loading="lazy" width="420" height="866"></div>
 </div></section>
 
-<section id="faq" style="background:#fff"><div class="wrap" style="max-width:820px">
-<h2>أسئلة كتكرر</h2>
-<details><summary>واش نقدر نخلص ملي توصلني السلعة؟</summary><p>إيه، الخلاص كيكون عند الاستلام. ما كتحتاج لا بطاقة بنكية لا حساب.</p></details>
-<details><summary>شحال كيكلف التوصيل؟</summary><p>التوصيل مجاني لسلا والرباط. تمارة كنوصلو ليها فعطلة آخر الأسبوع.</p></details>
-<details><summary>كنسكن فمدينة أخرى، واش كتوصلو؟</summary><p>صيفط لينا فواتساب المدينة ديالك والمنتج اللي بغيتي، ونجاوبوك.</p></details>
-<details><summary>إلا كان شي مشكل فالمنتج؟</summary><p>خدمة ما بعد البيع متوفرة 24/24 طول الأسبوع فواتساب.</p></details>
+<section id="faq" class="white"><div class="wrap narrow">
+<h2><span data-i18n="faq_h">Frequently asked questions</span></h2>
+<details><summary><span data-i18n="q1">Can I pay when the order arrives?</span></summary><p><span data-i18n="a1">Yes, you pay cash on delivery. No bank card or account needed.</span></p></details><details><summary><span data-i18n="q2">How much is delivery?</span></summary><p><span data-i18n="a2">Delivery is free in Salé and Rabat. We deliver to Témara on weekends.</span></p></details><details><summary><span data-i18n="q3">I live in another city. Do you deliver?</span></summary><p><span data-i18n="a3">Send us your city and the product on WhatsApp and we&#x27;ll get back to you.</span></p></details><details><summary><span data-i18n="q4">What if there&#x27;s a problem with the product?</span></summary><p><span data-i18n="a4">After-sales support is available 24/7 on WhatsApp.</span></p></details>
 </div></section>
 
 <section class="final"><div class="wrap">
-<h2>لقيتي شي حاجة عجباتك؟</h2><p>صيفط لينا دابا، والتوصيل فابور لسلا والرباط.</p>
-<a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D9%86%D8%AA%D8%AC" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>طلب فواتساب</a>
+<h2><span data-i18n="fin_h">Found something you like?</span></h2><p><span data-i18n="fin_p">Message us now — delivery is free in Salé and Rabat.</span></p>
+<a class="btn wa" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-i18n="fin_b">Order on WhatsApp</span></a>
 </div></section>
 </main>
 
-<footer><div class="wrap"><span>© 2026 nexProMa — جميع الحقوق محفوظة</span><span>Redesign by OA</span></div></footer>
-
-<div class="bar"><a class="btn wa" href="https://wa.me/212768808146?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D9%86%D8%AA%D8%AC" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>واتساب</a><a class="btn blue" href="#products">المنتجات</a></div>
+<footer><div class="wrap"><span><span data-i18n="rights">© 2026 nexProMa — All rights reserved</span></span><span>Redesign by OA</span></div></footer>
+<div class="bar"><a class="btn wa" data-waq href="https://wa.me/212768808146?text=Hello%2C%20I%20have%20a%20question%20about%20a%20product" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a><a class="btn blue" href="#products"><span data-i18n="bar_p">Products</span></a></div>
 
 <script>
+var D={"ui": {"title": ["nexProMa — Free delivery in Salé & Rabat, cash on delivery", "nexProMa — Livraison gratuite à Salé et Rabat, paiement à la livraison", "nexProMa — توصيل مجاني لسلا والرباط والدفع عند الاستلام"], "nav_products": ["Products", "Produits", "المنتجات"], "nav_how": ["How to order", "Commander", "كيفاش نطلب"], "nav_reviews": ["Reviews", "Avis", "آراء الزبناء"], "nav_faq": ["FAQ", "FAQ", "أسئلة"], "pill": ["Free delivery in Salé & Rabat · Cash on delivery", "Livraison gratuite à Salé et Rabat · Paiement à la livraison", "توصيل مجاني لسلا والرباط · الخلاص عند الاستلام"], "h1a": ["Handpicked products at great prices — ", "Des produits choisis à bon prix — ", "منتجات مختارة بأثمنة مزيانة — "], "h1b": ["order on WhatsApp, pay when it arrives", "commandez sur WhatsApp, payez à la réception", "طلب فواتساب، وخلص ملي توصلك"], "lead": ["Electronics, sport, accessories and home products. No account, no bank card: pick a product, send us a message, and we deliver it to you.", "Électronique, sport, accessoires et maison. Sans compte ni carte bancaire : choisissez un produit, envoyez-nous un message, on vous le livre.", "إلكترونيات، رياضة، إكسسوارات ومنتجات للدار. ما كاين لا حساب لا بطاقة بنكية: اختار المنتج، صيفط لينا ميساج، ونوصلوه ليك."], "see": ["See the products", "Voir les produits", "شوف المنتجات"], "ask": ["Ask us on WhatsApp", "Écrivez-nous sur WhatsApp", "سولنا فواتساب"], "t1": ["Cash on delivery", "Paiement à la livraison", "الدفع عند الاستلام"], "t2": ["Free delivery in Salé & Rabat", "Livraison gratuite à Salé et Rabat", "توصيل مجاني لسلا والرباط"], "t3": ["Témara on weekends", "Témara le week-end", "تمارة فعطلة آخر الأسبوع"], "t4": ["After-sales support 24/7", "Service après-vente 24h/24, 7j/7", "خدمة ما بعد البيع 24/24 طول الأسبوع"], "p_h": ["Products", "Produits", "المنتجات"], "p_sub": ["Every product is one tap away: the WhatsApp message is written for you.", "Chaque produit se commande en un clic : le message WhatsApp s'écrit tout seul.", "كل منتج كيتطلب بضغطة وحدة: الميساج كيتكتب بوحدو فواتساب."], "all": ["All", "Tous", "الكل"], "order": ["Order on WhatsApp", "Commander sur WhatsApp", "اطلب فواتساب"], "cur": ["MAD", "DH", "درهم"], "how_h": ["How to order", "Comment commander", "كيفاش نطلب؟"], "how_sub": ["3 steps, no sign-up.", "3 étapes, sans inscription.", "3 خطوات، بلا تسجيل."], "s1h": ["Pick a product", "Choisissez un produit", "اختار المنتج"], "s1p": ["Tap “Order on WhatsApp” under the product you like.", "Appuyez sur « Commander sur WhatsApp » sous le produit.", "ضغط على «اطلب فواتساب» تحت المنتج اللي عجبك."], "s2h": ["Send the message", "Envoyez le message", "صيفط الميساج"], "s2p": ["We confirm your address and delivery time with you.", "On confirme avec vous l'adresse et l'heure de livraison.", "كنأكدو معاك العنوان ووقت التوصيل."], "s3h": ["Pay on delivery", "Payez à la réception", "خلص ملي توصلك"], "s3p": ["Check the product with your own eyes, then pay.", "Vérifiez le produit, puis payez.", "شوف المنتج بعينيك، ومن بعد خلص."], "rev_h": ["Our products speak for themselves", "Nos produits parlent d'eux-mêmes", "منتجاتنا كتهضر على راسها"], "rev_sub": ["Real WhatsApp conversations with our customers.", "Vraies conversations WhatsApp avec nos clients.", "محادثات حقيقية مع زبنائنا فواتساب."], "faq_h": ["Frequently asked questions", "Questions fréquentes", "أسئلة كتكرر"], "q1": ["Can I pay when the order arrives?", "Puis-je payer à la livraison ?", "واش نقدر نخلص ملي توصلني السلعة؟"], "a1": ["Yes, you pay cash on delivery. No bank card or account needed.", "Oui, vous payez à la livraison. Pas besoin de carte bancaire ni de compte.", "إيه، الخلاص كيكون عند الاستلام. ما كتحتاج لا بطاقة بنكية لا حساب."], "q2": ["How much is delivery?", "Combien coûte la livraison ?", "شحال كيكلف التوصيل؟"], "a2": ["Delivery is free in Salé and Rabat. We deliver to Témara on weekends.", "La livraison est gratuite à Salé et Rabat. Témara est livrée le week-end.", "التوصيل مجاني لسلا والرباط. تمارة كنوصلو ليها فعطلة آخر الأسبوع."], "q3": ["I live in another city. Do you deliver?", "J'habite dans une autre ville. Vous livrez ?", "كنسكن فمدينة أخرى، واش كتوصلو؟"], "a3": ["Send us your city and the product on WhatsApp and we'll get back to you.", "Envoyez-nous votre ville et le produit sur WhatsApp, on vous répond.", "صيفط لينا فواتساب المدينة ديالك والمنتج اللي بغيتي، ونجاوبوك."], "q4": ["What if there's a problem with the product?", "Et s'il y a un problème avec le produit ?", "إلا كان شي مشكل فالمنتج؟"], "a4": ["After-sales support is available 24/7 on WhatsApp.", "Le service après-vente est disponible 24h/24, 7j/7 sur WhatsApp.", "خدمة ما بعد البيع متوفرة 24/24 طول الأسبوع فواتساب."], "fin_h": ["Found something you like?", "Vous avez trouvé votre bonheur ?", "لقيتي شي حاجة عجباتك؟"], "fin_p": ["Message us now — delivery is free in Salé and Rabat.", "Écrivez-nous maintenant — livraison gratuite à Salé et Rabat.", "صيفط لينا دابا، والتوصيل فابور لسلا والرباط."], "fin_b": ["Order on WhatsApp", "Commander sur WhatsApp", "طلب فواتساب"], "rights": ["© 2026 nexProMa — All rights reserved", "© 2026 nexProMa — Tous droits réservés", "© 2026 nexProMa — جميع الحقوق محفوظة"], "bar_p": ["Products", "Produits", "المنتجات"], "wa_q": ["Hello, I have a question about a product", "Bonjour, j'ai une question sur un produit", "السلام، عندي سؤال على منتج"], "wa_o": ["Hello, I'd like to order: {t} — {p} MAD", "Bonjour, je souhaite commander : {t} — {p} DH", "السلام، بغيت نطلب: {t} — {p} درهم"], "avis_alt": ["Real WhatsApp conversation with a customer", "Vraie conversation WhatsApp avec un client", "محادثة واتساب حقيقية مع زبون"]}, "tr": {"1": ["Smart automatic upper-arm blood pressure monitor (Microlife)", "Tensiomètre automatique intelligent de bras (Microlife)", "جهاز قياس ضغط الدم الذكي الأوتوماتيكي للذراع (Microlife)"], "2": ["Smart Wi-Fi plug — control any appliance remotely (TV, lamp, AC)", "Prise intelligente Wi-Fi — contrôlez vos appareils à distance (TV, lampe, clim)", "المقبس الذكي Wi-Fi للتحكم في أي جهاز عن بعد (تلفاز، مصباح، مكيف)"], "3": ["Gym gloves, sizes M–L — black", "Gants de musculation, tailles M–L — noir", "قفازات رياضية، المقاس M–L — أسود"], "4": ["Truck pendant watch necklace — unisex gift", "Montre pendentif camion — collier cadeau homme et femme", "ساعة قلادة على شكل شاحنة — هدية للرجال والنساء"], "5": ["Tactical sport gloves for training & cycling, sizes S–M", "Gants tactiques pour sport et vélo, tailles S–M", "قفازات تكتيكية للتدريب وركوب الدراجات، المقاس S–M"], "6": ["Muscle massager — relieves cramps and muscle pain", "Masseur musculaire — soulage crampes et douleurs", "جهاز التدليك لإزالة التشنجات وتخفيف آلام العضلات"], "7": ["Gym gloves, sizes M–L — green", "Gants de musculation, tailles M–L — vert", "قفازات رياضية، المقاس M–L — أخضر"], "8": ["Gym gloves with wrist support, sizes S–XL", "Gants de sport avec maintien du poignet, tailles S–XL", "قفازات رياضية مع حماية المعصم، المقاس S–XL"], "9": ["Smart ear cleaner with camera and wax removal tool", "Nettoyeur d'oreilles intelligent avec caméra et outil anti-cérumen", "منظف الأذن الذكي بالكاميرا مع أداة إزالة الشمع"], "10": ["Electric toothbrush, rechargeable", "Brosse à dents électrique rechargeable", "فرشاة أسنان كهربائية قابلة للشحن"], "11": ["One Piece pendant watch — a unique gift", "Montre pendentif One Piece — un cadeau unique", "ساعة One Piece بتصميم فريد — هدية لا تُنسى"], "12": ["Lenovo GM2 Pro Bluetooth earbuds — white", "Écouteurs Bluetooth Lenovo GM2 Pro — blanc", "سماعات بلوتوث Lenovo GM2 Pro — أبيض"], "13": ["Adjustable wrist straps, men & women (pack of 2)", "Bandes de poignet ajustables homme et femme (lot de 2)", "أربطة معصم قابلة للتعديل للرجال والنساء (قطعتان)"], "14": ["Motorcycle pendant watch necklace — unisex gift", "Montre pendentif moto — collier cadeau homme et femme", "ساعة قلادة على شكل دراجة نارية — هدية"], "15": ["Aluminium laptop stand", "Support PC portable en aluminium", "حامل الحاسوب المحمول من الألومنيوم"], "16": ["Wireless lamp remote control (15 m range)", "Télécommande sans fil pour lampe (portée 15 m)", "جهاز لاسلكي للتحكم في المصباح عن بعد (15 م)"], "17": ["Lenovo GM2 Pro Bluetooth earbuds — black", "Écouteurs Bluetooth Lenovo GM2 Pro — noir", "سماعات بلوتوث Lenovo GM2 Pro — أسود"], "18": ["Mini self-adhesive aluminium laptop stand", "Petit support PC portable aluminium auto-adhésif", "حامل صغير للحاسوب من الألومنيوم ذاتي اللصق"], "19": ["Wi-Fi repeater and access point — boosts your signal", "Répéteur et point d'accès Wi-Fi — amplifie le signal", "مقوي ومُعيد إرسال إشارة الواي فاي"], "20": ["Horse pendant watch necklace — unisex gift", "Montre pendentif cheval — collier cadeau homme et femme", "ساعة قلادة على شكل حصان — هدية"], "21": ["Motorcycle pendant watch necklace — unisex gift", "Montre pendentif moto — collier cadeau homme et femme", "ساعة قلادة على شكل دراجة نارية — هدية"], "22": ["Light running waist bag for your phone", "Sacoche ceinture légère pour téléphone (sport et running)", "حقيبة خصر خفيفة لحمل الهاتف أثناء الرياضة والجري"], "23": ["Colmi P71 smartwatch — original", "Montre connectée Colmi P71 — originale", "ساعة ذكية Colmi P71 — أصلية"], "24": ["Waterproof chest/back bag, multi-use", "Sac poitrine/dos imperméable multi-usage", "حقيبة صدر/ظهر مضادة للماء ومتعددة الاستخدامات"], "25": ["One Piece pendant watch — a unique gift", "Montre pendentif One Piece — un cadeau unique", "ساعة One Piece بتصميم فريد — هدية لا تُنسى"], "26": ["Anti-snoring nose clip", "Pince-nez anti-ronflement", "مشبك الأنف لمكافحة الشخير"], "27": ["Bike computer — speed and distance", "Compteur vélo — vitesse et distance", "عداد الدراجة لقياس السرعة والمسافة"], "28": ["Non-contact infrared thermometer", "Thermomètre infrarouge sans contact", "ميزان حرارة بالأشعة تحت الحمراء بدون لمس"], "29": ["Weightlifting tactical gloves, sizes S–XL", "Gants tactiques de musculation, tailles S–XL", "قفازات حمل الأثقال التكتيكية، المقاس S–XL"], "30": ["Baby safety helmet — anti-fall head protection", "Casque de sécurité bébé — protection anti-chute", "خوذة أمان للأطفال لحماية الرأس من السقوط"], "31": ["Electric horn for bike and scooter", "Klaxon électrique pour vélo et trottinette", "بوق إلكتروني للدراجة والتروتينيت"]}, "cats": {"elec": ["Electronics", "Électronique", "إلكترونيات"], "sport": ["Sport & fitness", "Sport & fitness", "رياضة ولياقة"], "acc": ["Accessories", "Accessoires", "إكسسوارات شخصية"], "home": ["Home & comfort", "Maison & confort", "المنزل والرفاهية"]}, "wa": "212768808146"};
+(function(){
+var IDX={en:0,fr:1,ar:2};
+function wa(t){return 'https://wa.me/'+D.wa+'?text='+encodeURIComponent(t)}
+function setLang(l){
+ if(!(l in IDX))l='en';var i=IDX[l];
+ document.documentElement.lang=l;document.documentElement.dir=(l==='ar'?'rtl':'ltr');
+ document.title=D.ui.title[i];
+ document.querySelectorAll('[data-i18n]').forEach(function(e){var k=e.getAttribute('data-i18n');if(D.ui[k])e.textContent=D.ui[k][i]});
+ document.querySelectorAll('[data-i18n-alt]').forEach(function(e){e.alt=D.ui[e.getAttribute('data-i18n-alt')][i]});
+ document.querySelectorAll('[data-cat-label]').forEach(function(e){e.textContent=D.cats[e.getAttribute('data-cat-label')][i]});
+ document.querySelectorAll('[data-title]').forEach(function(e){e.textContent=D.tr[e.getAttribute('data-title')][i]});
+ document.querySelectorAll('.card').forEach(function(c){var id=c.getAttribute('data-id'),t=D.tr[id][i];c.querySelector('img').alt=t;
+  c.querySelector('[data-order]').href=wa(D.ui.wa_o[i].replace('{t}',t).replace('{p}',c.getAttribute('data-price')))});
+ document.querySelectorAll('[data-waq]').forEach(function(a){a.href=wa(D.ui.wa_q[i])});
+ document.querySelectorAll('[data-lang]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-lang')===l)});
+ try{localStorage.setItem('nx_lang',l)}catch(e){}
+}
+document.querySelectorAll('[data-lang]').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-lang'))})});
+var q=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('nx_lang')}catch(e){}
+var l=q||s||'en';if(l!=='en')setLang(l);
 document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
-var f=b.getAttribute('data-f');document.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
-document.querySelectorAll('.card').forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-cat')===f)});})});
+ var f=b.getAttribute('data-f');document.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
+ document.querySelectorAll('.card').forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-cat')===f)})})});
+})();
 </script>
 </body>
 </html>
