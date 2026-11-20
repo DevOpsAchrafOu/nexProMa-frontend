@@ -3,21 +3,18 @@ import { CatKey, DATA, LANGS, Lang, Tr } from './data/site-data';
 
 const STORAGE_KEY = 'nx_lang';
 
-/** Current language (EN by default, FR, AR in RTL) and the WhatsApp links. */
+/** Current language (EN by default, or FR) and the WhatsApp links. */
 @Injectable({ providedIn: 'root' })
 export class I18n {
   private readonly doc = inject(DOCUMENT);
 
   readonly lang = signal<Lang>(this.initialLang());
   readonly index = computed(() => LANGS.indexOf(this.lang()));
-  readonly rtl = computed(() => this.lang() === 'ar');
 
   constructor() {
     effect(() => {
       const l = this.lang();
-      const html = this.doc.documentElement;
-      html.lang = l;
-      html.dir = l === 'ar' ? 'rtl' : 'ltr';
+      this.doc.documentElement.lang = l;
       this.doc.title = this.t('title');
       try {
         localStorage.setItem(STORAGE_KEY, l);

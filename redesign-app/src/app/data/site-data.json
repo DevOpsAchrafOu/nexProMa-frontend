@@ -3,500 +3,401 @@
  "ui": {
   "title": [
    "nexProMa — Free delivery in Salé & Rabat, cash on delivery",
-   "nexProMa — Livraison gratuite à Salé et Rabat, paiement à la livraison",
-   "nexProMa — توصيل مجاني لسلا والرباط والدفع عند الاستلام"
+   "nexProMa — Livraison gratuite à Salé et Rabat, paiement à la livraison"
   ],
   "nav_products": [
    "Products",
-   "Produits",
-   "المنتجات"
+   "Produits"
   ],
   "nav_how": [
    "How to order",
-   "Commander",
-   "كيفاش نطلب"
+   "Commander"
   ],
   "nav_reviews": [
    "Reviews",
-   "Avis",
-   "آراء الزبناء"
+   "Avis"
   ],
   "nav_faq": [
    "FAQ",
-   "FAQ",
-   "أسئلة"
+   "FAQ"
   ],
   "pill": [
    "Free delivery in Salé & Rabat, pay on delivery",
-   "Livraison gratuite à Salé et Rabat, paiement à la réception",
-   "توصيل مجاني لسلا والرباط، والخلاص عند الاستلام"
+   "Livraison gratuite à Salé et Rabat, paiement à la réception"
   ],
   "h1a": [
    "Great products, ordered on WhatsApp, ",
-   "De bons produits, commandés sur WhatsApp, ",
-   "منتجات مزيانة، كتطلبها فواتساب "
+   "De bons produits, commandés sur WhatsApp, "
   ],
   "h1b": [
    "paid when they arrive.",
-   "payés à la réception.",
-   "وكتخلصها ملي توصلك."
+   "payés à la réception."
   ],
   "lead": [
    "Electronics, sport, accessories and home products. No account, no bank card: pick a product, send us a message, and we deliver it to you.",
-   "Électronique, sport, accessoires et maison. Sans compte ni carte bancaire : choisissez un produit, envoyez-nous un message, on vous le livre.",
-   "إلكترونيات، رياضة، إكسسوارات ومنتجات للدار. ما كاين لا حساب لا بطاقة بنكية: اختار المنتج، صيفط لينا ميساج، ونوصلوه ليك."
+   "Électronique, sport, accessoires et maison. Sans compte ni carte bancaire : choisissez un produit, envoyez-nous un message, on vous le livre."
   ],
   "see": [
    "See the products",
-   "Voir les produits",
-   "شوف المنتجات"
+   "Voir les produits"
   ],
   "ask": [
    "Ask us on WhatsApp",
-   "Écrivez-nous sur WhatsApp",
-   "سولنا فواتساب"
+   "Écrivez-nous sur WhatsApp"
   ],
   "t1": [
    "Cash on delivery",
-   "Paiement à la livraison",
-   "الدفع عند الاستلام"
+   "Paiement à la livraison"
   ],
   "t2": [
    "Free delivery in Salé & Rabat",
-   "Livraison gratuite à Salé et Rabat",
-   "توصيل مجاني لسلا والرباط"
+   "Livraison gratuite à Salé et Rabat"
   ],
   "t3": [
    "Témara on weekends",
-   "Témara le week-end",
-   "تمارة فعطلة آخر الأسبوع"
+   "Témara le week-end"
   ],
   "t4": [
    "After-sales support 24/7",
-   "Service après-vente 24h/24, 7j/7",
-   "خدمة ما بعد البيع 24/24 طول الأسبوع"
+   "Service après-vente 24h/24, 7j/7"
   ],
   "p_h": [
    "Products",
-   "Produits",
-   "المنتجات"
+   "Produits"
   ],
   "p_sub": [
    "Fill in your name, phone and city: your WhatsApp order is written for you.",
-   "Indiquez votre nom, téléphone et ville : votre commande WhatsApp s'écrit toute seule.",
-   "كتب سميتك، التيليفون والمدينة: الطلب ديالك كيتكتب بوحدو فواتساب."
+   "Indiquez votre nom, téléphone et ville : votre commande WhatsApp s'écrit toute seule."
   ],
   "all": [
    "All",
-   "Tous",
-   "الكل"
+   "Tous"
   ],
   "order": [
    "Order on WhatsApp",
-   "Commander sur WhatsApp",
-   "اطلب فواتساب"
+   "Commander sur WhatsApp"
   ],
   "cur": [
    "MAD",
-   "DH",
-   "درهم"
+   "DH"
   ],
   "how_h": [
    "How to order",
-   "Comment commander",
-   "كيفاش نطلب؟"
+   "Comment commander"
   ],
   "how_sub": [
    "3 steps, no sign-up.",
-   "3 étapes, sans inscription.",
-   "3 خطوات، بلا تسجيل."
+   "3 étapes, sans inscription."
   ],
   "s1h": [
    "Pick a product",
-   "Choisissez un produit",
-   "اختار المنتج"
+   "Choisissez un produit"
   ],
   "s1p": [
    "Tap “Order on WhatsApp” under the product you like.",
-   "Appuyez sur « Commander sur WhatsApp » sous le produit.",
-   "ضغط على «اطلب فواتساب» تحت المنتج اللي عجبك."
+   "Appuyez sur « Commander sur WhatsApp » sous le produit."
   ],
   "s2h": [
    "Send the message",
-   "Envoyez le message",
-   "صيفط الميساج"
+   "Envoyez le message"
   ],
   "s2p": [
    "We confirm your address and delivery time with you.",
-   "On confirme avec vous l'adresse et l'heure de livraison.",
-   "كنأكدو معاك العنوان ووقت التوصيل."
+   "On confirme avec vous l'adresse et l'heure de livraison."
   ],
   "s3h": [
    "Pay on delivery",
-   "Payez à la réception",
-   "خلص ملي توصلك"
+   "Payez à la réception"
   ],
   "s3p": [
    "Check the product with your own eyes, then pay.",
-   "Vérifiez le produit, puis payez.",
-   "شوف المنتج بعينيك، ومن بعد خلص."
+   "Vérifiez le produit, puis payez."
   ],
   "rev_h": [
    "Our products speak for themselves",
-   "Nos produits parlent d'eux-mêmes",
-   "منتجاتنا كتهضر على راسها"
+   "Nos produits parlent d'eux-mêmes"
   ],
   "rev_sub": [
    "Real WhatsApp conversations with our customers.",
-   "Vraies conversations WhatsApp avec nos clients.",
-   "محادثات حقيقية مع زبنائنا فواتساب."
+   "Vraies conversations WhatsApp avec nos clients."
   ],
   "faq_h": [
    "Frequently asked questions",
-   "Questions fréquentes",
-   "أسئلة كتكرر"
+   "Questions fréquentes"
   ],
   "q1": [
    "Can I pay when the order arrives?",
-   "Puis-je payer à la livraison ?",
-   "واش نقدر نخلص ملي توصلني السلعة؟"
+   "Puis-je payer à la livraison ?"
   ],
   "a1": [
    "Yes, you pay cash on delivery. No bank card or account needed.",
-   "Oui, vous payez à la livraison. Pas besoin de carte bancaire ni de compte.",
-   "إيه، الخلاص كيكون عند الاستلام. ما كتحتاج لا بطاقة بنكية لا حساب."
+   "Oui, vous payez à la livraison. Pas besoin de carte bancaire ni de compte."
   ],
   "q2": [
    "How much is delivery?",
-   "Combien coûte la livraison ?",
-   "شحال كيكلف التوصيل؟"
+   "Combien coûte la livraison ?"
   ],
   "a2": [
    "Delivery is free in Salé and Rabat. We deliver to Témara on weekends.",
-   "La livraison est gratuite à Salé et Rabat. Témara est livrée le week-end.",
-   "التوصيل مجاني لسلا والرباط. تمارة كنوصلو ليها فعطلة آخر الأسبوع."
+   "La livraison est gratuite à Salé et Rabat. Témara est livrée le week-end."
   ],
   "q3": [
    "I live in another city. Do you deliver?",
-   "J'habite dans une autre ville. Vous livrez ?",
-   "كنسكن فمدينة أخرى، واش كتوصلو؟"
+   "J'habite dans une autre ville. Vous livrez ?"
   ],
   "a3": [
    "Send us your city and the product on WhatsApp and we'll get back to you.",
-   "Envoyez-nous votre ville et le produit sur WhatsApp, on vous répond.",
-   "صيفط لينا فواتساب المدينة ديالك والمنتج اللي بغيتي، ونجاوبوك."
+   "Envoyez-nous votre ville et le produit sur WhatsApp, on vous répond."
   ],
   "q4": [
    "What if there's a problem with the product?",
-   "Et s'il y a un problème avec le produit ?",
-   "إلا كان شي مشكل فالمنتج؟"
+   "Et s'il y a un problème avec le produit ?"
   ],
   "a4": [
    "After-sales support is available 24/7 on WhatsApp.",
-   "Le service après-vente est disponible 24h/24, 7j/7 sur WhatsApp.",
-   "خدمة ما بعد البيع متوفرة 24/24 طول الأسبوع فواتساب."
+   "Le service après-vente est disponible 24h/24, 7j/7 sur WhatsApp."
   ],
   "fin_h": [
    "Found something you like?",
-   "Vous avez trouvé votre bonheur ?",
-   "لقيتي شي حاجة عجباتك؟"
+   "Vous avez trouvé votre bonheur ?"
   ],
   "fin_p": [
    "Message us now — delivery is free in Salé and Rabat.",
-   "Écrivez-nous maintenant — livraison gratuite à Salé et Rabat.",
-   "صيفط لينا دابا، والتوصيل فابور لسلا والرباط."
+   "Écrivez-nous maintenant — livraison gratuite à Salé et Rabat."
   ],
   "fin_b": [
    "Order on WhatsApp",
-   "Commander sur WhatsApp",
-   "طلب فواتساب"
+   "Commander sur WhatsApp"
   ],
   "rights": [
    "© 2026 nexProMa — All rights reserved",
-   "© 2026 nexProMa — Tous droits réservés",
-   "© 2026 nexProMa — جميع الحقوق محفوظة"
+   "© 2026 nexProMa — Tous droits réservés"
   ],
   "bar_p": [
    "Products",
-   "Produits",
-   "المنتجات"
+   "Produits"
   ],
   "wa_q": [
    "Hello, I have a question about a product",
-   "Bonjour, j'ai une question sur un produit",
-   "السلام، عندي سؤال على منتج"
+   "Bonjour, j'ai une question sur un produit"
   ],
   "wa_o": [
    "Hello, I'd like to order: {t} — {p} MAD",
-   "Bonjour, je souhaite commander : {t} — {p} DH",
-   "السلام، بغيت نطلب: {t} — {p} درهم"
+   "Bonjour, je souhaite commander : {t} — {p} DH"
   ],
   "avis_alt": [
    "Real WhatsApp conversation with a customer",
-   "Vraie conversation WhatsApp avec un client",
-   "محادثة واتساب حقيقية مع زبون"
+   "Vraie conversation WhatsApp avec un client"
   ],
   "nocash": [
    "No prepayment. Check the product before you pay.",
-   "Rien à payer d'avance. Vérifiez le produit avant de payer.",
-   "ما كتخلص والو قبل. شوف المنتج قبل ما تخلص."
+   "Rien à payer d'avance. Vérifiez le produit avant de payer."
   ],
   "search": [
    "Search a product…",
-   "Rechercher un produit…",
-   "قلّب على منتج…"
+   "Rechercher un produit…"
   ],
   "sort_l": [
    "Sort",
-   "Trier",
-   "ترتيب"
+   "Trier"
   ],
   "sort_rec": [
    "Recommended",
-   "Recommandés",
-   "المقترحة"
+   "Recommandés"
   ],
   "sort_low": [
    "Price: low to high",
-   "Prix croissant",
-   "الثمن: من الأرخص"
+   "Prix croissant"
   ],
   "sort_high": [
    "Price: high to low",
-   "Prix décroissant",
-   "الثمن: من الأغلى"
+   "Prix décroissant"
   ],
   "sort_off": [
    "Biggest discount",
-   "Plus grosse remise",
-   "أكبر تخفيض"
+   "Plus grosse remise"
   ],
   "none": [
    "No product matches your search. Ask us on WhatsApp — we may have it.",
-   "Aucun produit ne correspond. Demandez-nous sur WhatsApp, on l'a peut-être.",
-   "ما لقينا حتى منتج. سولنا فواتساب، يمكن يكون عندنا."
+   "Aucun produit ne correspond. Demandez-nous sur WhatsApp, on l'a peut-être."
   ],
   "photos": [
    "photos",
-   "photos",
-   "صور"
+   "photos"
   ],
   "details": [
    "View photos & details",
-   "Voir photos et détails",
-   "شوف الصور والتفاصيل"
+   "Voir photos et détails"
   ],
   "save": [
    "You save {s} MAD",
-   "Vous économisez {s} DH",
-   "كتربح {s} درهم"
+   "Vous économisez {s} DH"
   ],
   "m1": [
    "Cash on delivery — no prepayment",
-   "Paiement à la livraison — rien à payer d'avance",
-   "الخلاص عند الاستلام — ما كتخلص والو قبل"
+   "Paiement à la livraison — rien à payer d'avance"
   ],
   "m2": [
    "Free delivery in Salé & Rabat",
-   "Livraison gratuite à Salé et Rabat",
-   "توصيل مجاني لسلا والرباط"
+   "Livraison gratuite à Salé et Rabat"
   ],
   "m3": [
    "Check the product before you pay",
-   "Vérifiez le produit avant de payer",
-   "شوف المنتج قبل ما تخلص"
+   "Vérifiez le produit avant de payer"
   ],
   "askp": [
    "Ask a question about this product",
-   "Poser une question sur ce produit",
-   "سول على هاد المنتج"
+   "Poser une question sur ce produit"
   ],
   "wa_ask": [
    "Hello, I have a question about: {t}",
-   "Bonjour, j'ai une question sur : {t}",
-   "السلام، عندي سؤال على: {t}"
+   "Bonjour, j'ai une question sur : {t}"
   ],
   "close": [
    "Close",
-   "Fermer",
-   "سد"
+   "Fermer"
   ],
   "prev": [
    "Previous photo",
-   "Photo précédente",
-   "الصورة السابقة"
+   "Photo précédente"
   ],
   "next": [
    "Next photo",
-   "Photo suivante",
-   "الصورة التالية"
+   "Photo suivante"
   ],
   "rev_tap": [
    "Tap a conversation to enlarge it.",
-   "Touchez une conversation pour l'agrandir.",
-   "ضغط على محادثة باش تكبر."
+   "Touchez une conversation pour l'agrandir."
   ],
   "about_h": [
    "Who we are",
-   "Qui sommes-nous",
-   "شكون حنا"
+   "Qui sommes-nous"
   ],
   "about_p": [
    "Since 2024, nexProMa has offered a varied selection of products with cash on delivery. We are committed to quality products that meet our customers' needs, with a reliable, safe and comfortable shopping experience.",
-   "Depuis 2024, nexProMa propose des produits variés avec paiement à la livraison. Nous nous engageons à offrir des produits de qualité qui répondent aux besoins de nos clients, avec une expérience d'achat fiable, sûre et confortable.",
-   "فـ 2024، تميزت منصة نكس بروما للتجارة الإلكترونية بتوفير منتجات متنوعة مع خيار الدفع عند الاستلام. نحن ملتزمون بتقديم منتجات عالية الجودة تلبي احتياجات عملائنا بشكل موثوق وآمن، مع ضمان تجربة شراء مريحة وآمنة."
+   "Depuis 2024, nexProMa propose des produits variés avec paiement à la livraison. Nous nous engageons à offrir des produits de qualité qui répondent aux besoins de nos clients, avec une expérience d'achat fiable, sûre et confortable."
   ],
   "about_c": [
    "Talk to us on WhatsApp",
-   "Parlez-nous sur WhatsApp",
-   "هضر معانا فواتساب"
+   "Parlez-nous sur WhatsApp"
   ],
   "fd": [
    "Free delivery to Rabat & Salé",
-   "Livraison gratuite Rabat et Salé",
-   "توصيل فابور للرباط وسلا"
+   "Livraison gratuite Rabat et Salé"
   ],
   "more": [
    "See all products",
-   "Voir tous les produits",
-   "شوف جميع المنتجات"
+   "Voir tous les produits"
   ],
   "fab": [
    "Chat on WhatsApp",
-   "Discuter sur WhatsApp",
-   "هضر معانا فواتساب"
+   "Discuter sur WhatsApp"
   ],
   "f_h": [
    "Order now, pay on delivery",
-   "Commandez, payez à la livraison",
-   "اطلب دابا، وخلص عند الاستلام"
+   "Commandez, payez à la livraison"
   ],
   "f_name": [
    "Full name",
-   "Nom complet",
-   "الاسم الكامل"
+   "Nom complet"
   ],
   "f_phone": [
    "Phone number",
-   "Numéro de téléphone",
-   "رقم الهاتف"
+   "Numéro de téléphone"
   ],
   "f_city": [
    "City",
-   "Ville",
-   "المدينة"
+   "Ville"
   ],
   "f_other": [
    "Other city",
-   "Autre ville",
-   "مدينة أخرى"
+   "Autre ville"
   ],
   "f_city_name": [
    "Your city",
-   "Votre ville",
-   "سمية المدينة"
+   "Votre ville"
   ],
   "f_addr": [
    "Address (optional)",
-   "Adresse (facultatif)",
-   "العنوان (اختياري)"
+   "Adresse (facultatif)"
   ],
   "f_qty": [
    "Quantity",
-   "Quantité",
-   "الكمية"
+   "Quantité"
   ],
   "f_less": [
    "Decrease quantity",
-   "Diminuer la quantité",
-   "نقص الكمية"
+   "Diminuer la quantité"
   ],
   "f_plus": [
    "Increase quantity",
-   "Augmenter la quantité",
-   "زيد الكمية"
+   "Augmenter la quantité"
   ],
   "f_total": [
    "Total",
-   "Total",
-   "المجموع"
+   "Total"
   ],
   "f_send": [
    "Send my order on WhatsApp",
-   "Envoyer ma commande sur WhatsApp",
-   "صيفط الطلب ديالي فواتساب"
+   "Envoyer ma commande sur WhatsApp"
   ],
   "f_note": [
    "WhatsApp opens with your order already written. Just press send.",
-   "WhatsApp s'ouvre avec votre commande déjà écrite. Il suffit d'appuyer sur envoyer.",
-   "واتساب غادي يتحل والطلب مكتوب، غير ضغط على صيفط."
+   "WhatsApp s'ouvre avec votre commande déjà écrite. Il suffit d'appuyer sur envoyer."
   ],
   "d_free": [
    "Free delivery",
-   "Livraison gratuite",
-   "التوصيل فابور"
+   "Livraison gratuite"
   ],
   "d_weekend": [
    "Delivered on weekends",
-   "Livraison le week-end",
-   "التوصيل فعطلة آخر الأسبوع"
+   "Livraison le week-end"
   ],
   "d_other": [
    "We'll confirm delivery to your city on WhatsApp.",
-   "On vous confirme la livraison dans votre ville sur WhatsApp.",
-   "غادي نأكدو معاك التوصيل لمدينتك فواتساب."
+   "On vous confirme la livraison dans votre ville sur WhatsApp."
   ],
   "e_name": [
    "Please enter your name.",
-   "Indiquez votre nom.",
-   "كتب سميتك."
+   "Indiquez votre nom."
   ],
   "e_phone": [
    "Enter a Moroccan number, e.g. 06 12 34 56 78.",
-   "Entrez un numéro marocain, ex. 06 12 34 56 78.",
-   "دخل رقم مغربي، بحال 06 12 34 56 78."
+   "Entrez un numéro marocain, ex. 06 12 34 56 78."
   ],
   "e_city": [
    "Please enter your city.",
-   "Indiquez votre ville.",
-   "كتب المدينة ديالك."
+   "Indiquez votre ville."
   ],
   "msg_head": [
    "Hello, I'd like to order:",
-   "Bonjour, je souhaite commander :",
-   "السلام، بغيت نطلب:"
+   "Bonjour, je souhaite commander :"
   ],
   "msg_addr": [
    "Address",
-   "Adresse",
-   "العنوان"
+   "Adresse"
   ],
   "msg_cod": [
    "cash on delivery",
-   "paiement à la livraison",
-   "الخلاص عند الاستلام"
+   "paiement à la livraison"
   ]
  },
  "cats": {
   "elec": [
    "Electronics",
-   "Électronique",
-   "إلكترونيات"
+   "Électronique"
   ],
   "sport": [
    "Sport & fitness",
-   "Sport & fitness",
-   "رياضة ولياقة"
+   "Sport & fitness"
   ],
   "acc": [
    "Accessories",
-   "Accessoires",
-   "إكسسوارات شخصية"
+   "Accessoires"
   ],
   "home": [
    "Home & comfort",
-   "Maison & confort",
-   "المنزل والرفاهية"
+   "Maison & confort"
   ]
  },
  "catOrder": [
@@ -514,8 +415,7 @@
    "photos": 7,
    "title": [
     "Smart automatic upper-arm blood pressure monitor (Microlife)",
-    "Tensiomètre automatique intelligent de bras (Microlife)",
-    "جهاز قياس ضغط الدم الذكي الأوتوماتيكي للذراع (Microlife)"
+    "Tensiomètre automatique intelligent de bras (Microlife)"
    ]
   },
   {
@@ -526,8 +426,7 @@
    "photos": 9,
    "title": [
     "Smart Wi-Fi plug — control any appliance remotely (TV, lamp, AC)",
-    "Prise intelligente Wi-Fi — contrôlez vos appareils à distance (TV, lampe, clim)",
-    "المقبس الذكي Wi-Fi للتحكم في أي جهاز عن بعد (تلفاز، مصباح، مكيف)"
+    "Prise intelligente Wi-Fi — contrôlez vos appareils à distance (TV, lampe, clim)"
    ]
   },
   {
@@ -538,8 +437,7 @@
    "photos": 8,
    "title": [
     "Gym gloves, sizes M–L — black",
-    "Gants de musculation, tailles M–L — noir",
-    "قفازات رياضية، المقاس M–L — أسود"
+    "Gants de musculation, tailles M–L — noir"
    ]
   },
   {
@@ -550,8 +448,7 @@
    "photos": 5,
    "title": [
     "Truck pendant watch necklace — unisex gift",
-    "Montre pendentif camion — collier cadeau homme et femme",
-    "ساعة قلادة على شكل شاحنة — هدية للرجال والنساء"
+    "Montre pendentif camion — collier cadeau homme et femme"
    ]
   },
   {
@@ -562,8 +459,7 @@
    "photos": 5,
    "title": [
     "Tactical sport gloves for training & cycling, sizes S–M",
-    "Gants tactiques pour sport et vélo, tailles S–M",
-    "قفازات تكتيكية للتدريب وركوب الدراجات، المقاس S–M"
+    "Gants tactiques pour sport et vélo, tailles S–M"
    ]
   },
   {
@@ -574,8 +470,7 @@
    "photos": 8,
    "title": [
     "Muscle massager — relieves cramps and muscle pain",
-    "Masseur musculaire — soulage crampes et douleurs",
-    "جهاز التدليك لإزالة التشنجات وتخفيف آلام العضلات"
+    "Masseur musculaire — soulage crampes et douleurs"
    ]
   },
   {
@@ -586,8 +481,7 @@
    "photos": 8,
    "title": [
     "Gym gloves, sizes M–L — green",
-    "Gants de musculation, tailles M–L — vert",
-    "قفازات رياضية، المقاس M–L — أخضر"
+    "Gants de musculation, tailles M–L — vert"
    ]
   },
   {
@@ -598,8 +492,7 @@
    "photos": 9,
    "title": [
     "Gym gloves with wrist support, sizes S–XL",
-    "Gants de sport avec maintien du poignet, tailles S–XL",
-    "قفازات رياضية مع حماية المعصم، المقاس S–XL"
+    "Gants de sport avec maintien du poignet, tailles S–XL"
    ]
   },
   {
@@ -610,8 +503,7 @@
    "photos": 10,
    "title": [
     "Smart ear cleaner with camera and wax removal tool",
-    "Nettoyeur d'oreilles intelligent avec caméra et outil anti-cérumen",
-    "منظف الأذن الذكي بالكاميرا مع أداة إزالة الشمع"
+    "Nettoyeur d'oreilles intelligent avec caméra et outil anti-cérumen"
    ]
   },
   {
@@ -622,8 +514,7 @@
    "photos": 4,
    "title": [
     "Electric toothbrush, rechargeable",
-    "Brosse à dents électrique rechargeable",
-    "فرشاة أسنان كهربائية قابلة للشحن"
+    "Brosse à dents électrique rechargeable"
    ]
   },
   {
@@ -634,8 +525,7 @@
    "photos": 6,
    "title": [
     "One Piece pendant watch — a unique gift",
-    "Montre pendentif One Piece — un cadeau unique",
-    "ساعة One Piece بتصميم فريد — هدية لا تُنسى"
+    "Montre pendentif One Piece — un cadeau unique"
    ]
   },
   {
@@ -646,8 +536,7 @@
    "photos": 6,
    "title": [
     "Lenovo GM2 Pro Bluetooth earbuds — white",
-    "Écouteurs Bluetooth Lenovo GM2 Pro — blanc",
-    "سماعات بلوتوث Lenovo GM2 Pro — أبيض"
+    "Écouteurs Bluetooth Lenovo GM2 Pro — blanc"
    ]
   },
   {
@@ -658,8 +547,7 @@
    "photos": 8,
    "title": [
     "Adjustable wrist straps, men & women (pack of 2)",
-    "Bandes de poignet ajustables homme et femme (lot de 2)",
-    "أربطة معصم قابلة للتعديل للرجال والنساء (قطعتان)"
+    "Bandes de poignet ajustables homme et femme (lot de 2)"
    ]
   },
   {
@@ -670,8 +558,7 @@
    "photos": 3,
    "title": [
     "Motorcycle pendant watch necklace — unisex gift",
-    "Montre pendentif moto — collier cadeau homme et femme",
-    "ساعة قلادة على شكل دراجة نارية — هدية"
+    "Montre pendentif moto — collier cadeau homme et femme"
    ]
   },
   {
@@ -682,8 +569,7 @@
    "photos": 8,
    "title": [
     "Aluminium laptop stand",
-    "Support PC portable en aluminium",
-    "حامل الحاسوب المحمول من الألومنيوم"
+    "Support PC portable en aluminium"
    ]
   },
   {
@@ -694,8 +580,7 @@
    "photos": 7,
    "title": [
     "Wireless lamp remote control (15 m range)",
-    "Télécommande sans fil pour lampe (portée 15 m)",
-    "جهاز لاسلكي للتحكم في المصباح عن بعد (15 م)"
+    "Télécommande sans fil pour lampe (portée 15 m)"
    ]
   },
   {
@@ -706,8 +591,7 @@
    "photos": 6,
    "title": [
     "Lenovo GM2 Pro Bluetooth earbuds — black",
-    "Écouteurs Bluetooth Lenovo GM2 Pro — noir",
-    "سماعات بلوتوث Lenovo GM2 Pro — أسود"
+    "Écouteurs Bluetooth Lenovo GM2 Pro — noir"
    ]
   },
   {
@@ -718,8 +602,7 @@
    "photos": 9,
    "title": [
     "Mini self-adhesive aluminium laptop stand",
-    "Petit support PC portable aluminium auto-adhésif",
-    "حامل صغير للحاسوب من الألومنيوم ذاتي اللصق"
+    "Petit support PC portable aluminium auto-adhésif"
    ]
   },
   {
@@ -730,8 +613,7 @@
    "photos": 9,
    "title": [
     "Wi-Fi repeater and access point — boosts your signal",
-    "Répéteur et point d'accès Wi-Fi — amplifie le signal",
-    "مقوي ومُعيد إرسال إشارة الواي فاي"
+    "Répéteur et point d'accès Wi-Fi — amplifie le signal"
    ]
   },
   {
@@ -742,8 +624,7 @@
    "photos": 3,
    "title": [
     "Horse pendant watch necklace — unisex gift",
-    "Montre pendentif cheval — collier cadeau homme et femme",
-    "ساعة قلادة على شكل حصان — هدية"
+    "Montre pendentif cheval — collier cadeau homme et femme"
    ]
   },
   {
@@ -754,8 +635,7 @@
    "photos": 5,
    "title": [
     "Light running waist bag for your phone",
-    "Sacoche ceinture légère pour téléphone (sport et running)",
-    "حقيبة خصر خفيفة لحمل الهاتف أثناء الرياضة والجري"
+    "Sacoche ceinture légère pour téléphone (sport et running)"
    ]
   },
   {
@@ -766,8 +646,7 @@
    "photos": 6,
    "title": [
     "Colmi P71 smartwatch — original",
-    "Montre connectée Colmi P71 — originale",
-    "ساعة ذكية Colmi P71 — أصلية"
+    "Montre connectée Colmi P71 — originale"
    ]
   },
   {
@@ -778,8 +657,7 @@
    "photos": 7,
    "title": [
     "Waterproof chest/back bag, multi-use",
-    "Sac poitrine/dos imperméable multi-usage",
-    "حقيبة صدر/ظهر مضادة للماء ومتعددة الاستخدامات"
+    "Sac poitrine/dos imperméable multi-usage"
    ]
   },
   {
@@ -790,8 +668,7 @@
    "photos": 3,
    "title": [
     "One Piece pendant watch — a unique gift — style 2",
-    "Montre pendentif One Piece — un cadeau unique — modèle 2",
-    "ساعة One Piece بتصميم فريد — هدية لا تُنسى — موديل 2"
+    "Montre pendentif One Piece — un cadeau unique — modèle 2"
    ]
   },
   {
@@ -802,8 +679,7 @@
    "photos": 10,
    "title": [
     "Anti-snoring nose clip",
-    "Pince-nez anti-ronflement",
-    "مشبك الأنف لمكافحة الشخير"
+    "Pince-nez anti-ronflement"
    ]
   },
   {
@@ -814,8 +690,7 @@
    "photos": 5,
    "title": [
     "Bike computer — speed and distance",
-    "Compteur vélo — vitesse et distance",
-    "عداد الدراجة لقياس السرعة والمسافة"
+    "Compteur vélo — vitesse et distance"
    ]
   },
   {
@@ -826,8 +701,7 @@
    "photos": 6,
    "title": [
     "Non-contact infrared thermometer",
-    "Thermomètre infrarouge sans contact",
-    "ميزان حرارة بالأشعة تحت الحمراء بدون لمس"
+    "Thermomètre infrarouge sans contact"
    ]
   },
   {
@@ -838,8 +712,7 @@
    "photos": 7,
    "title": [
     "Weightlifting tactical gloves, sizes S–XL",
-    "Gants tactiques de musculation, tailles S–XL",
-    "قفازات حمل الأثقال التكتيكية، المقاس S–XL"
+    "Gants tactiques de musculation, tailles S–XL"
    ]
   },
   {
@@ -850,8 +723,7 @@
    "photos": 5,
    "title": [
     "Baby safety helmet — anti-fall head protection",
-    "Casque de sécurité bébé — protection anti-chute",
-    "خوذة أمان للأطفال لحماية الرأس من السقوط"
+    "Casque de sécurité bébé — protection anti-chute"
    ]
   },
   {
@@ -862,8 +734,7 @@
    "photos": 6,
    "title": [
     "Electric horn for bike and scooter",
-    "Klaxon électrique pour vélo et trottinette",
-    "بوق إلكتروني للدراجة والتروتينيت"
+    "Klaxon électrique pour vélo et trottinette"
    ]
   }
  ],
@@ -872,8 +743,7 @@
    "key": "rabat",
    "name": [
     "Rabat",
-    "Rabat",
-    "الرباط"
+    "Rabat"
    ],
    "delivery": "d_free"
   },
@@ -881,8 +751,7 @@
    "key": "sale",
    "name": [
     "Salé",
-    "Salé",
-    "سلا"
+    "Salé"
    ],
    "delivery": "d_free"
   },
@@ -890,8 +759,7 @@
    "key": "temara",
    "name": [
     "Témara",
-    "Témara",
-    "تمارة"
+    "Témara"
    ],
    "delivery": "d_weekend"
   }

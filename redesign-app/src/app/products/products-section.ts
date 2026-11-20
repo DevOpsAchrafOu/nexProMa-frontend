@@ -11,9 +11,9 @@ type Filter = CatKey | 'all';
 const POP_STEP_MS = 45;
 const POP_MAX_STEPS = 12;
 
-/** Lower case, without accents or Arabic diacritics, for search. */
+/** Lower case, without accents, for search. */
 function norm(s: string): string {
-  return s.toLowerCase().normalize('NFD').replace(/[̀-ًͯ-ٟ]/g, '');
+  return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
 
 const SORT_KEY: Record<Sort, (p: Product, rank: number) => number> = {
