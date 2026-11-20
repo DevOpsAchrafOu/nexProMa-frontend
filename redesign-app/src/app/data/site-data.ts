@@ -1,10 +1,10 @@
 import raw from './site-data.json';
 
-/** One text in the 3 languages, in this order: English, French, Arabic. */
-export type Tr = [string, string, string];
+/** One text in the 2 languages, in this order: English, French. */
+export type Tr = [string, string];
 
-export type Lang = 'en' | 'fr' | 'ar';
-export const LANGS: Lang[] = ['en', 'fr', 'ar'];
+export type Lang = 'en' | 'fr';
+export const LANGS: Lang[] = ['en', 'fr'];
 
 export type CatKey = 'elec' | 'sport' | 'acc' | 'home';
 

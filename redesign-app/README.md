@@ -18,13 +18,13 @@ npm run build    # writes the site to ../docs/redesign/ (commit it)
 
 | Path | What it holds |
 | --- | --- |
-| `src/app/data/site-data.json` | WhatsApp number, every interface text (EN / FR / AR), categories, the 30 products in "Recommended" order |
+| `src/app/data/site-data.json` | WhatsApp number, every interface text (EN / FR), categories, the 30 products in "Recommended" order |
 | `src/app/data/site-data.ts` | Types and helpers for that data (`FEATURED` = products shown before "See all") |
-| `src/app/i18n.ts` | Current language, RTL for Arabic, `t('key')`, WhatsApp links |
+| `src/app/i18n.ts` | Current language (EN / FR), `t('key')`, WhatsApp links |
 | `src/app/layout/` | Header (menu, language switch), footer, mobile bar, floating WhatsApp button |
 | `src/app/sections/` | Hero + trust strip, How to order, Reviews (lightbox), About, FAQ, final call to action |
 | `src/app/products/` | Search / categories / sort, product card with photo slideshow, product dialog |
 | `src/styles.css` | All styles (global) |
 | `public/img/` | Product photos (`p{id}.jpg`), galleries (`g/p{id}_{n}.jpg`), review screenshots, logo |
 
-Every new text needs its 3 languages in `site-data.json` (`ui`), in the order English, French, Arabic.
+Every new text needs its 2 languages in `site-data.json` (`ui`), in the order English, French.

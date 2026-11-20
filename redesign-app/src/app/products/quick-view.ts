@@ -94,13 +94,12 @@ export class QuickView {
     this.current.set(((k - 1 + n) % n) + 1);
   }
 
-  /** The ‹ and › buttons follow the reading direction. */
   protected back(): void {
-    this.show(this.i18n.rtl() ? this.current() + 1 : this.current() - 1);
+    this.show(this.current() - 1);
   }
 
   protected forward(): void {
-    this.show(this.i18n.rtl() ? this.current() - 1 : this.current() + 1);
+    this.show(this.current() + 1);
   }
 
   protected keys(e: KeyboardEvent): void {
