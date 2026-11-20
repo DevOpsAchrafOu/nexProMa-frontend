@@ -122,3 +122,22 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
 .hero .txt>*:nth-child(2){animation-delay:.08s}.hero .txt>*:nth-child(3){animation-delay:.16s}.hero .txt>*:nth-child(4){animation-delay:.24s}.hero .txt>*:nth-child(5){animation-delay:.32s}
 .collage img{animation:float .8s cubic-bezier(.2,.7,.2,1) both}.collage img:nth-of-type(2){animation-delay:.15s}.collage img:nth-of-type(3){animation-delay:.3s}
 @media (prefers-reduced-motion:reduce){.hero .txt>*,.collage img,.card.pop{animation:none}.ph .layer{transition:none}}
+
+/* Order form (product dialog) */
+.order{display:flex;flex-direction:column;gap:12px;margin-top:6px;padding:16px;border:1px solid var(--line);border-radius:var(--r);background:#FAFBFD}
+.order h3{margin:0;font-size:18px}
+.order .f{display:flex;flex-direction:column;gap:6px}
+.order label,.order .qtyrow>span{font-weight:600;font-size:14px}
+.order input,.order select{width:100%;min-height:48px;padding:10px 14px;border:1.5px solid #C9D1E0;border-radius:10px;background:#fff;font:inherit;font-size:16px;color:var(--ink)}
+.order input:focus,.order select:focus{outline:3px solid #BFD0FF;outline-offset:0;border-color:var(--blue)}
+.order [aria-invalid=true]{border-color:#C62828}
+.order .err{color:#B71C1C;font-size:14px;font-weight:600}
+.order .hint{display:flex;align-items:center;gap:6px;color:var(--green);font-size:14px;font-weight:600}
+.order .qtyrow,.order .total{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.order .qty{display:flex;align-items:center;border:1.5px solid #C9D1E0;border-radius:10px;background:#fff;overflow:hidden}
+.order .qty button{width:48px;height:46px;border:0;background:none;font-size:22px;font-weight:700;color:var(--ink);cursor:pointer}
+.order .qty button:disabled{color:#A9B2C4;cursor:default}
+.order .qty output{min-width:36px;text-align:center;font-weight:700;font-size:17px}
+.order .total{border-top:1px dashed var(--line);padding-top:12px}
+.order .total strong{font-size:22px}
+.order .note{margin:0;color:var(--ink2);font-size:13px;text-align:center}

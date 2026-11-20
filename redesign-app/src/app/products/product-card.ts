@@ -40,7 +40,7 @@ const MAX_SLIDES = 4;
         <strong>{{ p.price }} {{ i18n.t('cur') }}</strong><s>{{ p.old }} {{ i18n.t('cur') }}</s>
       </div>
       <span class="fd"><app-icon name="truck" />{{ i18n.t('fd') }}</span>
-      <a class="btn wa" [href]="orderLink()" target="_blank" rel="noopener"><app-icon name="wa" />{{ i18n.t('order') }}</a>
+      <button class="btn wa" type="button" (click)="buy.emit(p.id)"><app-icon name="wa" />{{ i18n.t('order') }}</button>
     </div>
   `,
 })
@@ -58,12 +58,11 @@ export class ProductCard implements OnInit {
   readonly popDelay = input<number | null>(null);
 
   readonly open = output<number>();
+  /** "Order" opens the product dialog on its order form. */
+  readonly buy = output<number>();
 
   protected readonly title = computed(() => this.i18n.pick(this.product().title));
   protected readonly off = computed(() => discount(this.product()));
-  protected readonly orderLink = computed(() =>
-    this.i18n.wa(this.i18n.t('wa_o', { t: this.title(), p: this.product().price })),
-  );
 
   /** Number of photos in the slideshow (1 = no slideshow). */
   protected readonly slides = computed(() => (this.featured() ? Math.min(this.product().photos, MAX_SLIDES) : 1));

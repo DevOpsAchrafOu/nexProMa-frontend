@@ -65,6 +65,7 @@ const SORT_KEY: Record<Sort, (p: Product, rank: number) => number> = {
             [order]="item.rank"
             [popDelay]="popDelays().get(item.p.id) ?? null"
             (open)="quickView.open($event)"
+            (buy)="quickView.open($event, true)"
           ></article>
         }
       </div>

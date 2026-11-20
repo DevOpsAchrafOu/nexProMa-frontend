@@ -82,9 +82,9 @@
    "المنتجات"
   ],
   "p_sub": [
-   "Every product is one tap away: the WhatsApp message is written for you.",
-   "Chaque produit se commande en un clic : le message WhatsApp s'écrit tout seul.",
-   "كل منتج كيتطلب بضغطة وحدة: الميساج كيتكتب بوحدو فواتساب."
+   "Fill in your name, phone and city: your WhatsApp order is written for you.",
+   "Indiquez votre nom, téléphone et ville : votre commande WhatsApp s'écrit toute seule.",
+   "كتب سميتك، التيليفون والمدينة: الطلب ديالك كيتكتب بوحدو فواتساب."
   ],
   "all": [
    "All",
@@ -365,6 +365,116 @@
    "Chat on WhatsApp",
    "Discuter sur WhatsApp",
    "هضر معانا فواتساب"
+  ],
+  "f_h": [
+   "Order now, pay on delivery",
+   "Commandez, payez à la livraison",
+   "اطلب دابا، وخلص عند الاستلام"
+  ],
+  "f_name": [
+   "Full name",
+   "Nom complet",
+   "الاسم الكامل"
+  ],
+  "f_phone": [
+   "Phone number",
+   "Numéro de téléphone",
+   "رقم الهاتف"
+  ],
+  "f_city": [
+   "City",
+   "Ville",
+   "المدينة"
+  ],
+  "f_other": [
+   "Other city",
+   "Autre ville",
+   "مدينة أخرى"
+  ],
+  "f_city_name": [
+   "Your city",
+   "Votre ville",
+   "سمية المدينة"
+  ],
+  "f_addr": [
+   "Address (optional)",
+   "Adresse (facultatif)",
+   "العنوان (اختياري)"
+  ],
+  "f_qty": [
+   "Quantity",
+   "Quantité",
+   "الكمية"
+  ],
+  "f_less": [
+   "Decrease quantity",
+   "Diminuer la quantité",
+   "نقص الكمية"
+  ],
+  "f_plus": [
+   "Increase quantity",
+   "Augmenter la quantité",
+   "زيد الكمية"
+  ],
+  "f_total": [
+   "Total",
+   "Total",
+   "المجموع"
+  ],
+  "f_send": [
+   "Send my order on WhatsApp",
+   "Envoyer ma commande sur WhatsApp",
+   "صيفط الطلب ديالي فواتساب"
+  ],
+  "f_note": [
+   "WhatsApp opens with your order already written. Just press send.",
+   "WhatsApp s'ouvre avec votre commande déjà écrite. Il suffit d'appuyer sur envoyer.",
+   "واتساب غادي يتحل والطلب مكتوب، غير ضغط على صيفط."
+  ],
+  "d_free": [
+   "Free delivery",
+   "Livraison gratuite",
+   "التوصيل فابور"
+  ],
+  "d_weekend": [
+   "Delivered on weekends",
+   "Livraison le week-end",
+   "التوصيل فعطلة آخر الأسبوع"
+  ],
+  "d_other": [
+   "We'll confirm delivery to your city on WhatsApp.",
+   "On vous confirme la livraison dans votre ville sur WhatsApp.",
+   "غادي نأكدو معاك التوصيل لمدينتك فواتساب."
+  ],
+  "e_name": [
+   "Please enter your name.",
+   "Indiquez votre nom.",
+   "كتب سميتك."
+  ],
+  "e_phone": [
+   "Enter a Moroccan number, e.g. 06 12 34 56 78.",
+   "Entrez un numéro marocain, ex. 06 12 34 56 78.",
+   "دخل رقم مغربي، بحال 06 12 34 56 78."
+  ],
+  "e_city": [
+   "Please enter your city.",
+   "Indiquez votre ville.",
+   "كتب المدينة ديالك."
+  ],
+  "msg_head": [
+   "Hello, I'd like to order:",
+   "Bonjour, je souhaite commander :",
+   "السلام، بغيت نطلب:"
+  ],
+  "msg_addr": [
+   "Address",
+   "Adresse",
+   "العنوان"
+  ],
+  "msg_cod": [
+   "cash on delivery",
+   "paiement à la livraison",
+   "الخلاص عند الاستلام"
   ]
  },
  "cats": {
@@ -755,6 +865,35 @@
     "Klaxon électrique pour vélo et trottinette",
     "بوق إلكتروني للدراجة والتروتينيت"
    ]
+  }
+ ],
+ "cities": [
+  {
+   "key": "rabat",
+   "name": [
+    "Rabat",
+    "Rabat",
+    "الرباط"
+   ],
+   "delivery": "d_free"
+  },
+  {
+   "key": "sale",
+   "name": [
+    "Salé",
+    "Salé",
+    "سلا"
+   ],
+   "delivery": "d_free"
+  },
+  {
+   "key": "temara",
+   "name": [
+    "Témara",
+    "Témara",
+    "تمارة"
+   ],
+   "delivery": "d_weekend"
   }
  ]
 }
