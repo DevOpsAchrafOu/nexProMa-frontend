@@ -380,6 +380,10 @@
   "msg_cod": [
    "cash on delivery",
    "paiement à la livraison"
+  ],
+  "feat_h": [
+   "Features",
+   "Caractéristiques"
   ]
  },
  "cats": {
@@ -416,6 +420,28 @@
    "title": [
     "Smart automatic upper-arm blood pressure monitor (Microlife)",
     "Tensiomètre automatique intelligent de bras (Microlife)"
+   ],
+   "about": [
+    "Check your blood pressure at home: put on the arm cuff, press one button, and the monitor shows and reads out the result.",
+    "Contrôlez votre tension à la maison : mettez le brassard, appuyez sur un bouton, l’appareil affiche et annonce le résultat."
+   ],
+   "points": [
+    [
+     "Shows systolic and diastolic pressure, pulse and date",
+     "Affiche la tension systolique et diastolique, le pouls et la date"
+    ],
+    [
+     "Colour scale (WHO) to read your result at a glance",
+     "Échelle de couleurs (OMS) pour lire le résultat d’un coup d’œil"
+    ],
+    [
+     "Voice announcement of the result",
+     "Annonce vocale du résultat"
+    ],
+    [
+     "Memory button, runs on USB power or batteries",
+     "Bouton mémoire, fonctionne sur USB ou sur piles"
+    ]
    ]
   },
   {
@@ -427,6 +453,28 @@
    "title": [
     "Smart Wi-Fi plug — control any appliance remotely (TV, lamp, AC)",
     "Prise intelligente Wi-Fi — contrôlez vos appareils à distance (TV, lampe, clim)"
+   ],
+   "about": [
+    "Plug any appliance into this Wi-Fi smart plug and switch it on or off from your phone, wherever you are.",
+    "Branchez un appareil sur cette prise connectée Wi-Fi et allumez-le ou éteignez-le depuis votre téléphone, où que vous soyez."
+   ],
+   "points": [
+    [
+     "Timer, countdown and weekly schedules",
+     "Minuterie, compte à rebours et programmation par jour"
+    ],
+    [
+     "Energy monitoring to follow your consumption",
+     "Suivi de la consommation d’électricité"
+    ],
+    [
+     "Overload protection",
+     "Protection contre les surcharges"
+    ],
+    [
+     "Works with a TV, lamp, air conditioner, kettle…",
+     "Pour TV, lampe, climatiseur, bouilloire…"
+    ]
    ]
   },
   {
@@ -438,6 +486,28 @@
    "title": [
     "Gym gloves, sizes M–L — black",
     "Gants de musculation, tailles M–L — noir"
+   ],
+   "about": [
+    "Fingerless gym gloves that protect your palms and support your wrists during weight training.",
+    "Gants de musculation mitaines qui protègent vos paumes et maintiennent vos poignets pendant l’entraînement."
+   ],
+   "points": [
+    [
+     "Double Velcro wrist strap that holds firmly",
+     "Double scratch au poignet qui tient bien en place"
+    ],
+    [
+     "Breathable, stretchy back of the hand",
+     "Dos de la main respirant et extensible"
+    ],
+    [
+     "Padded palm that absorbs shocks and vibrations",
+     "Paume rembourrée qui absorbe les chocs et les vibrations"
+    ],
+    [
+     "For weightlifting, fitness and gym workouts",
+     "Pour la musculation, le fitness et la salle de sport"
+    ]
    ]
   },
   {
@@ -449,6 +519,24 @@
    "title": [
     "Truck pendant watch necklace — unisex gift",
     "Montre pendentif camion — collier cadeau homme et femme"
+   ],
+   "about": [
+    "Vintage-style pocket watch on a chain, with a truck on the lid. A nice gift for men and women.",
+    "Montre de poche style vintage sur chaîne, avec un camion sur le couvercle. Une jolie idée cadeau pour homme et femme."
+   ],
+   "points": [
+    [
+     "Opens to show a classic dial with numbers",
+     "S’ouvre sur un cadran classique à chiffres"
+    ],
+    [
+     "Worn as a necklace or kept in a pocket",
+     "Se porte en collier ou se garde dans la poche"
+    ],
+    [
+     "Antique bronze finish",
+     "Finition bronze vieilli"
+    ]
    ]
   },
   {
@@ -460,6 +548,24 @@
    "title": [
     "Tactical sport gloves for training & cycling, sizes S–M",
     "Gants tactiques pour sport et vélo, tailles S–M"
+   ],
+   "about": [
+    "Light fingerless gloves for sport and cycling, made to resist wear and reduce vibrations.",
+    "Gants mitaines légers pour le sport et le vélo, résistants à l’usure et anti-vibrations."
+   ],
+   "points": [
+    [
+     "Anti-vibration, wear-resistant palm",
+     "Paume anti-vibrations et résistante à l’usure"
+    ],
+    [
+     "For cycling, climbing, hiking and fitness",
+     "Pour le vélo, l’escalade, la randonnée et le fitness"
+    ],
+    [
+     "Sizes S–M",
+     "Tailles S–M"
+    ]
    ]
   },
   {
@@ -471,6 +577,24 @@
    "title": [
     "Muscle massager — relieves cramps and muscle pain",
     "Masseur musculaire — soulage crampes et douleurs"
+   ],
+   "about": [
+    "Small electric pulse (EMS) massager that sticks to the skin to relax tense muscles in the neck, shoulders, back, arms or legs.",
+    "Petit masseur à impulsions électriques (EMS) qui se colle sur la peau pour détendre les muscles du cou, des épaules, du dos, des bras ou des jambes."
+   ],
+   "points": [
+    [
+     "Digital screen and buttons to choose mode and intensity",
+     "Écran digital et boutons pour choisir le mode et l’intensité"
+    ],
+    [
+     "Reusable adhesive pads",
+     "Patchs adhésifs réutilisables"
+    ],
+    [
+     "Turns off by itself when removed from the skin",
+     "S’éteint tout seul quand on le retire de la peau"
+    ]
    ]
   },
   {
@@ -482,6 +606,28 @@
    "title": [
     "Gym gloves, sizes M–L — green",
     "Gants de musculation, tailles M–L — vert"
+   ],
+   "about": [
+    "Fingerless gym gloves that protect your palms and support your wrists during weight training.",
+    "Gants de musculation mitaines qui protègent vos paumes et maintiennent vos poignets pendant l’entraînement."
+   ],
+   "points": [
+    [
+     "Double Velcro wrist strap that holds firmly",
+     "Double scratch au poignet qui tient bien en place"
+    ],
+    [
+     "Breathable, stretchy back of the hand",
+     "Dos de la main respirant et extensible"
+    ],
+    [
+     "Padded palm that absorbs shocks and vibrations",
+     "Paume rembourrée qui absorbe les chocs et les vibrations"
+    ],
+    [
+     "For weightlifting, fitness and gym workouts",
+     "Pour la musculation, le fitness et la salle de sport"
+    ]
    ]
   },
   {
@@ -493,6 +639,28 @@
    "title": [
     "Gym gloves with wrist support, sizes S–XL",
     "Gants de sport avec maintien du poignet, tailles S–XL"
+   ],
+   "about": [
+    "Sports gloves with a long wrist strap, for a firm grip and better wrist support.",
+    "Gants de sport avec une longue sangle de poignet, pour une bonne prise et un meilleur maintien."
+   ],
+   "points": [
+    [
+     "Long adjustable wrist strap",
+     "Longue sangle de poignet réglable"
+    ],
+    [
+     "Anti-slip palm pads and reinforced double stitching",
+     "Paume antidérapante et doubles coutures renforcées"
+    ],
+    [
+     "Breathable fabric on the fingers and back of the hand",
+     "Tissu respirant sur les doigts et le dos de la main"
+    ],
+    [
+     "Pull tabs to take them off easily",
+     "Languettes pour les retirer facilement"
+    ]
    ]
   },
   {
@@ -504,6 +672,28 @@
    "title": [
     "Smart ear cleaner with camera and wax removal tool",
     "Nettoyeur d'oreilles intelligent avec caméra et outil anti-cérumen"
+   ],
+   "about": [
+    "Ear cleaner with a built-in camera: you see the inside of the ear live on your phone while you clean it.",
+    "Nettoyeur d’oreilles avec caméra intégrée : vous voyez l’intérieur de l’oreille en direct sur votre téléphone pendant le nettoyage."
+   ],
+   "points": [
+    [
+     "Wi-Fi connection to a phone app",
+     "Connexion Wi-Fi à une application sur téléphone"
+    ],
+    [
+     "3.6 mm lens, 100° view, 3-axis gyroscope",
+     "Objectif 3,6 mm, vue à 100°, gyroscope 3 axes"
+    ],
+    [
+     "Waterproof (IPX5), replaceable soft silicone tips",
+     "Étanche (IPX5), embouts en silicone souple remplaçables"
+    ],
+    [
+     "Children must use it with an adult",
+     "Les enfants doivent l’utiliser avec un adulte"
+    ]
    ]
   },
   {
@@ -515,6 +705,20 @@
    "title": [
     "Electric toothbrush, rechargeable",
     "Brosse à dents électrique rechargeable"
+   ],
+   "about": [
+    "Rechargeable electric toothbrush for a deeper clean than a manual brush.",
+    "Brosse à dents électrique rechargeable pour un nettoyage plus efficace qu’une brosse manuelle."
+   ],
+   "points": [
+    [
+     "Recharges with a USB cable",
+     "Se recharge avec un câble USB"
+    ],
+    [
+     "Comes with spare brush heads",
+     "Livrée avec des têtes de rechange"
+    ]
    ]
   },
   {
@@ -526,6 +730,24 @@
    "title": [
     "One Piece pendant watch — a unique gift",
     "Montre pendentif One Piece — un cadeau unique"
+   ],
+   "about": [
+    "Vintage-style pocket watch on a chain, with the One Piece straw hat skull on the lid. A nice gift for men and women.",
+    "Montre de poche style vintage sur chaîne, avec la tête de mort au chapeau de paille de One Piece sur le couvercle. Une jolie idée cadeau pour homme et femme."
+   ],
+   "points": [
+    [
+     "Opens to show a classic dial with numbers",
+     "S’ouvre sur un cadran classique à chiffres"
+    ],
+    [
+     "Worn as a necklace or kept in a pocket",
+     "Se porte en collier ou se garde dans la poche"
+    ],
+    [
+     "Antique bronze finish",
+     "Finition bronze vieilli"
+    ]
    ]
   },
   {
@@ -537,6 +759,28 @@
    "title": [
     "Lenovo GM2 Pro Bluetooth earbuds — white",
     "Écouteurs Bluetooth Lenovo GM2 Pro — blanc"
+   ],
+   "about": [
+    "Lenovo thinkplus GM2 Pro true wireless Bluetooth earbuds, in a compact charging case with a light strip.",
+    "Écouteurs sans fil Bluetooth Lenovo thinkplus GM2 Pro, dans un boîtier de charge compact avec bande lumineuse."
+   ],
+   "points": [
+    [
+     "Game mode for videos and mobile games",
+     "Mode jeu pour les vidéos et les jeux sur mobile"
+    ],
+    [
+     "Touch controls on the earbuds",
+     "Commandes tactiles sur les écouteurs"
+    ],
+    [
+     "Charging case to recharge them on the go",
+     "Boîtier de charge pour les recharger partout"
+    ],
+    [
+     "Comes with a charging cable and spare ear tips",
+     "Livrés avec un câble de charge et des embouts de rechange"
+    ]
    ]
   },
   {
@@ -548,6 +792,24 @@
    "title": [
     "Adjustable wrist straps, men & women (pack of 2)",
     "Bandes de poignet ajustables homme et femme (lot de 2)"
+   ],
+   "about": [
+    "Pair of wrist wraps that support your wrists when lifting heavy weights.",
+    "Paire de bandes de poignet qui soutiennent vos poignets quand vous soulevez lourd."
+   ],
+   "points": [
+    [
+     "8 cm wide, adjustable",
+     "Largeur 8 cm, réglables"
+    ],
+    [
+     "Thumb loop and strong Velcro closure",
+     "Boucle pour le pouce et fermeture scratch solide"
+    ],
+    [
+     "For men and women, sold as a pair",
+     "Pour homme et femme, vendues par paire"
+    ]
    ]
   },
   {
@@ -559,6 +821,24 @@
    "title": [
     "Motorcycle pendant watch necklace — unisex gift",
     "Montre pendentif moto — collier cadeau homme et femme"
+   ],
+   "about": [
+    "Vintage-style pocket watch on a chain, with a motorcycle on the lid. A nice gift for men and women.",
+    "Montre de poche style vintage sur chaîne, avec une moto sur le couvercle. Une jolie idée cadeau pour homme et femme."
+   ],
+   "points": [
+    [
+     "Opens to show a classic dial with numbers",
+     "S’ouvre sur un cadran classique à chiffres"
+    ],
+    [
+     "Worn as a necklace or kept in a pocket",
+     "Se porte en collier ou se garde dans la poche"
+    ],
+    [
+     "Antique bronze finish",
+     "Finition bronze vieilli"
+    ]
    ]
   },
   {
@@ -570,6 +850,28 @@
    "title": [
     "Aluminium laptop stand",
     "Support PC portable en aluminium"
+   ],
+   "about": [
+    "Foldable aluminium stand that raises your laptop to eye level, to work without hurting your neck and back.",
+    "Support pliable en aluminium qui remonte votre PC portable à hauteur des yeux, pour travailler sans mal au cou ni au dos."
+   ],
+   "points": [
+    [
+     "6 angles, from 15° to 40°",
+     "6 inclinaisons, de 15° à 40°"
+    ],
+    [
+     "Open design that lets air flow to cool the laptop",
+     "Design ouvert qui laisse passer l’air pour refroidir le PC"
+    ],
+    [
+     "Anti-slip pads, folds flat to carry",
+     "Patins antidérapants, se replie à plat pour le transport"
+    ],
+    [
+     "For laptops from 13 to 16 inches",
+     "Pour PC portables de 13 à 16 pouces"
+    ]
    ]
   },
   {
@@ -581,6 +883,28 @@
    "title": [
     "Wireless lamp remote control (15 m range)",
     "Télécommande sans fil pour lampe (portée 15 m)"
+   ],
+   "about": [
+    "Screw this socket between the ceiling and the bulb, and switch the light on or off from your bed with the remote.",
+    "Vissez cette douille entre le plafond et l’ampoule, et allumez ou éteignez la lumière depuis votre lit avec la télécommande."
+   ],
+   "points": [
+    [
+     "Wireless remote, range 15 m",
+     "Télécommande sans fil, portée 15 m"
+    ],
+    [
+     "Auto-off timer: 30 or 60 minutes",
+     "Minuterie d’extinction : 30 ou 60 minutes"
+    ],
+    [
+     "Standard E27 socket: LED up to 20 W, incandescent up to 60 W",
+     "Douille E27 standard : LED jusqu’à 20 W, incandescente jusqu’à 60 W"
+    ],
+    [
+     "Remote runs on an AAA battery (not included)",
+     "Télécommande à pile AAA (non fournie)"
+    ]
    ]
   },
   {
@@ -592,6 +916,28 @@
    "title": [
     "Lenovo GM2 Pro Bluetooth earbuds — black",
     "Écouteurs Bluetooth Lenovo GM2 Pro — noir"
+   ],
+   "about": [
+    "Lenovo thinkplus GM2 Pro true wireless Bluetooth earbuds, in a compact charging case with a light strip.",
+    "Écouteurs sans fil Bluetooth Lenovo thinkplus GM2 Pro, dans un boîtier de charge compact avec bande lumineuse."
+   ],
+   "points": [
+    [
+     "Game mode for videos and mobile games",
+     "Mode jeu pour les vidéos et les jeux sur mobile"
+    ],
+    [
+     "Touch controls on the earbuds",
+     "Commandes tactiles sur les écouteurs"
+    ],
+    [
+     "Charging case to recharge them on the go",
+     "Boîtier de charge pour les recharger partout"
+    ],
+    [
+     "Comes with a charging cable and spare ear tips",
+     "Livrés avec un câble de charge et des embouts de rechange"
+    ]
    ]
   },
   {
@@ -603,6 +949,24 @@
    "title": [
     "Mini self-adhesive aluminium laptop stand",
     "Petit support PC portable aluminium auto-adhésif"
+   ],
+   "about": [
+    "Two small aluminium feet that stick under your laptop and lift it slightly, so air flows underneath and it stays cooler.",
+    "Deux petits pieds en aluminium qui se collent sous le PC portable et le surélèvent, pour que l’air circule et qu’il chauffe moins."
+   ],
+   "points": [
+    [
+     "Strong 3M adhesive",
+     "Adhésif 3M solide"
+    ],
+    [
+     "Fold flat and stay on the laptop, nothing to carry",
+     "Se replient à plat et restent sur le PC, rien à transporter"
+    ],
+    [
+     "Better typing angle",
+     "Meilleur angle pour taper"
+    ]
    ]
   },
   {
@@ -614,6 +978,24 @@
    "title": [
     "Wi-Fi repeater and access point — boosts your signal",
     "Répéteur et point d'accès Wi-Fi — amplifie le signal"
+   ],
+   "about": [
+    "Plug this N300 Wi-Fi repeater into a socket to bring Wi-Fi to the rooms where the signal is weak.",
+    "Branchez ce répéteur Wi-Fi N300 sur une prise pour amener le Wi-Fi dans les pièces où le signal est faible."
+   ],
+   "points": [
+    [
+     "Extends coverage and removes dead zones",
+     "Étend la couverture et supprime les zones mortes"
+    ],
+    [
+     "2 modes: repeater, or access point with a cable to the router",
+     "2 modes : répéteur, ou point d’accès relié au routeur par câble"
+    ],
+    [
+     "Set up from your phone in a few minutes",
+     "Se configure depuis le téléphone en quelques minutes"
+    ]
    ]
   },
   {
@@ -625,6 +1007,24 @@
    "title": [
     "Horse pendant watch necklace — unisex gift",
     "Montre pendentif cheval — collier cadeau homme et femme"
+   ],
+   "about": [
+    "Vintage-style pocket watch on a chain, with a horse on the lid. A nice gift for men and women.",
+    "Montre de poche style vintage sur chaîne, avec un cheval sur le couvercle. Une jolie idée cadeau pour homme et femme."
+   ],
+   "points": [
+    [
+     "Opens to show a classic dial with numbers",
+     "S’ouvre sur un cadran classique à chiffres"
+    ],
+    [
+     "Worn as a necklace or kept in a pocket",
+     "Se porte en collier ou se garde dans la poche"
+    ],
+    [
+     "Antique bronze finish",
+     "Finition bronze vieilli"
+    ]
    ]
   },
   {
@@ -636,6 +1036,24 @@
    "title": [
     "Light running waist bag for your phone",
     "Sacoche ceinture légère pour téléphone (sport et running)"
+   ],
+   "about": [
+    "Slim waist bag to keep your phone, keys and cards on you while you run, cycle or walk.",
+    "Sacoche ceinture fine pour garder téléphone, clés et cartes sur vous en courant, à vélo ou en marchant."
+   ],
+   "points": [
+    [
+     "Pocket for a phone, keys, cards and change",
+     "Poche pour téléphone, clés, cartes et monnaie"
+    ],
+    [
+     "Headphone hole and water bottle holder",
+     "Passage pour écouteurs et porte-bouteille"
+    ],
+    [
+     "Reflective strip for night visibility",
+     "Bande réfléchissante pour être vu la nuit"
+    ]
    ]
   },
   {
@@ -647,6 +1065,28 @@
    "title": [
     "Colmi P71 smartwatch — original",
     "Montre connectée Colmi P71 — originale"
+   ],
+   "about": [
+    "Colmi P71 smartwatch with a large 1.9\" screen: take calls from your wrist and follow your health and sport.",
+    "Montre connectée Colmi P71 avec grand écran 1,9\" : répondez aux appels depuis votre poignet et suivez votre santé et votre sport."
+   ],
+   "points": [
+    [
+     "Bluetooth calls from the watch",
+     "Appels Bluetooth depuis la montre"
+    ],
+    [
+     "Heart rate, blood oxygen, blood pressure and sleep tracking",
+     "Suivi du rythme cardiaque, de l’oxygène sanguin, de la tension et du sommeil"
+    ],
+    [
+     "100+ sports modes",
+     "Plus de 100 modes sportifs"
+    ],
+    [
+     "Up to 7 days of battery life",
+     "Jusqu’à 7 jours d’autonomie"
+    ]
    ]
   },
   {
@@ -658,6 +1098,24 @@
    "title": [
     "Waterproof chest/back bag, multi-use",
     "Sac poitrine/dos imperméable multi-usage"
+   ],
+   "about": [
+    "Water-resistant sling bag, worn on the chest or the back, for your phone, wallet, keys and small tablet.",
+    "Sac bandoulière imperméable, à porter sur la poitrine ou dans le dos, pour téléphone, portefeuille, clés et petite tablette."
+   ],
+   "points": [
+    [
+     "Anti-theft combination lock",
+     "Cadenas à code antivol"
+    ],
+    [
+     "USB port to charge your phone from a power bank inside",
+     "Port USB pour charger le téléphone avec une batterie placée dedans"
+    ],
+    [
+     "Several inner pockets",
+     "Plusieurs poches intérieures"
+    ]
    ]
   },
   {
@@ -669,6 +1127,24 @@
    "title": [
     "One Piece pendant watch — a unique gift — style 2",
     "Montre pendentif One Piece — un cadeau unique — modèle 2"
+   ],
+   "about": [
+    "Vintage-style pocket watch on a chain, with the One Piece straw hat skull on the lid. A nice gift for men and women.",
+    "Montre de poche style vintage sur chaîne, avec la tête de mort au chapeau de paille de One Piece sur le couvercle. Une jolie idée cadeau pour homme et femme."
+   ],
+   "points": [
+    [
+     "Opens to show a classic dial with numbers",
+     "S’ouvre sur un cadran classique à chiffres"
+    ],
+    [
+     "Worn as a necklace or kept in a pocket",
+     "Se porte en collier ou se garde dans la poche"
+    ],
+    [
+     "Antique bronze finish",
+     "Finition bronze vieilli"
+    ]
    ]
   },
   {
@@ -680,6 +1156,24 @@
    "title": [
     "Anti-snoring nose clip",
     "Pince-nez anti-ronflement"
+   ],
+   "about": [
+    "Small magnetic nose clip that helps open the nasal airways to reduce snoring at night.",
+    "Petit clip nasal magnétique qui aide à ouvrir les voies nasales pour réduire le ronflement la nuit."
+   ],
+   "points": [
+    [
+     "Soft medical silicone, BPA-free",
+     "Silicone médical souple, sans BPA"
+    ],
+    [
+     "One size fits all",
+     "Taille unique"
+    ],
+    [
+     "Comes in a small storage box",
+     "Livré dans une petite boîte de rangement"
+    ]
    ]
   },
   {
@@ -691,6 +1185,24 @@
    "title": [
     "Bike computer — speed and distance",
     "Compteur vélo — vitesse et distance"
+   ],
+   "about": [
+    "Bicycle computer that shows your speed and distance on an LCD screen fixed to the handlebar.",
+    "Compteur vélo qui affiche votre vitesse et la distance parcourue sur un écran LCD fixé au guidon."
+   ],
+   "points": [
+    [
+     "Wheel sensor with a magnet",
+     "Capteur de roue avec aimant"
+    ],
+    [
+     "Comes with its mounting kit and battery",
+     "Livré avec son kit de fixation et sa pile"
+    ],
+    [
+     "Simple installation in a few steps",
+     "Installation simple en quelques étapes"
+    ]
    ]
   },
   {
@@ -702,6 +1214,24 @@
    "title": [
     "Non-contact infrared thermometer",
     "Thermomètre infrarouge sans contact"
+   ],
+   "about": [
+    "Infrared thermometer that measures temperature on the forehead in 1 second, without touching. Ideal for babies who are asleep.",
+    "Thermomètre infrarouge qui mesure la température sur le front en 1 seconde, sans contact. Idéal pour un bébé qui dort."
+   ],
+   "points": [
+    [
+     "Result in 1 second, without contact",
+     "Résultat en 1 seconde, sans contact"
+    ],
+    [
+     "Colour screen: green 34–37.3 °C, orange 37.4–37.9 °C, red 38 °C and above",
+     "Écran couleur : vert 34–37,3 °C, orange 37,4–37,9 °C, rouge à partir de 38 °C"
+    ],
+    [
+     "For the whole family",
+     "Pour toute la famille"
+    ]
    ]
   },
   {
@@ -713,6 +1243,28 @@
    "title": [
     "Weightlifting tactical gloves, sizes S–XL",
     "Gants tactiques de musculation, tailles S–XL"
+   ],
+   "about": [
+    "Sports gloves with a long wrist strap, for a firm grip and better wrist support.",
+    "Gants de sport avec une longue sangle de poignet, pour une bonne prise et un meilleur maintien."
+   ],
+   "points": [
+    [
+     "Long adjustable wrist strap",
+     "Longue sangle de poignet réglable"
+    ],
+    [
+     "Anti-slip palm pads and reinforced double stitching",
+     "Paume antidérapante et doubles coutures renforcées"
+    ],
+    [
+     "Breathable fabric on the fingers and back of the hand",
+     "Tissu respirant sur les doigts et le dos de la main"
+    ],
+    [
+     "Pull tabs to take them off easily",
+     "Languettes pour les retirer facilement"
+    ]
    ]
   },
   {
@@ -724,6 +1276,20 @@
    "title": [
     "Baby safety helmet — anti-fall head protection",
     "Casque de sécurité bébé — protection anti-chute"
+   ],
+   "about": [
+    "Soft padded helmet that protects your baby’s head from bumps and falls while learning to crawl and walk.",
+    "Casque rembourré et doux qui protège la tête de bébé des chocs et des chutes quand il apprend à ramper et à marcher."
+   ],
+   "points": [
+    [
+     "Light and soft padding",
+     "Rembourrage léger et doux"
+    ],
+    [
+     "Adjustable head size, ties under the chin",
+     "Tour de tête réglable, attaches sous le menton"
+    ]
    ]
   },
   {
@@ -735,6 +1301,24 @@
    "title": [
     "Electric horn for bike and scooter",
     "Klaxon électrique pour vélo et trottinette"
+   ],
+   "about": [
+    "Small but loud electric horn for bikes and scooters: one press and you are heard.",
+    "Klaxon électrique petit mais puissant pour vélo et trottinette : une pression et on vous entend."
+   ],
+   "points": [
+    [
+     "High-decibel sound in a compact size",
+     "Son puissant dans un format compact"
+    ],
+    [
+     "Water-resistant (IPX4)",
+     "Résistant à l’eau (IPX4)"
+    ],
+    [
+     "Fits handlebars from 22.2 to 31.8 mm, quick strap mounting",
+     "Pour guidons de 22,2 à 31,8 mm, fixation rapide par sangle"
+    ]
    ]
   }
  ],

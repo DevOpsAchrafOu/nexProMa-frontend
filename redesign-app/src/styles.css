@@ -145,3 +145,10 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
 .lang button:hover{color:var(--ink)}
 .lang button[aria-pressed=true]{color:#fff}
 @media (prefers-reduced-motion:reduce){.lang .thumb{transition:none}}
+
+/* Product description (product dialog) */
+.qv .desc{margin:0;color:var(--ink);font-size:16px;line-height:1.6}
+.qv .feat-h{margin:4px 0 0;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.qv ul.feat{gap:6px;margin:0;padding:0 0 12px;border-bottom:1px solid var(--line)}
+.qv ul.feat li{align-items:flex-start;font-size:15px}
+.qv ul.feat li::before{content:"";flex:0 0 7px;width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--blue)}
