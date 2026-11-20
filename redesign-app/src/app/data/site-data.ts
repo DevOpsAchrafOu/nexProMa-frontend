@@ -20,12 +20,20 @@ export interface Product {
   title: Tr;
 }
 
+/** Cities with a known delivery rule (key of the `ui` text that describes it). */
+export interface City {
+  key: string;
+  name: Tr;
+  delivery: string;
+}
+
 interface SiteData {
   /** WhatsApp number (fictional, never displayed). */
   wa: string;
   ui: Record<string, Tr>;
   cats: Record<CatKey, Tr>;
   catOrder: CatKey[];
+  cities: City[];
   /** In "Recommended" order. The first 4 are shown by default. */
   products: Product[];
 }

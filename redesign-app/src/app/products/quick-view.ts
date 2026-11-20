@@ -1,15 +1,16 @@
-import { Component, ElementRef, computed, effect, inject, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, Injector, afterNextRender, computed, effect, inject, signal, viewChild } from '@angular/core';
 import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { QuickViewState } from '../shared/quick-view.service';
 import { DATA, photo } from '../data/site-data';
+import { OrderForm } from './order-form';
 
 const SWIPE_PX = 40;
 
 /** Product dialog: photo gallery, price, WhatsApp order and question links. */
 @Component({
   selector: 'app-quick-view',
-  imports: [Icon],
+  imports: [Icon, OrderForm],
   host: { style: 'display:contents' },
   template: `
     <dialog #dlg id="qv" aria-labelledby="qvt" (close)="state.close()" (click)="backdrop($event)" (keydown)="keys($event)">
@@ -37,12 +38,12 @@ const SWIPE_PX = 40;
               <strong>{{ p.price }} {{ i18n.t('cur') }}</strong><s>{{ p.old }} {{ i18n.t('cur') }}</s>
             </div>
             <span class="saveb">{{ i18n.t('save', { s: p.old - p.price }) }}</span>
-            <a class="btn wa" [href]="i18n.wa(i18n.t('wa_o', { t: title(), p: p.price }))" target="_blank" rel="noopener"><app-icon name="wa" />{{ i18n.t('order') }}</a>
             <ul>
               <li><app-icon name="check" />{{ i18n.t('m1') }}</li>
               <li><app-icon name="check" />{{ i18n.t('m2') }}</li>
               <li><app-icon name="check" />{{ i18n.t('m3') }}</li>
             </ul>
+            <form appOrderForm [product]="p"></form>
             <a class="ask" [href]="i18n.wa(i18n.t('wa_ask', { t: title() }))" target="_blank" rel="noopener">{{ i18n.t('askp') }}</a>
           </div>
         </div>
@@ -53,7 +54,9 @@ const SWIPE_PX = 40;
 export class QuickView {
   protected readonly i18n = inject(I18n);
   protected readonly state = inject(QuickViewState);
+  private readonly injector = inject(Injector);
   private readonly dialog = viewChild.required<ElementRef<HTMLDialogElement>>('dlg');
+  private readonly orderForm = viewChild(OrderForm);
 
   protected readonly product = computed(() => {
     const id = this.state.productId();
@@ -74,6 +77,10 @@ export class QuickView {
       if (this.state.productId() === null) return;
       this.current.set(1);
       if (!dlg.open) dlg.showModal();
+      if (this.state.toOrder()) {
+        // Wait for the form to render, then put the cursor in the first field.
+        afterNextRender(() => this.orderForm()?.focus(), { injector: this.injector });
+      }
     });
   }
 
