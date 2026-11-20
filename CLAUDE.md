@@ -5,14 +5,13 @@ Conversation language with the owner: French / Moroccan Darija.
 
 ## What lives where
 - `src/` — original Angular 12 store (nexProMa). Built output is in `docs/` and served by GitHub Pages.
-- `docs/redesign/` — conversion-focused redesign of the home page (static HTML, no framework).
+- `redesign-app/` — conversion-focused redesign of the home page, **Angular 22** (standalone components, signals, zoneless).
+  Needs Node 22.22+ (the old `src/` app needs Node 16). See `redesign-app/README.md`.
+- `docs/redesign/` — build output of `redesign-app` (`cd redesign-app && npm run build`). Never hand-edit; commit it after building.
   Live: https://devopsachrafou.github.io/nexProMa-frontend/redesign/
-- `tools/redesign/` — generator for `docs/redesign/index.html`. Edit sources there, then run
-  `python3 tools/redesign/build.py` from the repo root. Never hand-edit the generated index.html.
-  See `tools/redesign/README.md`.
 
 ## Decisions already made (keep them)
-- Languages EN / FR / AR, **English by default**; AR switches the page to RTL. Every new text needs all 3 (in `gen.py` / `build.py` UI dict).
+- Languages EN / FR / AR, **English by default**; AR switches the page to RTL. Every new text needs all 3 (`ui` in `redesign-app/src/app/data/site-data.json`).
 - WhatsApp: the redesign uses a **fictional number** (212600000000) and the number is **not displayed** anywhere; buttons still open WhatsApp with a prefilled order message.
 - Products: 30 (duplicate #21 removed; #25 labelled "style 2"). **4 shown by default** with photo slideshow; "See all products" reveals the rest. Search / category / sort reveal all.
 - Design tokens: navy #0F1B3D text, brand blue #1F4FE0, buy green #078A3E, discount yellow #FFC93C, page #F2F4F8. Fonts: Plus Jakarta Sans (EN/FR), IBM Plex Sans Arabic (AR).
