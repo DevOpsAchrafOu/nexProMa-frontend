@@ -38,6 +38,13 @@ const SWIPE_PX = 40;
               <strong>{{ p.price }} {{ i18n.t('cur') }}</strong><s>{{ p.old }} {{ i18n.t('cur') }}</s>
             </div>
             <span class="saveb">{{ i18n.t('save', { s: p.old - p.price }) }}</span>
+            <p class="desc">{{ i18n.pick(p.about) }}</p>
+            <h3 class="feat-h">{{ i18n.t('feat_h') }}</h3>
+            <ul class="feat">
+              @for (pt of p.points; track $index) {
+                <li>{{ i18n.pick(pt) }}</li>
+              }
+            </ul>
             <ul>
               <li><app-icon name="check" />{{ i18n.t('m1') }}</li>
               <li><app-icon name="check" />{{ i18n.t('m2') }}</li>

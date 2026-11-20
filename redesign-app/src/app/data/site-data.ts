@@ -18,6 +18,10 @@ export interface Product {
   /** Number of photos in img/g/ (p{id}_1.jpg … p{id}_{photos}.jpg). */
   photos: number;
   title: Tr;
+  /** One or two sentences: what the product is for. */
+  about: Tr;
+  /** Key features, taken only from the product photos and title. */
+  points: Tr[];
 }
 
 /** Cities with a known delivery rule (key of the `ui` text that describes it). */
