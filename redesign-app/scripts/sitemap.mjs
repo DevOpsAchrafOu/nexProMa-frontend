@@ -6,8 +6,12 @@ const data = JSON.parse(readFileSync(new URL('../src/app/data/site-data.json', i
 const ts = readFileSync(new URL('../src/app/data/site-data.ts', import.meta.url), 'utf8');
 const SITE = ts.match(/SITE_URL = '([^']+)'/)[1];
 
+const info = readFileSync(new URL('../src/app/data/info-pages.ts', import.meta.url), 'utf8');
+const INFO_KEYS = JSON.parse(info.match(/INFO_KEYS: InfoKey\[\] = (\[[^\]]+\])/)[1].replace(/'/g, '"'));
+
 const url = (lang, path) => SITE + (lang === 'fr' ? 'fr/' : '') + path;
-const paths = ['', ...data.products.map((p) => `p/${p.slug}/`)];
+// The favorites page is personal (noindex), so it is not listed.
+const paths = ['', ...data.products.map((p) => `p/${p.slug}/`), ...INFO_KEYS.map((k) => `info/${k}/`)];
 const today = new Date().toISOString().slice(0, 10);
 
 const entries = paths.flatMap((path) =>
