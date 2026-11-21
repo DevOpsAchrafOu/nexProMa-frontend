@@ -20,6 +20,7 @@ Conversation language with the owner: French / Moroccan Darija.
 - Design ("brand blue", chosen by the owner): tokens at the top of `redesign-app/src/styles.css` — ink #0B1530, brand blue #1F4FE0 (primary buttons), green #0A8F45 for WhatsApp only, sale red #D92D20, page #F6F7FB. Font: Manrope. Soft motion only, disabled with reduced motion.
 - Only use facts from the store itself (free delivery Salé & Rabat, Témara on weekends, cash on delivery, after-sales 24/7). Do not invent delivery times, ratings or reviews.
 - Footer signature: "Redesign by OA".
+- Trust pages (`/info/…`, texts in `redesign-app/src/app/data/info-pages.ts`), validated by the owner on 2026-11-21: answers 9:00–21:00, delivery 24–48 h in Salé and Rabat (free), Témara on weekends, other cities on request; returns within 7 days, return cost paid by the customer when changing their mind, by the store for defective products; no return once opened for the nose clip, electric toothbrush and ear cleaner (hygiene); seller Achraf, Rabat; e-mail achraf.nexproma@gmail.com. Do not change these commitments without the owner.
 
 ## Deploying
 - Push to `main` → GitHub Pages redeploys (two jobs: branch build from `docs/` and `.github/workflows/static.yml`, which also uploads `docs/`).

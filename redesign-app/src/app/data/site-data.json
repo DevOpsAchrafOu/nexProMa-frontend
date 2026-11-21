@@ -476,6 +476,30 @@
   "seen_clear": [
    "Clear",
    "Effacer"
+  ],
+  "info_nav": [
+   "Help",
+   "Aide"
+  ],
+  "info_q": [
+   "Still have a question?",
+   "Une autre question ?"
+  ],
+  "foot_shop": [
+   "Shop",
+   "Boutique"
+  ],
+  "foot_contact": [
+   "Contact",
+   "Contact"
+  ],
+  "foot_about": [
+   "Electronics, sport, accessories and home products. Free delivery in Salé and Rabat, cash on delivery.",
+   "Électronique, sport, accessoires et maison. Livraison gratuite à Salé et Rabat, paiement à la livraison."
+  ],
+  "foot_hours": [
+   "We answer from 9:00 to 21:00",
+   "Réponse de 9 h à 21 h"
   ]
  },
  "cats": {
