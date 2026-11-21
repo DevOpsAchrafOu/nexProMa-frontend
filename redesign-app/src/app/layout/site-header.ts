@@ -2,17 +2,18 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
+import { Logo } from '../shared/logo';
 import { LANGS, Lang } from '../data/site-data';
 import { Cart } from '../cart/cart';
 import { Favorites } from '../shared/saved-products';
 
 @Component({
   selector: 'header[appSiteHeader]',
-  imports: [Icon, RouterLink],
+  imports: [Icon, RouterLink, Logo],
   host: { class: 'top' },
   template: `
     <div class="wrap">
-      <a class="logo" [routerLink]="i18n.link('')" aria-label="nexProMa"><img src="img/logo.svg" alt="nexProMa" width="160" height="40" /></a>
+      <a class="logo" [routerLink]="i18n.link('')" aria-label="nexProMa"><app-logo /></a>
       <nav aria-label="Menu">
         @for (n of nav; track n.id) {
           <a [routerLink]="i18n.link('')" [fragment]="n.id">{{ i18n.t(n.label) }}</a>
