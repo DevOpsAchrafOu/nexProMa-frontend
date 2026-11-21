@@ -1,6 +1,9 @@
-import { Component, Injector, afterNextRender, computed, effect, inject, input, viewChild } from '@angular/core';
+import { Component, Injector, afterNextRender, computed, effect, inject, input, untracked, viewChild } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { I18n } from '../i18n';
+import { I18n, inBrowser } from '../i18n';
+import { RecentlyViewed } from '../shared/saved-products';
+import { FavButton } from '../shared/fav-button';
+import { RecentlyViewedSection } from '../products/recently-viewed';
 import { Seo, pageUrl } from '../seo';
 import { Icon } from '../shared/icons';
 import { ProductGallery } from '../products/product-gallery';
@@ -15,7 +18,7 @@ const RELATED = 4;
 /** One product: photos, price, description, order form, then similar products. */
 @Component({
   selector: 'app-product-page',
-  imports: [RouterLink, Icon, ProductGallery, OrderForm, ProductCard, HowToOrder],
+  imports: [RouterLink, Icon, ProductGallery, OrderForm, ProductCard, HowToOrder, FavButton, RecentlyViewedSection],
   host: { style: 'display:contents' },
   template: `
     @if (product(); as p) {
@@ -51,9 +54,12 @@ const RELATED = 4;
               <li><app-icon name="check" />{{ i18n.t('m2') }}</li>
               <li><app-icon name="check" />{{ i18n.t('m3') }}</li>
             </ul>
-            <button class="btn outline add-cart" type="button" (click)="cart.add(p.id, title())">
-              <app-icon name="bag-plus" />{{ i18n.t('cart_add') }}
-            </button>
+            <div class="buy-row">
+              <button class="btn outline add-cart" type="button" (click)="cart.add(p.id, title())">
+                <app-icon name="bag-plus" />{{ i18n.t('cart_add') }}
+              </button>
+              <app-fav-button [productId]="p.id" />
+            </div>
             <form appOrderForm id="order" [product]="p"></form>
             <a class="ask" [href]="i18n.wa(i18n.t('wa_ask', { t: title() }))" target="_blank" rel="noopener">{{ i18n.t('askp') }}</a>
           </div>
@@ -71,6 +77,8 @@ const RELATED = 4;
         </div></section>
       }
 
+      <section appRecentlyViewed [exclude]="p.id"></section>
+
       <section appHowToOrder></section>
     }
   `,
@@ -83,6 +91,8 @@ export class ProductPage {
   private readonly router = inject(Router);
   private readonly injector = inject(Injector);
   private readonly orderForm = viewChild(OrderForm);
+  private readonly seen = inject(RecentlyViewed);
+  private readonly browser = inBrowser();
 
   /** From the URL p/:slug. */
   readonly slug = input.required<string>();
@@ -108,6 +118,8 @@ export class ProductPage {
         return;
       }
       this.seo.set(this.pageSeo(p));
+      // Remember the visit in the browser, for "Recently viewed".
+      if (this.browser) untracked(() => this.seen.add(p.id));
       // "Order" on a card links here with #order: put the cursor in the form.
       if (this.route.snapshot.fragment === 'order') {
         afterNextRender(() => this.orderForm()?.focus(), { injector: this.injector });

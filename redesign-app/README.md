@@ -38,6 +38,8 @@ schema.org data (`Product` with price in MAD on product pages, `Store` on the ho
 | `src/app/sections/` | Hero + trust strip, How to order, Reviews (lightbox), About, FAQ, final call to action |
 | `src/app/products/` | Search / categories / sort, product card, photo gallery, order form (one product or the whole cart) |
 | `src/app/cart/` | WhatsApp cart: service (saved in the visitor's browser, `localStorage` key `nx_cart`), slide-in panel, "added" confirmation |
+| `src/app/shared/saved-products.ts` | Favorites (`nx_fav`) and recently viewed products (`nx_seen`), kept in the visitor's browser |
+| `src/app/pages/favorites-page.ts` | `/favorites/` and `/fr/favorites/`: the visitor's favorites (filled in the browser, `noindex`, not in the sitemap) |
 | `src/app/app.routes.ts`, `src/app/app.routes.server.ts` | Routes, and which ones are prerendered |
 | `scripts/sitemap.mjs` | Writes `sitemap.xml` after the build |
 | `src/styles.css` | All styles (global) |

@@ -4,6 +4,7 @@ import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { LANGS, Lang } from '../data/site-data';
 import { Cart } from '../cart/cart';
+import { Favorites } from '../shared/saved-products';
 
 @Component({
   selector: 'header[appSiteHeader]',
@@ -30,6 +31,10 @@ import { Cart } from '../cart/cart';
           </div>
         </div>
         <a class="btn ghost-wa sm hide-sm" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />WhatsApp</a>
+        <a class="cart-btn" [routerLink]="i18n.link('favorites')" [attr.aria-label]="i18n.t('fav_nav') + (fav.count() ? ' (' + fav.count() + ')' : '')" [attr.title]="i18n.t('fav_nav')">
+          <app-icon name="heart" />
+          @if (fav.count()) { <span class="dot fav-dot" aria-hidden="true">{{ fav.count() }}</span> }
+        </a>
         <button class="cart-btn" type="button" [attr.aria-label]="i18n.t('cart_open') + (cart.count() ? ' (' + cart.count() + ')' : '')" (click)="cart.show()">
           <app-icon name="bag" />
           @if (cart.count()) { <span class="dot" aria-hidden="true">{{ cart.count() }}</span> }
@@ -41,6 +46,7 @@ import { Cart } from '../cart/cart';
 export class SiteHeader {
   protected readonly i18n = inject(I18n);
   protected readonly cart = inject(Cart);
+  protected readonly fav = inject(Favorites);
   protected readonly langs = LANGS;
   protected readonly labels: Record<Lang, string> = { en: 'EN', fr: 'FR' };
   protected readonly names: Record<Lang, string> = { en: 'English', fr: 'Français' };
