@@ -14,7 +14,7 @@ Conversation language with the owner: French / Moroccan Darija.
 
 ## Decisions already made (keep them)
 - Languages EN / FR only, **English by default** (Arabic was removed at the owner's request on 2026-11-20; it is in git history before PR "Modern language switch"). Every new text needs both (`ui` in `redesign-app/src/app/data/site-data.json`).
-- WhatsApp: the redesign uses a **fictional number** (212600000000) and the number is **not displayed** anywhere; buttons still open WhatsApp with a prefilled order message.
+- WhatsApp: the store's **real number** +212 7 68 80 81 46 (same as the old store), set as `wa` in `site-data.json` since 2026-11-21 (before: fictional 212600000000). The number is **not displayed** on the page; buttons open WhatsApp with a prefilled message.
 - Products: 30 (duplicate #21 removed; #25 labelled "style 2"). **4 shown by default** (no slideshow: it showed stickered photos); "See all products" reveals the rest. Search / category / sort reveal all.
 - Ordering: product page form (one product) or the **WhatsApp cart** (several products, one message). Both send a prefilled WhatsApp message; nothing is stored server-side. The cart lives in the visitor's `localStorage` (`nx_cart`).
 - Design ("brand blue", chosen by the owner): tokens at the top of `redesign-app/src/styles.css` — ink #0B1530, brand blue #1F4FE0 (primary buttons), green #0A8F45 for WhatsApp only, sale red #D92D20, page #F6F7FB. Font: Manrope. Soft motion only, disabled with reduced motion.
