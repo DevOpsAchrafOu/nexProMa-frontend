@@ -2,19 +2,20 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
+import { Logo } from '../shared/logo';
 import { Cart } from '../cart/cart';
 import { CONTACT, INFO, INFO_KEYS } from '../data/info-pages';
 
 /** Footer (shop, help pages, contact), sticky mobile bar and floating WhatsApp button. */
 @Component({
   selector: 'app-site-footer',
-  imports: [Icon, RouterLink],
+  imports: [Icon, RouterLink, Logo],
   host: { style: 'display:contents' },
   template: `
     <footer>
       <div class="wrap foot-grid">
         <div class="foot-brand">
-          <img src="img/logo.svg" alt="nexProMa" width="140" height="35" loading="lazy" />
+          <app-logo [dark]="true" [size]="32" />
           <p>{{ i18n.t('foot_about') }}</p>
         </div>
         <nav [attr.aria-label]="i18n.t('foot_shop')">
