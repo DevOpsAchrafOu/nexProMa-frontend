@@ -1,12 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { I18n } from '../i18n';
 import { RouterLink } from '@angular/router';
+import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { DATA } from '../data/site-data';
 
-const SPARK = 'M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0z';
-
-/** Hero + trust strip. */
+/** Hero (white, brand blue accents, clean product photos) + trust strip. */
 @Component({
   selector: 'app-hero',
   imports: [Icon, RouterLink],
@@ -16,18 +14,21 @@ const SPARK = 'M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-
       <div class="wrap">
         <div class="txt">
           <span class="pill">{{ i18n.t('pill') }}</span>
-          <h1>{{ i18n.t('h1a') }}{{ i18n.t('h1b') }}</h1>
+          <h1>{{ i18n.t('h1a') }}<span class="accent">{{ i18n.t('h1b') }}</span></h1>
           <p class="lead">{{ i18n.t('lead') }}</p>
           <div class="ctas">
-            <a class="btn blue" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('see') }} ({{ count }})</a>
-            <a class="btn wa" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />{{ i18n.t('ask') }}</a>
+            <a class="btn primary" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('see') }} ({{ count }})</a>
+            <a class="btn ghost-wa" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />{{ i18n.t('ask') }}</a>
           </div>
           <p class="micro"><app-icon name="check" />{{ i18n.t('nocash') }}</p>
         </div>
-        <div class="collage" aria-hidden="true">
-          <svg class="spark" aria-hidden="true" style="top:-26px;inset-inline-start:-22px;z-index:2" width="54" height="54" viewBox="0 0 24 24"><path fill="#FFC93C" [attr.d]="spark" /></svg>
-          <svg class="spark" aria-hidden="true" style="bottom:-18px;inset-inline-end:-14px;z-index:2" width="40" height="40" viewBox="0 0 24 24"><path fill="#00D555" [attr.d]="spark" /></svg>
-          <img src="img/p23.jpg" alt="" /><img src="img/p1.jpg" alt="" /><img src="img/p12.jpg" alt="" />
+        <div class="showcase" aria-hidden="true">
+          <div class="blob"></div>
+          <img class="s1" src="img/p12.jpg" alt="" width="600" height="600" />
+          <img class="s2" src="img/p3.jpg" alt="" width="600" height="600" />
+          <img class="s3" src="img/p31.jpg" alt="" width="600" height="600" />
+          <span class="badge b1"><app-icon name="check" />{{ i18n.t('t1') }}</span>
+          <span class="badge b2"><app-icon name="truck" />{{ i18n.t('fd') }}</span>
         </div>
       </div>
     </div>
@@ -44,6 +45,5 @@ const SPARK = 'M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-
 export class Hero {
   protected readonly i18n = inject(I18n);
   protected readonly count = DATA.products.length;
-  protected readonly spark = SPARK;
   protected readonly trust = ['t1', 't2', 't3', 't4'];
 }

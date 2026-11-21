@@ -94,8 +94,8 @@
    "Choisissez un produit"
   ],
   "s1p": [
-   "Tap “Order on WhatsApp” under the product you like.",
-   "Appuyez sur « Commander sur WhatsApp » sous le produit."
+   "Tap “Order now” under the product you like.",
+   "Appuyez sur « Commander » sous le produit qui vous plaît."
   ],
   "s2h": [
    "Send the message",
@@ -392,6 +392,10 @@
   "related_h": [
    "You may also like",
    "Vous aimerez aussi"
+  ],
+  "order_short": [
+   "Order now",
+   "Commander"
   ]
  },
  "cats": {

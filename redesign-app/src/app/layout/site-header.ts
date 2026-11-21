@@ -28,7 +28,7 @@ import { LANGS, Lang } from '../data/site-data';
             }
           </div>
         </div>
-        <a class="btn wa hide-sm" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />WhatsApp</a>
+        <a class="btn ghost-wa sm hide-sm" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />WhatsApp</a>
       </div>
     </div>
   `,

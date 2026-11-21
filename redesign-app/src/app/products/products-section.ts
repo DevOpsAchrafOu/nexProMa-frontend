@@ -60,8 +60,6 @@ const SORT_KEY: Record<Sort, (p: Product, rank: number) => number> = {
             appProductCard
             [product]="item.p"
             [more]="item.rank >= featured"
-            [featured]="item.rank < featured"
-            [order]="item.rank"
             [popDelay]="popDelays().get(item.p.id) ?? null"
           ></article>
         }

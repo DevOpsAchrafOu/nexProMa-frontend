@@ -14,9 +14,9 @@ import { Icon } from '../shared/icons';
     </footer>
     <div class="bar">
       <a class="btn wa" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />WhatsApp</a>
-      <a class="btn blue" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('bar_p') }}</a>
+      <a class="btn primary" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('bar_p') }}</a>
     </div>
-    <a class="btn wa fab" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />{{ i18n.t('fab') }}</a>
+    <a class="fab" [href]="i18n.waQuestion()" target="_blank" rel="noopener" [attr.aria-label]="i18n.t('fab')" [attr.title]="i18n.t('fab')"><app-icon name="wa" /></a>
   `,
 })
 export class SiteFooter {
