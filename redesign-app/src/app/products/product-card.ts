@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { Product, discount } from '../data/site-data';
+import { Cart } from '../cart/cart';
 
 @Component({
   selector: 'article[appProductCard]',
@@ -26,12 +27,17 @@ import { Product, discount } from '../data/site-data';
         <strong>{{ p.price }} {{ i18n.t('cur') }}</strong><s>{{ p.old }} {{ i18n.t('cur') }}</s>
       </div>
       <span class="fd"><app-icon name="truck" />{{ i18n.t('fd') }}</span>
-      <a class="btn primary sm" [routerLink]="link()" fragment="order">{{ i18n.t('order_short') }}</a>
+      <div class="actions">
+        <a class="btn primary sm" [routerLink]="link()" fragment="order">{{ i18n.t('order_short') }}</a>
+        <button class="btn outline sm add" type="button" [attr.aria-label]="i18n.t('cart_add')" [attr.title]="i18n.t('cart_add')"
+          (click)="cart.add(p.id, title())"><app-icon name="bag-plus" /></button>
+      </div>
     </div>
   `,
 })
 export class ProductCard {
   protected readonly i18n = inject(I18n);
+  protected readonly cart = inject(Cart);
 
   readonly product = input.required<Product>();
   /** Hidden while the grid is collapsed. */
