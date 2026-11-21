@@ -1,4 +1,6 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, afterNextRender, effect, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 import { I18n } from '../i18n';
 import { Seo } from '../seo';
 import { Hero } from '../sections/hero';
@@ -25,6 +27,13 @@ export class HomePage {
   private readonly seo = inject(Seo);
 
   constructor() {
+    // Coming from another page with #products, #faq…: scroll there once the page is drawn.
+    const route = inject(ActivatedRoute);
+    const scroller = inject(ViewportScroller);
+    afterNextRender(() => {
+      const id = route.snapshot.fragment;
+      if (id) scroller.scrollToAnchor(id);
+    });
     effect(() => {
       const lang = this.i18n.lang();
       this.seo.set({
