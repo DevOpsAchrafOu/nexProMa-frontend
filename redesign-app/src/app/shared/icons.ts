@@ -24,6 +24,9 @@ import { Component, input } from '@angular/core';
       @case ('bag') {
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
       }
+      @case ('heart') {
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      }
       @case ('bag-plus') {
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0M12 11v6M9 14h6"/></svg>
       }
@@ -31,5 +34,5 @@ import { Component, input } from '@angular/core';
   `,
 })
 export class Icon {
-  readonly name = input.required<'wa' | 'check' | 'camera' | 'truck' | 'chevron' | 'bag' | 'bag-plus'>();
+  readonly name = input.required<'wa' | 'check' | 'camera' | 'truck' | 'chevron' | 'bag' | 'bag-plus' | 'heart'>();
 }

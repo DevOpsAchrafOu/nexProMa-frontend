@@ -12,6 +12,8 @@ export interface PageSeo {
   image: string;
   /** schema.org data for search engines. */
   jsonLd: object;
+  /** Keep the page out of search results (e.g. the visitor's favorites). */
+  noindex?: boolean;
 }
 
 /** Absolute URL of a page; directories end with "/" like GitHub Pages serves them. */
@@ -42,6 +44,7 @@ export class Seo {
       'og:image': image,
       'og:locale': page.lang === 'fr' ? 'fr_MA' : 'en_US',
       'twitter:card': 'summary_large_image',
+      robots: page.noindex ? 'noindex, follow' : 'index, follow',
     };
     for (const [key, content] of Object.entries(tags)) {
       const attr = key.startsWith('og:') ? 'property' : 'name';

@@ -4,10 +4,11 @@ import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { Product, discount } from '../data/site-data';
 import { Cart } from '../cart/cart';
+import { FavButton } from '../shared/fav-button';
 
 @Component({
   selector: 'article[appProductCard]',
-  imports: [Icon, RouterLink],
+  imports: [Icon, RouterLink, FavButton],
   host: {
     class: 'card',
     '[class.more]': 'more()',
@@ -20,6 +21,7 @@ import { Cart } from '../cart/cart';
       <img [src]="'img/p' + p.id + '.jpg'" [alt]="title()" loading="lazy" width="600" height="600" />
       <span class="off" dir="ltr">-{{ off() }}%</span>
     </a>
+    <app-fav-button [productId]="p.id" />
     <div class="cb">
       <span class="cat">{{ i18n.cat(p.cat) }}</span>
       <h3><a class="tl" [routerLink]="link()">{{ title() }}</a></h3>

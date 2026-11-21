@@ -8,14 +8,16 @@ import { About, Faq, FinalCta, HowToOrder, Reviews } from '../sections/info-sect
 import { ProductsSection } from '../products/products-section';
 import { DATA, SITE_URL } from '../data/site-data';
 import { Reveal } from '../shared/reveal';
+import { RecentlyViewedSection } from '../products/recently-viewed';
 
 @Component({
   selector: 'app-home-page',
-  imports: [Hero, ProductsSection, HowToOrder, Reviews, About, Faq, FinalCta, Reveal],
+  imports: [Hero, ProductsSection, HowToOrder, Reviews, About, Faq, FinalCta, Reveal, RecentlyViewedSection],
   host: { style: 'display:contents' },
   template: `
     <app-hero />
     <section appProducts></section>
+    <section appRecentlyViewed></section>
     <section appHowToOrder appReveal></section>
     <section appReviews appReveal></section>
     <section appAbout appReveal></section>

@@ -9,5 +9,8 @@ export const serverRoutes: ServerRoute[] = [
   { path: 'fr', renderMode: RenderMode.Prerender },
   { path: 'p/:slug', renderMode: RenderMode.Prerender, getPrerenderParams: slugs },
   { path: 'fr/p/:slug', renderMode: RenderMode.Prerender, getPrerenderParams: slugs },
+  // Favorites are filled in the browser; the generated page is the empty shell.
+  { path: 'favorites', renderMode: RenderMode.Prerender },
+  { path: 'fr/favorites', renderMode: RenderMode.Prerender },
   { path: '**', renderMode: RenderMode.Client },
 ];

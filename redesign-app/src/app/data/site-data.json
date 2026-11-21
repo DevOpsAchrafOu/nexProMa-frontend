@@ -444,6 +444,38 @@
   "cart_clear": [
    "Empty the cart",
    "Vider le panier"
+  ],
+  "fav_add": [
+   "Add to favorites",
+   "Ajouter aux favoris"
+  ],
+  "fav_remove": [
+   "Remove from favorites",
+   "Retirer des favoris"
+  ],
+  "fav_nav": [
+   "Favorites",
+   "Favoris"
+  ],
+  "fav_title": [
+   "Your favorites",
+   "Vos favoris"
+  ],
+  "fav_sub": [
+   "Products you saved with the heart, on this device.",
+   "Les produits gardés avec le cœur, sur cet appareil."
+  ],
+  "fav_empty": [
+   "No favorites yet. Tap the heart on a product to save it here.",
+   "Aucun favori pour l’instant. Touchez le cœur d’un produit pour le retrouver ici."
+  ],
+  "seen_h": [
+   "Recently viewed",
+   "Récemment consultés"
+  ],
+  "seen_clear": [
+   "Clear",
+   "Effacer"
   ]
  },
  "cats": {
