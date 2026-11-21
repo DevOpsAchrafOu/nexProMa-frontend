@@ -55,7 +55,10 @@
             "outputPath": {
               "base": "../docs/redesign",
               "browser": ""
-            }
+            },
+            "server": "src/main.server.ts",
+            "outputMode": "static",
+            "baseHref": "/nexProMa-frontend/redesign/"
           },
           "configurations": {
             "production": {

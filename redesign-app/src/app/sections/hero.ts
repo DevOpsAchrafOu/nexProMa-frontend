@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { I18n } from '../i18n';
+import { RouterLink } from '@angular/router';
 import { Icon } from '../shared/icons';
 import { DATA } from '../data/site-data';
 
@@ -8,7 +9,7 @@ const SPARK = 'M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-
 /** Hero + trust strip. */
 @Component({
   selector: 'app-hero',
-  imports: [Icon],
+  imports: [Icon, RouterLink],
   host: { style: 'display:contents' },
   template: `
     <div class="hero">
@@ -18,7 +19,7 @@ const SPARK = 'M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-
           <h1>{{ i18n.t('h1a') }}{{ i18n.t('h1b') }}</h1>
           <p class="lead">{{ i18n.t('lead') }}</p>
           <div class="ctas">
-            <a class="btn blue" href="#products">{{ i18n.t('see') }} ({{ count }})</a>
+            <a class="btn blue" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('see') }} ({{ count }})</a>
             <a class="btn wa" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />{{ i18n.t('ask') }}</a>
           </div>
           <p class="micro"><app-icon name="check" />{{ i18n.t('nocash') }}</p>

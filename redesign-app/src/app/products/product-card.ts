@@ -1,5 +1,6 @@
-import { Component, DestroyRef, OnInit, computed, inject, input, output, signal } from '@angular/core';
-import { I18n, prefersReducedMotion } from '../i18n';
+import { Component, DestroyRef, OnInit, computed, inject, input, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { I18n, inBrowser, prefersReducedMotion } from '../i18n';
 import { Icon } from '../shared/icons';
 import { Product, discount, photo } from '../data/site-data';
 
@@ -8,7 +9,7 @@ const MAX_SLIDES = 4;
 
 @Component({
   selector: 'article[appProductCard]',
-  imports: [Icon],
+  imports: [Icon, RouterLink],
   host: {
     class: 'card',
     '[class.more]': 'more()',
@@ -17,7 +18,7 @@ const MAX_SLIDES = 4;
   },
   template: `
     @let p = product();
-    <button class="ph" type="button" (click)="open.emit(p.id)">
+    <a class="ph" [routerLink]="link()">
       <img [src]="'img/p' + p.id + '.jpg'" [alt]="title()" loading="lazy" width="600" height="600" />
       @for (src of layers(); track src; let k = $index) {
         <img class="layer" [class.show]="slide() === k + 2" [src]="src" alt="" loading="lazy" />
@@ -32,21 +33,22 @@ const MAX_SLIDES = 4;
           }
         </span>
       }
-    </button>
+    </a>
     <div class="cb">
       <span class="cat">{{ i18n.cat(p.cat) }}</span>
-      <h3><button class="tl" type="button" (click)="open.emit(p.id)">{{ title() }}</button></h3>
+      <h3><a class="tl" [routerLink]="link()">{{ title() }}</a></h3>
       <div class="pr">
         <strong>{{ p.price }} {{ i18n.t('cur') }}</strong><s>{{ p.old }} {{ i18n.t('cur') }}</s>
       </div>
       <span class="fd"><app-icon name="truck" />{{ i18n.t('fd') }}</span>
-      <button class="btn wa" type="button" (click)="buy.emit(p.id)"><app-icon name="wa" />{{ i18n.t('order') }}</button>
+      <a class="btn wa" [routerLink]="link()" fragment="order"><app-icon name="wa" />{{ i18n.t('order') }}</a>
     </div>
   `,
 })
 export class ProductCard implements OnInit {
   protected readonly i18n = inject(I18n);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly browser = inBrowser();
 
   readonly product = input.required<Product>();
   /** Hidden while the grid is collapsed. */
@@ -57,12 +59,10 @@ export class ProductCard implements OnInit {
   /** Set when the card appears after "See all products" (ms of delay), else null. */
   readonly popDelay = input<number | null>(null);
 
-  readonly open = output<number>();
-  /** "Order" opens the product dialog on its order form. */
-  readonly buy = output<number>();
-
   protected readonly title = computed(() => this.i18n.pick(this.product().title));
   protected readonly off = computed(() => discount(this.product()));
+  /** Product page in the current language. "Order" adds #order to open it on the form. */
+  protected readonly link = computed(() => this.i18n.link('p', this.product().slug));
 
   /** Number of photos in the slideshow (1 = no slideshow). */
   protected readonly slides = computed(() => (this.featured() ? Math.min(this.product().photos, MAX_SLIDES) : 1));
@@ -75,7 +75,8 @@ export class ProductCard implements OnInit {
   protected readonly slide = signal(1);
 
   ngOnInit(): void {
-    if (this.slides() < 2 || prefersReducedMotion()) return;
+    // The slideshow runs only in the visitor's browser, never while pages are generated.
+    if (!this.browser || this.slides() < 2 || prefersReducedMotion()) return;
     let timer: ReturnType<typeof setInterval> | undefined;
     const start = setTimeout(() => {
       timer = setInterval(() => {

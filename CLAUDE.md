@@ -8,7 +8,9 @@ Conversation language with the owner: French / Moroccan Darija.
 - `redesign-app/` — conversion-focused redesign of the home page, **Angular 22** (standalone components, signals, zoneless).
   Needs Node 22.22+ (the old `src/` app needs Node 16). See `redesign-app/README.md`.
 - `docs/redesign/` — build output of `redesign-app` (`cd redesign-app && npm run build`). Never hand-edit; commit it after building.
+  Every page is prerendered to static HTML (Angular `outputMode: static`): home + 30 product pages, in EN (root) and FR (`/fr/`), plus `sitemap.xml`.
   Live: https://devopsachrafou.github.io/nexProMa-frontend/redesign/
+- If the site moves to its own domain: change `SITE_URL` in `redesign-app/src/app/data/site-data.ts` and `baseHref` in `redesign-app/angular.json`.
 
 ## Decisions already made (keep them)
 - Languages EN / FR only, **English by default** (Arabic was removed at the owner's request on 2026-11-20; it is in git history before PR "Modern language switch"). Every new text needs both (`ui` in `redesign-app/src/app/data/site-data.json`).

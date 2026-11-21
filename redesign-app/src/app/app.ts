@@ -1,28 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, afterNextRender, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 import { SiteHeader } from './layout/site-header';
 import { SiteFooter } from './layout/site-footer';
-import { Hero } from './sections/hero';
-import { About, Faq, FinalCta, HowToOrder, Reviews } from './sections/info-sections';
-import { ProductsSection } from './products/products-section';
-import { QuickView } from './products/quick-view';
+import { I18n } from './i18n';
 
 @Component({
   selector: 'app-root',
-  imports: [SiteHeader, Hero, ProductsSection, HowToOrder, Reviews, About, Faq, FinalCta, SiteFooter, QuickView],
+  imports: [RouterOutlet, SiteHeader, SiteFooter],
   host: { style: 'display:contents' },
   template: `
     <header appSiteHeader></header>
-    <main id="top">
-      <app-hero />
-      <section appProducts></section>
-      <section appHowToOrder></section>
-      <section appReviews></section>
-      <section appAbout></section>
-      <section appFaq></section>
-      <section appFinalCta></section>
-    </main>
+    <main id="top"><router-outlet /></main>
     <app-site-footer />
-    <app-quick-view />
   `,
 })
-export class App {}
+export class App {
+  constructor() {
+    const router = inject(Router);
+    const i18n = inject(I18n);
+    // Old links used ?lang=fr: send them to the French page.
+    afterNextRender(() => {
+      if (new URLSearchParams(location.search).get('lang') === 'fr' && i18n.lang() === 'en') {
+        router.navigateByUrl(i18n.switchTo('fr'), { replaceUrl: true });
+      }
+    });
+  }
+}

@@ -384,6 +384,14 @@
   "feat_h": [
    "Features",
    "Caractéristiques"
+  ],
+  "crumb_home": [
+   "Home",
+   "Accueil"
+  ],
+  "related_h": [
+   "You may also like",
+   "Vous aimerez aussi"
   ]
  },
  "cats": {
@@ -442,7 +450,8 @@
      "Memory button, runs on USB power or batteries",
      "Bouton mémoire, fonctionne sur USB ou sur piles"
     ]
-   ]
+   ],
+   "slug": "tensiometre-automatique-intelligent-de-bras-microlife"
   },
   {
    "id": 2,
@@ -475,7 +484,8 @@
      "Works with a TV, lamp, air conditioner, kettle…",
      "Pour TV, lampe, climatiseur, bouilloire…"
     ]
-   ]
+   ],
+   "slug": "prise-intelligente-wi-fi-controlez-vos-appareils-a-distance"
   },
   {
    "id": 3,
@@ -508,7 +518,8 @@
      "For weightlifting, fitness and gym workouts",
      "Pour la musculation, le fitness et la salle de sport"
     ]
-   ]
+   ],
+   "slug": "gants-de-musculation-tailles-m-l-noir"
   },
   {
    "id": 4,
@@ -537,7 +548,8 @@
      "Antique bronze finish",
      "Finition bronze vieilli"
     ]
-   ]
+   ],
+   "slug": "montre-pendentif-camion-collier-cadeau-homme-et-femme"
   },
   {
    "id": 5,
@@ -566,7 +578,8 @@
      "Sizes S–M",
      "Tailles S–M"
     ]
-   ]
+   ],
+   "slug": "gants-tactiques-pour-sport-et-velo-tailles-s-m"
   },
   {
    "id": 6,
@@ -595,7 +608,8 @@
      "Turns off by itself when removed from the skin",
      "S’éteint tout seul quand on le retire de la peau"
     ]
-   ]
+   ],
+   "slug": "masseur-musculaire-soulage-crampes-et-douleurs"
   },
   {
    "id": 7,
@@ -628,7 +642,8 @@
      "For weightlifting, fitness and gym workouts",
      "Pour la musculation, le fitness et la salle de sport"
     ]
-   ]
+   ],
+   "slug": "gants-de-musculation-tailles-m-l-vert"
   },
   {
    "id": 8,
@@ -661,7 +676,8 @@
      "Pull tabs to take them off easily",
      "Languettes pour les retirer facilement"
     ]
-   ]
+   ],
+   "slug": "gants-de-sport-avec-maintien-du-poignet-tailles-s-xl"
   },
   {
    "id": 9,
@@ -694,7 +710,8 @@
      "Children must use it with an adult",
      "Les enfants doivent l’utiliser avec un adulte"
     ]
-   ]
+   ],
+   "slug": "nettoyeur-d-oreilles-avec-camera-anti-cerumen"
   },
   {
    "id": 10,
@@ -719,7 +736,8 @@
      "Comes with spare brush heads",
      "Livrée avec des têtes de rechange"
     ]
-   ]
+   ],
+   "slug": "brosse-a-dents-electrique-rechargeable"
   },
   {
    "id": 11,
@@ -748,7 +766,8 @@
      "Antique bronze finish",
      "Finition bronze vieilli"
     ]
-   ]
+   ],
+   "slug": "montre-pendentif-one-piece-un-cadeau-unique"
   },
   {
    "id": 12,
@@ -781,7 +800,8 @@
      "Comes with a charging cable and spare ear tips",
      "Livrés avec un câble de charge et des embouts de rechange"
     ]
-   ]
+   ],
+   "slug": "ecouteurs-bluetooth-lenovo-gm2-pro-blanc"
   },
   {
    "id": 13,
@@ -810,7 +830,8 @@
      "For men and women, sold as a pair",
      "Pour homme et femme, vendues par paire"
     ]
-   ]
+   ],
+   "slug": "bandes-de-poignet-ajustables-homme-et-femme-lot-de-2"
   },
   {
    "id": 14,
@@ -839,7 +860,8 @@
      "Antique bronze finish",
      "Finition bronze vieilli"
     ]
-   ]
+   ],
+   "slug": "montre-pendentif-moto-collier-cadeau-homme-et-femme"
   },
   {
    "id": 15,
@@ -872,7 +894,8 @@
      "For laptops from 13 to 16 inches",
      "Pour PC portables de 13 à 16 pouces"
     ]
-   ]
+   ],
+   "slug": "support-pc-portable-en-aluminium"
   },
   {
    "id": 16,
@@ -905,7 +928,8 @@
      "Remote runs on an AAA battery (not included)",
      "Télécommande à pile AAA (non fournie)"
     ]
-   ]
+   ],
+   "slug": "telecommande-sans-fil-pour-lampe-portee-15-m"
   },
   {
    "id": 17,
@@ -938,7 +962,8 @@
      "Comes with a charging cable and spare ear tips",
      "Livrés avec un câble de charge et des embouts de rechange"
     ]
-   ]
+   ],
+   "slug": "ecouteurs-bluetooth-lenovo-gm2-pro-noir"
   },
   {
    "id": 18,
@@ -967,7 +992,8 @@
      "Better typing angle",
      "Meilleur angle pour taper"
     ]
-   ]
+   ],
+   "slug": "petit-support-pc-portable-aluminium-auto-adhesif"
   },
   {
    "id": 19,
@@ -996,7 +1022,8 @@
      "Set up from your phone in a few minutes",
      "Se configure depuis le téléphone en quelques minutes"
     ]
-   ]
+   ],
+   "slug": "repeteur-et-point-d-acces-wi-fi-amplifie-le-signal"
   },
   {
    "id": 20,
@@ -1025,7 +1052,8 @@
      "Antique bronze finish",
      "Finition bronze vieilli"
     ]
-   ]
+   ],
+   "slug": "montre-pendentif-cheval-collier-cadeau-homme-et-femme"
   },
   {
    "id": 22,
@@ -1054,7 +1082,8 @@
      "Reflective strip for night visibility",
      "Bande réfléchissante pour être vu la nuit"
     ]
-   ]
+   ],
+   "slug": "sacoche-ceinture-legere-pour-telephone-sport-et-running"
   },
   {
    "id": 23,
@@ -1087,7 +1116,8 @@
      "Up to 7 days of battery life",
      "Jusqu’à 7 jours d’autonomie"
     ]
-   ]
+   ],
+   "slug": "montre-connectee-colmi-p71-originale"
   },
   {
    "id": 24,
@@ -1116,7 +1146,8 @@
      "Several inner pockets",
      "Plusieurs poches intérieures"
     ]
-   ]
+   ],
+   "slug": "sac-poitrine-dos-impermeable-multi-usage"
   },
   {
    "id": 25,
@@ -1145,7 +1176,8 @@
      "Antique bronze finish",
      "Finition bronze vieilli"
     ]
-   ]
+   ],
+   "slug": "montre-pendentif-one-piece-un-cadeau-unique-modele-2"
   },
   {
    "id": 26,
@@ -1174,7 +1206,8 @@
      "Comes in a small storage box",
      "Livré dans une petite boîte de rangement"
     ]
-   ]
+   ],
+   "slug": "pince-nez-anti-ronflement"
   },
   {
    "id": 27,
@@ -1203,7 +1236,8 @@
      "Simple installation in a few steps",
      "Installation simple en quelques étapes"
     ]
-   ]
+   ],
+   "slug": "compteur-velo-vitesse-et-distance"
   },
   {
    "id": 28,
@@ -1232,7 +1266,8 @@
      "For the whole family",
      "Pour toute la famille"
     ]
-   ]
+   ],
+   "slug": "thermometre-infrarouge-sans-contact"
   },
   {
    "id": 29,
@@ -1265,7 +1300,8 @@
      "Pull tabs to take them off easily",
      "Languettes pour les retirer facilement"
     ]
-   ]
+   ],
+   "slug": "gants-tactiques-de-musculation-tailles-s-xl"
   },
   {
    "id": 30,
@@ -1290,7 +1326,8 @@
      "Adjustable head size, ties under the chin",
      "Tour de tête réglable, attaches sous le menton"
     ]
-   ]
+   ],
+   "slug": "casque-de-securite-bebe-protection-anti-chute"
   },
   {
    "id": 31,
@@ -1319,7 +1356,8 @@
      "Fits handlebars from 22.2 to 31.8 mm, quick strap mounting",
      "Pour guidons de 22,2 à 31,8 mm, fixation rapide par sangle"
     ]
-   ]
+   ],
+   "slug": "klaxon-electrique-pour-velo-et-trottinette"
   }
  ],
  "cities": [
