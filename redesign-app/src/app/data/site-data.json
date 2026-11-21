@@ -396,6 +396,54 @@
   "order_short": [
    "Order now",
    "Commander"
+  ],
+  "cart": [
+   "Cart",
+   "Panier"
+  ],
+  "cart_open": [
+   "Open the cart",
+   "Ouvrir le panier"
+  ],
+  "cart_title": [
+   "Your cart",
+   "Votre panier"
+  ],
+  "cart_add": [
+   "Add to cart",
+   "Ajouter au panier"
+  ],
+  "cart_added": [
+   "Added to your cart",
+   "Ajouté au panier"
+  ],
+  "cart_view": [
+   "View cart",
+   "Voir le panier"
+  ],
+  "cart_remove": [
+   "Remove",
+   "Retirer"
+  ],
+  "cart_empty": [
+   "Your cart is empty.",
+   "Votre panier est vide."
+  ],
+  "cart_form_h": [
+   "Your details, pay on delivery",
+   "Vos coordonnées, paiement à la livraison"
+  ],
+  "cart_send": [
+   "Send my order on WhatsApp",
+   "Envoyer ma commande sur WhatsApp"
+  ],
+  "cart_sent": [
+   "Order sent on WhatsApp?",
+   "Commande envoyée sur WhatsApp ?"
+  ],
+  "cart_clear": [
+   "Empty the cart",
+   "Vider le panier"
   ]
  },
  "cats": {

@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { LANGS, Lang } from '../data/site-data';
+import { Cart } from '../cart/cart';
 
 @Component({
   selector: 'header[appSiteHeader]',
@@ -29,12 +30,17 @@ import { LANGS, Lang } from '../data/site-data';
           </div>
         </div>
         <a class="btn ghost-wa sm hide-sm" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />WhatsApp</a>
+        <button class="cart-btn" type="button" [attr.aria-label]="i18n.t('cart_open') + (cart.count() ? ' (' + cart.count() + ')' : '')" (click)="cart.show()">
+          <app-icon name="bag" />
+          @if (cart.count()) { <span class="dot" aria-hidden="true">{{ cart.count() }}</span> }
+        </button>
       </div>
     </div>
   `,
 })
 export class SiteHeader {
   protected readonly i18n = inject(I18n);
+  protected readonly cart = inject(Cart);
   protected readonly langs = LANGS;
   protected readonly labels: Record<Lang, string> = { en: 'EN', fr: 'FR' };
   protected readonly names: Record<Lang, string> = { en: 'English', fr: 'Français' };

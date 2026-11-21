@@ -337,3 +337,71 @@ html.js .reveal.in { opacity: 1; transform: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   html.js .reveal { opacity: 1; transform: none; }
 }
+
+/* Cart: header button, card actions, product page button */
+.cart-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); cursor: pointer; transition: border-color .2s, background-color .2s; }
+.cart-btn:hover { border-color: var(--ink); }
+.cart-btn .dot { position: absolute; top: -6px; right: -6px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 11px; font-weight: 800; line-height: 20px; text-align: center; box-shadow: 0 0 0 2px #fff; animation: pop .35s var(--ease); }
+.card .actions { display: flex; gap: 8px; margin-top: 10px; }
+.card .actions .btn { margin: 0; }
+.card .actions .btn.primary { flex: 1 1 auto; width: auto; }
+.card .actions .add { flex: 0 0 40px; width: 40px; padding: 0; }
+.card .actions .add svg { width: 19px; height: 19px; }
+.add-cart { width: 100%; }
+
+/* Cart panel (dialog sliding in from the right) */
+dialog.drawer { position: fixed; inset: 0 0 0 auto; width: min(440px, 100vw); max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; border-radius: 0; display: flex; flex-direction: column; background: var(--surface); }
+dialog.drawer:not([open]) { display: none; }
+dialog.drawer[open] { animation: slide-in .35s var(--ease); }
+@keyframes slide-in { from { transform: translateX(100%); } to { transform: none; } }
+.drawer-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; border-bottom: 1px solid var(--line); }
+.drawer-head h2 { margin: 0; font-size: 20px; letter-spacing: -.01em; }
+.drawer-head .count { color: var(--muted); font-weight: 700; }
+.icon-btn { width: 40px; height: 40px; border: 0; border-radius: 10px; background: var(--bg); color: var(--ink); font-size: 22px; line-height: 1; cursor: pointer; }
+.icon-btn:hover { background: var(--line); }
+.drawer-body { flex: 1; overflow-y: auto; padding: 8px 20px 24px; }
+.lines { margin: 0 0 18px; padding: 0; list-style: none; }
+.lines li { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.lines .thumb img { width: 72px; height: 72px; object-fit: contain; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.lines .meta { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.lines .name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--ink); font-size: 14px; font-weight: 600; line-height: 1.4; text-decoration: none; }
+.lines .name:hover { color: var(--blue); }
+.lines .unit { font-size: 13px; color: var(--muted); }
+.lines .row { display: flex; align-items: center; gap: 12px; margin-top: 4px; }
+.lines .qty { display: flex; align-items: center; overflow: hidden; border: 1px solid #d5dae5; border-radius: 10px; }
+.lines .qty button { width: 34px; height: 34px; border: 0; background: none; font-size: 18px; font-weight: 700; color: var(--ink); cursor: pointer; }
+.lines .qty button:hover:not(:disabled) { background: var(--bg); }
+.lines .qty button:disabled { color: #c3c9d6; cursor: default; }
+.lines .qty output { min-width: 28px; text-align: center; font-weight: 700; font-size: 14px; }
+.lines .remove { padding: 0; border: 0; background: none; color: var(--muted); font: inherit; font-size: 13px; font-weight: 600; text-decoration: underline; cursor: pointer; }
+.lines .remove:hover { color: var(--sale); }
+.lines .sub { font-size: 15px; font-weight: 800; white-space: nowrap; }
+.sent { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 16px 0 0; padding: 14px 16px; border-radius: 12px; background: var(--wa-50); font-size: 14px; font-weight: 600; color: var(--wa-600); }
+.link { padding: 0; border: 0; background: none; color: var(--blue); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+.empty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 32px; text-align: center; color: var(--ink-2); }
+.empty svg { width: 48px; height: 48px; padding: 12px; border-radius: 16px; background: var(--blue-50); color: var(--blue); }
+.empty p { margin: 0; font-size: 16px; font-weight: 600; }
+
+/* "Added to cart" confirmation */
+.toast { position: fixed; left: 50%; bottom: 24px; z-index: 40; display: flex; align-items: center; gap: 12px; width: min(460px, calc(100vw - 32px)); padding: 12px 12px 12px 16px; border-radius: 16px; background: var(--ink); color: #fff; box-shadow: var(--shadow-lg); transform: translate(-50%, 140%); opacity: 0; pointer-events: none; transition: transform .35s var(--ease), opacity .35s var(--ease); }
+.toast.on { transform: translate(-50%, 0); opacity: 1; pointer-events: auto; }
+.toast > svg { flex: 0 0 auto; width: 22px; height: 22px; padding: 3px; border-radius: 50%; background: var(--wa); color: #fff; }
+.toast .msg { display: flex; flex-direction: column; min-width: 0; flex: 1; font-size: 13px; line-height: 1.35; }
+.toast .msg b { font-size: 14px; }
+.toast .msg .t { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #b8c2dc; }
+.toast .btn { flex: 0 0 auto; box-shadow: none; }
+@media (max-width: 720px) {
+  .toast { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .cart-btn { width: 40px; height: 40px; }
+  .lang .globe { display: none; }
+  .lang { padding-left: 3px; }
+}
+dialog.drawer { overflow: hidden; }
+.card .actions .btn.primary { min-width: 0; }
+@media (max-width: 720px) {
+  .card .actions { gap: 6px; }
+  .card .actions .btn.primary { padding: 0 8px; }
+  .card .actions .add { flex-basis: 38px; width: 38px; }
+}
+/* No page scroll behind an open panel or lightbox */
+html:has(dialog[open]) { overflow: hidden; }

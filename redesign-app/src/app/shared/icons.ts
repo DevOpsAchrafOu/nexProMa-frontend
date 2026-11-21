@@ -21,9 +21,15 @@ import { Component, input } from '@angular/core';
       @case ('chevron') {
         <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       }
+      @case ('bag') {
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      }
+      @case ('bag-plus') {
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0M12 11v6M9 14h6"/></svg>
+      }
     }
   `,
 })
 export class Icon {
-  readonly name = input.required<'wa' | 'check' | 'camera' | 'truck' | 'chevron'>();
+  readonly name = input.required<'wa' | 'check' | 'camera' | 'truck' | 'chevron' | 'bag' | 'bag-plus'>();
 }

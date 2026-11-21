@@ -8,6 +8,7 @@ import { OrderForm } from '../products/order-form';
 import { ProductCard } from '../products/product-card';
 import { HowToOrder } from '../sections/info-sections';
 import { DATA, Product, SITE_URL, photo, productBySlug } from '../data/site-data';
+import { Cart } from '../cart/cart';
 
 const RELATED = 4;
 
@@ -50,6 +51,9 @@ const RELATED = 4;
               <li><app-icon name="check" />{{ i18n.t('m2') }}</li>
               <li><app-icon name="check" />{{ i18n.t('m3') }}</li>
             </ul>
+            <button class="btn outline add-cart" type="button" (click)="cart.add(p.id, title())">
+              <app-icon name="bag-plus" />{{ i18n.t('cart_add') }}
+            </button>
             <form appOrderForm id="order" [product]="p"></form>
             <a class="ask" [href]="i18n.wa(i18n.t('wa_ask', { t: title() }))" target="_blank" rel="noopener">{{ i18n.t('askp') }}</a>
           </div>
@@ -73,6 +77,7 @@ const RELATED = 4;
 })
 export class ProductPage {
   protected readonly i18n = inject(I18n);
+  protected readonly cart = inject(Cart);
   private readonly seo = inject(Seo);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);

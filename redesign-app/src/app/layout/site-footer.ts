@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { I18n } from '../i18n';
 import { RouterLink } from '@angular/router';
 import { Icon } from '../shared/icons';
+import { Cart } from '../cart/cart';
 
 /** Footer, sticky mobile bar and floating WhatsApp button. */
 @Component({
@@ -14,11 +15,16 @@ import { Icon } from '../shared/icons';
     </footer>
     <div class="bar">
       <a class="btn wa" [href]="i18n.waQuestion()" target="_blank" rel="noopener"><app-icon name="wa" />WhatsApp</a>
-      <a class="btn primary" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('bar_p') }}</a>
+      @if (cart.count()) {
+        <button class="btn primary" type="button" (click)="cart.show()"><app-icon name="bag" />{{ i18n.t('cart') }} ({{ cart.count() }})</button>
+      } @else {
+        <a class="btn primary" [routerLink]="i18n.link('')" fragment="products">{{ i18n.t('bar_p') }}</a>
+      }
     </div>
     <a class="fab" [href]="i18n.waQuestion()" target="_blank" rel="noopener" [attr.aria-label]="i18n.t('fab')" [attr.title]="i18n.t('fab')"><app-icon name="wa" /></a>
   `,
 })
 export class SiteFooter {
   protected readonly i18n = inject(I18n);
+  protected readonly cart = inject(Cart);
 }
