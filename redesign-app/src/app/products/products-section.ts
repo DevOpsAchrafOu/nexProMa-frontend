@@ -2,7 +2,6 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { I18n, prefersReducedMotion } from '../i18n';
 import { Icon } from '../shared/icons';
 import { ProductCard } from './product-card';
-import { QuickViewState } from '../shared/quick-view.service';
 import { CatKey, DATA, FEATURED, Product, discount } from '../data/site-data';
 
 type Sort = 'rec' | 'low' | 'high' | 'off';
@@ -64,8 +63,6 @@ const SORT_KEY: Record<Sort, (p: Product, rank: number) => number> = {
             [featured]="item.rank < featured"
             [order]="item.rank"
             [popDelay]="popDelays().get(item.p.id) ?? null"
-            (open)="quickView.open($event)"
-            (buy)="quickView.open($event, true)"
           ></article>
         }
       </div>
@@ -81,7 +78,6 @@ const SORT_KEY: Record<Sort, (p: Product, rank: number) => number> = {
 })
 export class ProductsSection {
   protected readonly i18n = inject(I18n);
-  protected readonly quickView = inject(QuickViewState);
 
   protected readonly products = DATA.products;
   protected readonly featured = FEATURED;

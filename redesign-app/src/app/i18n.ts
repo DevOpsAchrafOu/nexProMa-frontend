@@ -1,25 +1,44 @@
-import { DOCUMENT, Injectable, computed, effect, inject, signal } from '@angular/core';
+import { DOCUMENT, Injectable, PLATFORM_ID, computed, effect, inject, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { NavigationEnd, Router } from '@angular/router';
 import { CatKey, DATA, LANGS, Lang, Tr } from './data/site-data';
 
-const STORAGE_KEY = 'nx_lang';
-
-/** Current language (EN by default, or FR) and the WhatsApp links. */
+/**
+ * Current language, read from the URL: /fr/… is French, everything else is English (default).
+ * Also builds the WhatsApp links and the language-aware internal links.
+ */
 @Injectable({ providedIn: 'root' })
 export class I18n {
   private readonly doc = inject(DOCUMENT);
+  private readonly router = inject(Router);
+  private readonly url = signal(this.router.url);
 
-  readonly lang = signal<Lang>(this.initialLang());
+  readonly lang = computed<Lang>(() => (/^\/fr(\/|$|\?|#)/.test(this.url()) ? 'fr' : 'en'));
   readonly index = computed(() => LANGS.indexOf(this.lang()));
 
   constructor() {
-    effect(() => {
-      const l = this.lang();
-      this.doc.documentElement.lang = l;
-      this.doc.title = this.t('title');
-      try {
-        localStorage.setItem(STORAGE_KEY, l);
-      } catch {}
+    this.router.events.subscribe((e) => {
+      if (e instanceof NavigationEnd) this.url.set(e.urlAfterRedirects);
     });
+    effect(() => {
+      this.doc.documentElement.lang = this.lang();
+    });
+  }
+
+  /** Internal link in the current language: link('p', slug) → '/fr/p/slug' in French. */
+  link(...segments: string[]): string {
+    return this.linkIn(this.lang(), ...segments);
+  }
+
+  linkIn(lang: Lang, ...segments: string[]): string {
+    const path = segments.filter(Boolean).join('/');
+    return (lang === 'fr' ? '/fr' : '') + '/' + path;
+  }
+
+  /** The same page in another language (path without the /fr prefix, then re-prefixed). */
+  switchTo(lang: Lang): string {
+    const path = this.url().split(/[?#]/)[0].replace(/^\/fr(?=\/|$)/, '').replace(/^\//, '');
+    return this.linkIn(lang, path);
   }
 
   /** Interface text for the current language. `{t}`, `{p}`, `{s}` are replaced from `vars`. */
@@ -44,16 +63,11 @@ export class I18n {
 
   /** Generic "I have a question" WhatsApp link. */
   readonly waQuestion = computed(() => this.wa(this.t('wa_q')));
+}
 
-  private initialLang(): Lang {
-    let stored: string | null = null;
-    try {
-      stored = localStorage.getItem(STORAGE_KEY);
-    } catch {}
-    const q = new URLSearchParams(this.doc.defaultView?.location.search ?? '').get('lang');
-    const l = q || stored || 'en';
-    return (LANGS as string[]).includes(l) ? (l as Lang) : 'en';
-  }
+/** True only in the visitor's browser (false while pages are generated at build time). */
+export function inBrowser(): boolean {
+  return isPlatformBrowser(inject(PLATFORM_ID));
 }
 
 export const prefersReducedMotion = (): boolean =>

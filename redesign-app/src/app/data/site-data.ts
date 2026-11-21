@@ -8,8 +8,13 @@ export const LANGS: Lang[] = ['en', 'fr'];
 
 export type CatKey = 'elec' | 'sport' | 'acc' | 'home';
 
+/** Public address of the site. Change it here when the site gets its own domain. */
+export const SITE_URL = 'https://devopsachrafou.github.io/nexProMa-frontend/redesign/';
+
 export interface Product {
   id: number;
+  /** URL part of the product page: p/{slug}. */
+  slug: string;
   cat: CatKey;
   /** Price in MAD. */
   price: number;
@@ -55,4 +60,8 @@ export function discount(p: Product): number {
 
 export function photo(id: number, k: number): string {
   return `img/g/p${id}_${k}.jpg`;
+}
+
+export function productBySlug(slug: string): Product | undefined {
+  return DATA.products.find((p) => p.slug === slug);
 }

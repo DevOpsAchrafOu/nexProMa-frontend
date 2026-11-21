@@ -1,20 +1,20 @@
 import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { I18n } from '../i18n';
 import { Icon } from '../shared/icons';
 import { LANGS, Lang } from '../data/site-data';
 
 @Component({
   selector: 'header[appSiteHeader]',
-  imports: [Icon],
+  imports: [Icon, RouterLink],
   host: { class: 'top' },
   template: `
     <div class="wrap">
-      <a class="logo" href="#top" aria-label="nexProMa"><img src="img/logo.svg" alt="nexProMa" width="160" height="40" /></a>
+      <a class="logo" [routerLink]="i18n.link('')" aria-label="nexProMa"><img src="img/logo.svg" alt="nexProMa" width="160" height="40" /></a>
       <nav aria-label="Menu">
-        <a href="#products">{{ i18n.t('nav_products') }}</a>
-        <a href="#how">{{ i18n.t('nav_how') }}</a>
-        <a href="#avis">{{ i18n.t('nav_reviews') }}</a>
-        <a href="#faq">{{ i18n.t('nav_faq') }}</a>
+        @for (n of nav; track n.id) {
+          <a [routerLink]="i18n.link('')" [fragment]="n.id">{{ i18n.t(n.label) }}</a>
+        }
       </nav>
       <div class="right">
         <div class="lang" role="group" aria-label="Language" [style.--i]="i18n.index()">
@@ -22,9 +22,9 @@ import { LANGS, Lang } from '../data/site-data';
           <div class="seg">
             <span class="thumb" aria-hidden="true"></span>
             @for (l of langs; track l) {
-              <button type="button" [attr.aria-pressed]="i18n.lang() === l" [attr.title]="names[l]" [attr.lang]="l" (click)="i18n.lang.set(l)">
-                {{ labels[l] }}
-              </button>
+              <!-- Real links to the same page in the other language (readable by search engines). -->
+              <a class="opt" [routerLink]="i18n.switchTo(l)" [attr.aria-current]="i18n.lang() === l ? 'true' : null"
+                [attr.title]="names[l]" [attr.hreflang]="l" [attr.lang]="l">{{ labels[l] }}</a>
             }
           </div>
         </div>
@@ -38,4 +38,10 @@ export class SiteHeader {
   protected readonly langs = LANGS;
   protected readonly labels: Record<Lang, string> = { en: 'EN', fr: 'FR' };
   protected readonly names: Record<Lang, string> = { en: 'English', fr: 'Français' };
+  protected readonly nav = [
+    { id: 'products', label: 'nav_products' },
+    { id: 'how', label: 'nav_how' },
+    { id: 'avis', label: 'nav_reviews' },
+    { id: 'faq', label: 'nav_faq' },
+  ];
 }
