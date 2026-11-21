@@ -7,19 +7,20 @@ import { Hero } from '../sections/hero';
 import { About, Faq, FinalCta, HowToOrder, Reviews } from '../sections/info-sections';
 import { ProductsSection } from '../products/products-section';
 import { DATA, SITE_URL } from '../data/site-data';
+import { Reveal } from '../shared/reveal';
 
 @Component({
   selector: 'app-home-page',
-  imports: [Hero, ProductsSection, HowToOrder, Reviews, About, Faq, FinalCta],
+  imports: [Hero, ProductsSection, HowToOrder, Reviews, About, Faq, FinalCta, Reveal],
   host: { style: 'display:contents' },
   template: `
     <app-hero />
     <section appProducts></section>
-    <section appHowToOrder></section>
-    <section appReviews></section>
-    <section appAbout></section>
-    <section appFaq></section>
-    <section appFinalCta></section>
+    <section appHowToOrder appReveal></section>
+    <section appReviews appReveal></section>
+    <section appAbout appReveal></section>
+    <section appFaq appReveal></section>
+    <section appFinalCta appReveal></section>
   `,
 })
 export class HomePage {
