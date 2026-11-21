@@ -74,7 +74,7 @@ header.top {
   border-bottom: 1px solid var(--line);
 }
 header.top .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.logo { display: inline-flex; text-decoration: none; }
+.logo img { height: 32px; width: auto; }
 header.top nav { display: flex; gap: 6px; }
 header.top nav a { padding: 8px 12px; border-radius: 8px; color: var(--ink-2); font-size: 15px; font-weight: 600; text-decoration: none; transition: color .2s, background-color .2s; }
 header.top nav a:hover { color: var(--ink); background: var(--bg); }
@@ -309,7 +309,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
   :root { --header: 60px; }
   .wrap { padding: 0 16px; }
   header.top nav, .hide-sm { display: none; }
-
+  .logo img { height: 28px; }
   section { padding: 56px 0; }
   .lead { font-size: 16px; }
   .sub { font-size: 15px; margin-bottom: 24px; }
@@ -465,7 +465,7 @@ section.info-page { padding: 24px 0 72px; }
 footer { padding-top: 48px; }
 footer .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 32px; padding-bottom: 36px; }
 .foot-grid > div, .foot-grid > nav { display: flex; flex-direction: column; gap: 10px; }
-.foot-brand .brand { align-self: flex-start; }
+.foot-brand img { width: 140px; height: auto; filter: brightness(0) invert(1); opacity: .95; }
 .foot-brand p { margin: 6px 0 0; max-width: 36ch; line-height: 1.6; }
 .foot-h { margin: 0 0 4px; color: #fff; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .foot-grid a { display: inline-flex; align-items: center; gap: 8px; color: #c5cde0; font-weight: 500; text-decoration: none; overflow-wrap: anywhere; }
@@ -484,14 +484,3 @@ footer .foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-bet
   .contact-cards { grid-template-columns: 1fr; }
   footer .foot-bottom { padding-bottom: 92px; }
 }
-
-/* Logo ("Sparkle"): blue tile with "n" + green sparkle, and the nexProMa wordmark */
-.brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand .mark { flex: 0 0 auto; transition: transform .35s var(--ease); }
-.logo:hover .brand .mark { transform: rotate(-6deg) scale(1.05); }
-.brand .wm { font-size: 23px; font-weight: 800; letter-spacing: -.035em; line-height: 1; white-space: nowrap; }
-.brand .nex { color: var(--ink); }
-.brand .pro { color: #0d4ee1; }
-.brand.on-dark .nex { color: #fff; }
-.brand.on-dark .pro { color: #7aa2ff; }
-@media (max-width: 720px) { .brand .mark { width: 32px; height: 32px; } .brand .wm { font-size: 20px; } }
